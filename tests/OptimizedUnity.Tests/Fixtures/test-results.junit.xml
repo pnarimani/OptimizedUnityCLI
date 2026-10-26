@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TestProj" tests="45" failures="3" errors="0" skipped="1" time="0.054">
+  <testsuite name="Demo.Tests.MathTests" tests="43" failures="2" errors="0" skipped="1" time="0.010">
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_bd8de443bfab55a214d1ca66" classname="Sample.Generated.Tests.Editor" time="0.005" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_76cd59148028d6d1a3a97ee2" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_323bfe2ac31ea11db5217c78" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_7dfc757f02f744c8951e54c5" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_3a2d551dddbda3e91290fb52" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_75edd754104d859ddf398b13" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_7cfa076ab2d5b1aa7f657308" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_cbc94364750fe48078d38d98" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_5082a0f79b05522cb89f4147" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_f22b289d935f118705808fdf" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_f824c91c16119e293ccdd774" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_52a7cc26f40815256886e1f5" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_30e990b0a1efadafd8e3bdb5" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_b896cd8485b3714268f5f01d" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_d7510d14188ef34ed0059428" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_af1da112e8fb851964a1c4cf" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_3176337a3e1e0936a8f03e2a" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_5f42d99fbd06df084ebf4f49" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_5f84186b7116c96cfc4cc1bc" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_34c9f8f368844cc5e2d6df2d" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_6bc44c5126ee15bf97eb13c5" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_16ab22a5488d2973920b36e2" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_3556dc74607a047bdea713d5" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_ce468f0492dce3346ae41b2d" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_b64eaa5837dc77c6f50630cd" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_5fe8edecfe179adfa315e63f" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_676f37877e1c002a2b08bd48" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_65cd3cb757fbf56cfaf473e8" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_0ab39f35808f3621a8eccc5d" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_aa9b3f9cff8afe00e630b9dd" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_ac351c09dcf3e76d3fd09529" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_5b2e0f023e5b8feb892d7981" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_feb76a44c52455b5a9b507dc" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_1ba990012dd098dd7af50355" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_67e4edf54406eeaf6a0d2b83" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_47de65b2ef3e6df0ca83b7d0" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_1c36db500832c03387d4cb23" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_898c0c73b057df1152c1b77a" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_3b0684b3db77309d0ba491ce" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_7667c011f61ea7ea30208b76" classname="Sample.Generated.Tests.Editor" time="0.000" />
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_eebadf98797aa8f48f11b781" classname="Sample.Generated.Tests.Editor" time="0.003">
+      <failure message="sum should be four&#10;  Expected: 4&#10;  But was:  5" type="Failed">at Demo.Tests.MathTests.FailsEquality () [0x00000] in /work/TestProj/Assets/Tests/DemoTests.cs:16</failure>
+    </testcase>
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_73c0f703b4d5192fba77bb51" classname="Sample.Generated.Tests.Editor" time="0.001">
+      <failure message="System.InvalidOperationException : boom from helper" type="Failed">at Demo.Tests.Helper.Deeper () [0x00000] in /work/TestProj/Assets/Tests/DemoTests.cs:45 
+  at Demo.Tests.Helper.Explode () [0x00000] in /work/TestProj/Assets/Tests/DemoTests.cs:44 
+  at Demo.Tests.MathTests.FailsWithException () [0x00000] in /work/TestProj/Assets/Tests/DemoTests.cs:19 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&amp;)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in &lt;c5eeda5e65d44b388e164c6c5cfe0702&gt;:0</failure>
+    </testcase>
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_37f93934d6793aea36ff977d" classname="Sample.Generated.Tests.Editor" time="0.000">
+      <skipped message="not ready" />
+    </testcase>
+  </testsuite>
+  <testsuite name="Demo.Tests.NoisyTests" tests="2" failures="1" errors="0" skipped="0" time="0.044">
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_dd783654bdd2002e5cc41157" classname="Sample.Generated.Tests.Editor" time="0.001">
+      <failure message="Expected: collection containing 4&#10;  But was:  &lt; 1, 2, 3 &gt;" type="Failed">at Demo.Tests.NoisyTests.FailsAfterLogging () [0x0000c] in /work/TestProj/Assets/Tests/DemoTests.cs:38</failure>
+      <system-out>about to fail</system-out>
+    </testcase>
+    <testcase name="Sample.Generated.Tests.Editor.GeneratedTest_b47b4e0a64eda0eb08395a34" classname="Sample.Generated.Tests.Editor" time="0.043">
+      <system-out>noisy log line 0
+noisy log line 1
+noisy log line 2
+noisy log line 3
+noisy log line 4
+noisy log line 5
+noisy log line 6
+noisy log line 7
+noisy log line 8
+noisy log line 9
+noisy log line 10
+noisy log line 11
+noisy log line 12
+noisy log line 13
+noisy log line 14
+noisy log line 15
+noisy log line 16
+noisy log line 17
+noisy log line 18
+noisy log line 19
+noisy log line 20
+noisy log line 21
+noisy log line 22
+noisy log line 23
+noisy log line 24
+noisy log line 25
+noisy log line 26
+noisy log line 27
+noisy log line 28
+noisy log line 29
+noisy log line 30
+noisy log line 31
+noisy log line 32
+noisy log line 33
+noisy log line 34
+noisy log line 35
+noisy log line 36
+noisy log line 37
+noisy log line 38
+noisy log line 39
+noisy log line 40
+noisy log line 41
+noisy log line 42
+noisy log line 43
+noisy log line 44
+noisy log line 45
+noisy log line 46
+noisy log line 47
+noisy log line 48
+noisy log line 49
+noisy log line 50
+noisy log line 51
+noisy log line 52
+noisy log line 53
+noisy log line 54
+noisy log line 55
+noisy log line 56
+noisy log line 57
+noisy log line 58
+noisy log line 59
+noisy log line 60
+noisy log line 61
+noisy log line 62
+noisy log line 63
+noisy log line 64
+noisy log line 65
+noisy log line 66
+noisy log line 67
+noisy log line 68
+noisy log line 69
+noisy log line 70
+noisy log line 71
+noisy log line 72
+noisy log line 73
+noisy log line 74
+noisy log line 75
+noisy log line 76
+noisy log line 77
+noisy log line 78
+noisy log line 79
+noisy log line 80
+noisy log line 81
+noisy log line 82
+noisy log line 83
+noisy log line 84
+noisy log line 85
+noisy log line 86
+noisy log line 87
+noisy log line 88
+noisy log line 89
+noisy log line 90
+noisy log line 91
+noisy log line 92
+noisy log line 93
+noisy log line 94
+noisy log line 95
+noisy log line 96
+noisy log line 97
+noisy log line 98
+noisy log line 99
+noisy log line 100
+noisy log line 101
+noisy log line 102
+noisy log line 103
+noisy log line 104
+noisy log line 105
+noisy log line 106
+noisy log line 107
+noisy log line 108
+noisy log line 109
+noisy log line 110
+noisy log line 111
+noisy log line 112
+noisy log line 113
+noisy log line 114
+noisy log line 115
+noisy log line 116
+noisy log line 117
+noisy log line 118
+noisy log line 119
+noisy log line 120
+noisy log line 121
+noisy log line 122
+noisy log line 123
+noisy log line 124
+noisy log line 125
+noisy log line 126
+noisy log line 127
+noisy log line 128
+noisy log line 129
+noisy log line 130
+noisy log line 131
+noisy log line 132
+noisy log line 133
+noisy log line 134
+noisy log line 135
+noisy log line 136
+noisy log line 137
+noisy log line 138
+noisy log line 139
+noisy log line 140
+noisy log line 141
+noisy log line 142
+noisy log line 143
+noisy log line 144
+noisy log line 145
+noisy log line 146
+noisy log line 147
+noisy log line 148
+noisy log line 149
+noisy log line 150
+noisy log line 151
+noisy log line 152
+noisy log line 153
+noisy log line 154
+noisy log line 155
+noisy log line 156
+noisy log line 157
+noisy log line 158
+noisy log line 159
+noisy log line 160
+noisy log line 161
+noisy log line 162
+noisy log line 163
+noisy log line 164
+noisy log line 165
+noisy log line 166
+noisy log line 167
+noisy log line 168
+noisy log line 169
+noisy log line 170
+noisy log line 171
+noisy log line 172
+noisy log line 173
+noisy log line 174
+noisy log line 175
+noisy log line 176
+noisy log line 177
+noisy log line 178
+noisy log line 179
+noisy log line 180
+noisy log line 181
+noisy log line 182
+noisy log line 183
+noisy log line 184
+noisy log line 185
+noisy log line 186
+noisy log line 187
+noisy log line 188
+noisy log line 189
+noisy log line 190
+noisy log line 191
+noisy log line 192
+noisy log line 193
+noisy log line 194
+noisy log line 195
+noisy log line 196
+noisy log line 197
+noisy log line 198
+noisy log line 199
+Saving results to: /work/elsewhere/test-results.xml</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

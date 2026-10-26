@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "command": "command",
+  "data": {
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/dev/projects/SampleGame"
+    },
+    "server": {
+      "version": "0.0.1",
+      "port": 7800
+    },
+    "commands": [],
+    "count": 0,
+    "total": 0,
+    "offset": 0,
+    "limit": null,
+    "hint": "No Pipeline commands match \"zzzqqq\". No CLI commands or plugins match \"zzzqqq\".",
+    "search": {
+      "pattern": "zzzqqq",
+      "count": 0,
+      "matches": [],
+      "hint": ""
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

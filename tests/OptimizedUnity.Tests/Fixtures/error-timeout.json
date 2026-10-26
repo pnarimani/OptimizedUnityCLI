@@ -1,0 +1,12 @@
+{
+  "success": false,
+  "command": "unity command gameobject",
+  "data": null,
+  "errors": [
+    {
+      "code": "COMMAND_FAILED",
+      "message": "Pipeline server returned 504 Gateway Timeout: 'gameobject find' did not finish within 60 s."
+    }
+  ],
+  "warnings": []
+}

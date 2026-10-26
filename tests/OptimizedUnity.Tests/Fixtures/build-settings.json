@@ -1,0 +1,287 @@
+{
+  "success": true,
+  "command": "command build get_settings",
+  "data": {
+    "command": "build get_settings",
+    "parameters": {},
+    "result": {
+      "activeBuildTarget": "StandaloneOSX",
+      "activeBuildTargetGroup": "Standalone",
+      "developmentBuild": false,
+      "allowDebugging": false,
+      "connectWithProfiler": false,
+      "buildScriptsOnly": false,
+      "symlinkSources": false,
+      "il2CppCodeGeneration": "OptimizeSpeed",
+      "scenes": [
+        {
+          "path": "Assets/Scenes/Boot.unity",
+          "guid": "9bbcc9370d715498acd947a1b5a41eaf",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Scenes/Main.unity",
+          "guid": "e6ab7233a007b22f16ec9fc9fab9b32f",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Scenes/Menu.unity",
+          "guid": "ed0766bb31ed04d259b3717bd5c2d6a9",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Scenes/Lobby.unity",
+          "guid": "a5f04c5503b11606e4644e0d4887d6e1",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Scenes/Shop.unity",
+          "guid": "20a578757563e68d1f0e22d4ae56ad76",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World1/Level_1.unity",
+          "guid": "75dbd9956e246a395dfeff8f6f4572bc",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World1/Level_2.unity",
+          "guid": "2c3bdabc4e01fbcd9504bca7a5c59340",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World1/Level_3.unity",
+          "guid": "afef8b0baf3a8c80bc2b08a9f5c02661",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World1/Level_4.unity",
+          "guid": "449771d833424d61fcd25491215310a5",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World1/Level_5.unity",
+          "guid": "3e5356b6b3dacd8e7f05554b1e1e0ee0",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World1/Level_6.unity",
+          "guid": "ac414f5c500bd6cdaf5ac6860aa8a5f8",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World1/Level_7.unity",
+          "guid": "2f14d2d9d0243c83de82eb31f96288b6",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World1/Level_8.unity",
+          "guid": "d8eacf314914bc781ef02216ef29a543",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World1/Level_9.unity",
+          "guid": "58a557f78817592ce63dfa1c7ef6853a",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World1/Level_10.unity",
+          "guid": "c54fff8b3fa5a3bc34f9ac5a0a6e39eb",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World1/Level_11.unity",
+          "guid": "bf65b669972d0626373936081d28a0db",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World1/Level_12.unity",
+          "guid": "506573638acc02d384db001dc5bb4bb8",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World2/Level_1.unity",
+          "guid": "4554433593fde017d4707b72fcdaf171",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World2/Level_2.unity",
+          "guid": "e7156282a2a2d92e7459da3d51f35191",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World2/Level_3.unity",
+          "guid": "a136c576d8e27e07c36d29ba78a71cdd",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World2/Level_4.unity",
+          "guid": "24221683cf863fe92f442fd405123a71",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World2/Level_5.unity",
+          "guid": "78b5bd85ee5042d74833c27041b29ae6",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World2/Level_6.unity",
+          "guid": "96fa4bb7840dd51983ebf7c99c18fa6e",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World2/Level_7.unity",
+          "guid": "b9eb2b67d8b081abd1d97aaf35f3b68f",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World2/Level_8.unity",
+          "guid": "14ade9d4a455b817a151dd64b338ec80",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World2/Level_9.unity",
+          "guid": "cc5c0b3aa41660793677fa31a2e376e9",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World2/Level_10.unity",
+          "guid": "db073ac7d7a7c198ffe01ce75fc538e2",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World3/Level_1.unity",
+          "guid": "9e602225b0dde9bb53f3b967cba892b3",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World3/Level_2.unity",
+          "guid": "ba4a3a5d0b7c056ebc875e5b10c7ac1f",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World3/Level_3.unity",
+          "guid": "f65255845a94f3489967ea4bfe513214",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World3/Level_4.unity",
+          "guid": "825007e2e756aa04ab22031598926e80",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World3/Level_5.unity",
+          "guid": "19792f4cece6788749c1736ebebf0bc6",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World3/Level_6.unity",
+          "guid": "5bfc54d5f667b388b3f9c6ad09844593",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World3/Level_7.unity",
+          "guid": "dedd634d54a7dc843565f6ef306e13d6",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/World3/Level_8.unity",
+          "guid": "975bb3f2594831167628828f5809e7b7",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/Bonus/Bonus_01.unity",
+          "guid": "d3703a3ef076b1acdc79d2edf85dd616",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/Bonus/Bonus_02.unity",
+          "guid": "e732bd008f56f49d64c090cea7a24129",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/Bonus/Bonus_03.unity",
+          "guid": "199532290b5cd33e9fec3d7c6afcc831",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/Bonus/Bonus_05.unity",
+          "guid": "e864ec8b45d48730d21e9e233c90cb4f",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/Bonus/Bonus_07.unity",
+          "guid": "20047226249de87a13d9133d268f95d0",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/Bonus/Bonus_08.unity",
+          "guid": "9ea9823fa7b3a99b7d87de86440285b8",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/Bonus/Bonus_09.unity",
+          "guid": "6ce53935fd16ccd6b9ccc6c4ae12725b",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Scenes/Credits.unity",
+          "guid": "8efa9b555246fa3447a99286c0d7ce0e",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/Challenges/Daily/Challenge_4.unity",
+          "guid": "c037c8703ed27e961b130f4c4e8bc562",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/Challenges/Daily/Challenge_1.unity",
+          "guid": "ad69a1b31a888deeeea35374646fa6ae",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/Challenges/Daily/Challenge_3.unity",
+          "guid": "f1515e22e00fd2d741d7a9fdc10a1d67",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/Challenges/Daily/Challenge_2.unity",
+          "guid": "a0031dffb3ca0c8d2fc3f3c3fd03f91d",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/Challenges/Weekly/Challenge_1.unity",
+          "guid": "80f7bec391a97c0de4f91904a170587c",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/Challenges/Weekly/Challenge_2.unity",
+          "guid": "7a437ecb4e59b08f1350c2aa24c4913e",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/Challenges/Weekly/Challenge_3.unity",
+          "guid": "4f3649701835ea45ac4e8854b4703690",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/Challenges/Weekly/Challenge_4.unity",
+          "guid": "9a39e5e32bc556202c247e1de30ca67d",
+          "enabled": true
+        },
+        {
+          "path": "Assets/Levels/Challenges/Weekly/Challenge_5.unity",
+          "guid": "beb4c29d9936dae96f9c23e2ed8f8c37",
+          "enabled": true
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/dev/projects/SampleGame"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

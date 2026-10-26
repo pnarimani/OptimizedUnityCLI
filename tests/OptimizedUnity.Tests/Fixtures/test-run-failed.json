@@ -1,0 +1,1037 @@
+{
+  "success": true,
+  "command": "command test run",
+  "data": {
+    "command": "test run",
+    "parameters": {
+      "mode": "editor",
+      "filter": "Sample.Navigation.Tests.Editor",
+      "filter_type": "assembly"
+    },
+    "result": {
+      "Summary": {
+        "Total": 143,
+        "Passed": 138,
+        "Failed": 4,
+        "Skipped": 1,
+        "Inconclusive": 0
+      },
+      "Results": [
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_164b81e18d037342c7dfedca",
+          "Status": "Passed",
+          "Duration": 0.3408956,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_2de91f277d23a9e3f3fc9277",
+          "Status": "Passed",
+          "Duration": 0.2421816,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_6249117db2ee38b84cb799d5",
+          "Status": "Passed",
+          "Duration": 0.2843097,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_8f28871248d15995a9c598fe",
+          "Status": "Passed",
+          "Duration": 0.1296486,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9a2ff9296f137bd9b619bdd9",
+          "Status": "Passed",
+          "Duration": 0.1097218,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_1f7aed396f30e82c024efc87",
+          "Status": "Passed",
+          "Duration": 0.2440727,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_a59670ed19fe65c27c30c289",
+          "Status": "Passed",
+          "Duration": 0.0937145,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_287eeae35046e9a446406893",
+          "Status": "Passed",
+          "Duration": 0.3115559,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_a52b1e69e3cb354f60a5feea",
+          "Status": "Passed",
+          "Duration": 0.0340406,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_2c5f22be2d6d12cb690bc3cc",
+          "Status": "Passed",
+          "Duration": 0.1528083,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_7b21dccd0c2edc27aed32ed7",
+          "Status": "Passed",
+          "Duration": 0.2298005,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_17880afa9b70c49d462082b4",
+          "Status": "Passed",
+          "Duration": 0.2617448,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_55027e20c22d1f04f1f06e2a",
+          "Status": "Passed",
+          "Duration": 0.1359487,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_022a4098e3e5b03dbdfc5957",
+          "Status": "Passed",
+          "Duration": 0.10772,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_60707dd1f37d4dad10c4b031",
+          "Status": "Passed",
+          "Duration": 0.2501824,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ac02389a7a5c739f006bb977",
+          "Status": "Passed",
+          "Duration": 0.3462439,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_344438563f780abee5be6d21",
+          "Status": "Passed",
+          "Duration": 0.3842848,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_c20d41ddefcac51fd5805da2",
+          "Status": "Passed",
+          "Duration": 0.2065099,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_2290e4a7ef1cb16b7aa38985",
+          "Status": "Passed",
+          "Duration": 0.1181686,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_76612ca333a7717b270882e3",
+          "Status": "Passed",
+          "Duration": 0.2309741,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_967482b91c446aad108be611",
+          "Status": "Passed",
+          "Duration": 0.3582571,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_a634387cf79ed829e5992c18",
+          "Status": "Passed",
+          "Duration": 0.2211642,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_acf8a66b18e50a2faa913bc8",
+          "Status": "Passed",
+          "Duration": 0.0123684,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_8c52e9f424c0d590373270bd",
+          "Status": "Passed",
+          "Duration": 0.1471811,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_22449934cabdda8260efe9ff",
+          "Status": "Passed",
+          "Duration": 0.2056912,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_cd07e89acefecc5147700bd8",
+          "Status": "Passed",
+          "Duration": 0.0544166,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_f4b44a56e8f94002178a77f8",
+          "Status": "Passed",
+          "Duration": 0.3803655,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_be178ab99880bc082cff0d71",
+          "Status": "Passed",
+          "Duration": 0.1678205,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_af6c98c756bf79d7cb1d1e38",
+          "Status": "Passed",
+          "Duration": 0.2321314,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_819bf60155a8db6cbbafbf0b",
+          "Status": "Passed",
+          "Duration": 0.066242,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_606d8449bca1c1dc21fb36c9",
+          "Status": "Passed",
+          "Duration": 0.1490135,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_141296c7549e47ff5fa5933f",
+          "Status": "Passed",
+          "Duration": 0.0345431,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_b0a549db2c4eae2e77570548",
+          "Status": "Passed",
+          "Duration": 0.260131,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_c137fc32ec0319ab0c21db48",
+          "Status": "Passed",
+          "Duration": 0.334689,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_2f546156d4f02f9f92190069",
+          "Status": "Passed",
+          "Duration": 0.0103646,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_2032e58c539d309b16308239",
+          "Status": "Passed",
+          "Duration": 0.0240987,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_a3ffd5f93a2869b088479e50",
+          "Status": "Passed",
+          "Duration": 0.0735343,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_577add0bbe3d326ef8421086",
+          "Status": "Passed",
+          "Duration": 0.121817,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_bb8e39e6277c63861ad35eec",
+          "Status": "Passed",
+          "Duration": 0.3278641,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_65344ed3bead9b91352af303",
+          "Status": "Passed",
+          "Duration": 0.3468714,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_08661904168723b0ff95106f",
+          "Status": "Passed",
+          "Duration": 0.386194,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_3dfb2bf0c31944f6fc10b009",
+          "Status": "Passed",
+          "Duration": 0.2026472,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_5aa597b62a43c62845de49d3",
+          "Status": "Passed",
+          "Duration": 0.0632477,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_4b404ea4282b62cb91f78a14",
+          "Status": "Passed",
+          "Duration": 0.3568025,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_fa935c75ddc610295212e48c",
+          "Status": "Passed",
+          "Duration": 0.2595534,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_e92c597048a7fbaaa0afeb44",
+          "Status": "Passed",
+          "Duration": 0.2170555,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_765b89f1c30a92fb6a8b6aba",
+          "Status": "Passed",
+          "Duration": 0.118162,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_acba738088ab35729a12d8c7",
+          "Status": "Passed",
+          "Duration": 0.0703476,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_757d9981fb43ba2d1aae69d6",
+          "Status": "Passed",
+          "Duration": 0.1796854,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9046f2328103e73c3d8851cc",
+          "Status": "Passed",
+          "Duration": 0.178187,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_4e7b8fb2947dd2fbd1272a30",
+          "Status": "Passed",
+          "Duration": 0.0722329,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_6d3ba1f4e6c9ed3b5a681eb5",
+          "Status": "Passed",
+          "Duration": 0.1212762,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_3174bbbf20dd19811382d0c3",
+          "Status": "Passed",
+          "Duration": 0.0542944,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_d3c5f9dcc35ae1cf5d5370d3",
+          "Status": "Passed",
+          "Duration": 0.1296934,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_f7ee876f33ba9b54eae1d6f9",
+          "Status": "Passed",
+          "Duration": 0.0961251,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_0d33854810c7016956feb46a",
+          "Status": "Passed",
+          "Duration": 0.1479931,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_e0dad9dd3e9f319659eda85b",
+          "Status": "Passed",
+          "Duration": 0.3154785,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_97309e4a5e5fe12ceb10893a",
+          "Status": "Passed",
+          "Duration": 0.2117623,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_d48c13aae0c717fc4a7d4440",
+          "Status": "Passed",
+          "Duration": 0.2424687,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_fe6354e21e9eefa86613fb36",
+          "Status": "Passed",
+          "Duration": 0.1828128,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_687ed6551c36639517aad1df",
+          "Status": "Passed",
+          "Duration": 0.2987536,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_f2c3580008deffae248ffa20",
+          "Status": "Passed",
+          "Duration": 0.0379594,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_51951bd1f1fd1b9047eb4462",
+          "Status": "Passed",
+          "Duration": 0.3005354,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_4cc1b66f706447a91b0df5b6",
+          "Status": "Passed",
+          "Duration": 0.2216694,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_84bbf7f5333a269942e8b64b",
+          "Status": "Passed",
+          "Duration": 0.251118,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_106b2ce9f92c1e363ae317b8",
+          "Status": "Passed",
+          "Duration": 0.3471118,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_b8a6cd95b12fc7c1d2fdf558",
+          "Status": "Passed",
+          "Duration": 0.2270069,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_6cd7b4ece887a8e6fc203111",
+          "Status": "Passed",
+          "Duration": 0.243836,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_541ccfdcbc142bf62becf8d4",
+          "Status": "Passed",
+          "Duration": 0.0608653,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_2439e31a305ccb7334d6ce4f",
+          "Status": "Passed",
+          "Duration": 0.1313935,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_05e24283b9851faae0120d0f",
+          "Status": "Passed",
+          "Duration": 0.3456324,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_e445f9b6ee8b880182b98cb6",
+          "Status": "Passed",
+          "Duration": 0.0076594,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_3e74100cdf36662d068a43dd",
+          "Status": "Passed",
+          "Duration": 0.0392487,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_b29fe4bbf4e887ed7f84d717",
+          "Status": "Passed",
+          "Duration": 0.072124,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_de78648a5c9d7b98ab2a26ed",
+          "Status": "Passed",
+          "Duration": 0.3748438,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_bbc2464a5de055c7d5e2c8a4",
+          "Status": "Passed",
+          "Duration": 0.1686561,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_286d126b66e7619317f258c7",
+          "Status": "Passed",
+          "Duration": 0.3789772,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_a8ebe90497784568305e8742",
+          "Status": "Passed",
+          "Duration": 0.1040752,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_b41c2b57606ec1af0cc48689",
+          "Status": "Passed",
+          "Duration": 0.0222541,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_16477654b6b09bbdca68cbe3",
+          "Status": "Passed",
+          "Duration": 0.2993335,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_8e9e0354e9d31f3591b18d39",
+          "Status": "Passed",
+          "Duration": 0.1094503,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_dcf8809cf8f2fbdd7098a489",
+          "Status": "Passed",
+          "Duration": 0.0500763,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_b6aba959e20827533d05362b",
+          "Status": "Passed",
+          "Duration": 0.1390375,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_203f3fa10e677977378a8b28",
+          "Status": "Passed",
+          "Duration": 0.2606116,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_83f8d7ae0b3f640fe6eaaec7",
+          "Status": "Passed",
+          "Duration": 0.3695933,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_89c75258d68ca89b793b3884",
+          "Status": "Passed",
+          "Duration": 0.1827941,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_fdd3ead09892cecbd18b568a",
+          "Status": "Passed",
+          "Duration": 0.2610642,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_33b6afa7a42d78a15d7047c2",
+          "Status": "Passed",
+          "Duration": 0.0175791,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_b3308d1544effa31f5eb50d3",
+          "Status": "Passed",
+          "Duration": 0.1217041,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_b0c193a6a9157ff137efc911",
+          "Status": "Passed",
+          "Duration": 0.2836288,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_63be3fe09be3a28a5cb30bc7",
+          "Status": "Passed",
+          "Duration": 0.0406017,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_4edb2466571e16d062399c15",
+          "Status": "Passed",
+          "Duration": 0.1258955,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_654af48d561a1ac44a168496",
+          "Status": "Passed",
+          "Duration": 0.0223355,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_5f154453c72ab75c7097a574",
+          "Status": "Passed",
+          "Duration": 0.2845194,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_122e53b92b41df787855f031",
+          "Status": "Passed",
+          "Duration": 0.2122998,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_e81f710fedfc5d7c16818105",
+          "Status": "Passed",
+          "Duration": 0.2735246,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_c55effe33dd3188206cd7187",
+          "Status": "Passed",
+          "Duration": 0.1425021,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9802ddec7b57776c578d9c65",
+          "Status": "Passed",
+          "Duration": 0.2216081,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_179b2fb967f3628f33a17bf0",
+          "Status": "Passed",
+          "Duration": 0.2363401,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_96450edca9162ae5fff46062",
+          "Status": "Passed",
+          "Duration": 0.1798185,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9a7873db2d02f37a8389bca8",
+          "Status": "Passed",
+          "Duration": 0.055275,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_da9cb222b922b5c47cbeb8f7",
+          "Status": "Passed",
+          "Duration": 0.0282201,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_bab0403538ac9a67e6fa064c",
+          "Status": "Passed",
+          "Duration": 0.3472413,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_c09725d692a6bd8919d20262",
+          "Status": "Passed",
+          "Duration": 0.251402,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_8fad0506698db253b2197428",
+          "Status": "Passed",
+          "Duration": 0.2775484,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_8167c094cb9d83985d16294f",
+          "Status": "Passed",
+          "Duration": 0.2627857,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_17b420a859042417377f9040",
+          "Status": "Passed",
+          "Duration": 0.1722872,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_c1165683a32de7a6af141d4b",
+          "Status": "Passed",
+          "Duration": 0.0161926,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_4c072f54d6b0dcd1a3b5f544",
+          "Status": "Passed",
+          "Duration": 0.3708454,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_6dba0d8c3124a1ff6b09282a",
+          "Status": "Passed",
+          "Duration": 0.1132357,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ae38d637a2b4cf983d900992",
+          "Status": "Passed",
+          "Duration": 0.3667951,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_db8290e19f79522ec4b2e33e",
+          "Status": "Passed",
+          "Duration": 0.0723187,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_50256bfaed2fef9bbab76111",
+          "Status": "Passed",
+          "Duration": 0.3654194,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_f46d1e7b48491efd8f4abdab",
+          "Status": "Passed",
+          "Duration": 0.2154323,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_2fae3dec71a50d78b5c4aa0c",
+          "Status": "Passed",
+          "Duration": 0.0534198,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_31e8eaf4a1a579da144cae7f",
+          "Status": "Passed",
+          "Duration": 0.0997495,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_7dfdc4bed60fa53e00ff95ca",
+          "Status": "Passed",
+          "Duration": 0.2720237,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_fa85186852ceb96ecfbbf3e2",
+          "Status": "Passed",
+          "Duration": 0.3814793,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_8552df86f2e70fb867e081b7",
+          "Status": "Passed",
+          "Duration": 0.1768932,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_5cde5c52ee0e4af94b75020c",
+          "Status": "Passed",
+          "Duration": 0.2493088,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_14bbe67c51c1120e9f424744",
+          "Status": "Passed",
+          "Duration": 0.3318422,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_07cfa7da08f9df37a3a6c257",
+          "Status": "Passed",
+          "Duration": 0.0005754,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9f2ff863b20da5b123b22d88",
+          "Status": "Passed",
+          "Duration": 0.095347,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_a136e946abfb4b96d641cfe0",
+          "Status": "Passed",
+          "Duration": 0.0902301,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_a8c63a62560c39530da0d46d",
+          "Status": "Passed",
+          "Duration": 0.2893472,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_c46ab8d666815b5cf8303c50",
+          "Status": "Passed",
+          "Duration": 0.301657,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_f6c14d8a80ca550fe89e9e06",
+          "Status": "Passed",
+          "Duration": 0.371348,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_23b0dca94bb7fe20be624139",
+          "Status": "Passed",
+          "Duration": 0.151028,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_87b5bcfa7be157427b4daaa9",
+          "Status": "Passed",
+          "Duration": 0.3520591,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_212a0949d4de537ac2614153",
+          "Status": "Passed",
+          "Duration": 0.0597576,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_eb066e5ca2f1f718ca8e89a7",
+          "Status": "Passed",
+          "Duration": 0.3407931,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_05e7a858e72df8d75b0baafa",
+          "Status": "Passed",
+          "Duration": 0.3432258,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_c5f26e49990e2384a69987e6",
+          "Status": "Passed",
+          "Duration": 0.3036739,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_edadb9d4cbd9e814e0e608f2",
+          "Status": "Passed",
+          "Duration": 0.2305078,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_cce58bb3e7954f235f460c2d",
+          "Status": "Passed",
+          "Duration": 0.3873707,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_16349a0f8a29ea6807861013",
+          "Status": "Passed",
+          "Duration": 0.3235742,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_6d610e2e00f9c023611fae1b",
+          "Status": "Passed",
+          "Duration": 0.0019687,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_438a257597dd51519697441b",
+          "Status": "Passed",
+          "Duration": 0.3346595,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_8ae0f1fe2400472f2edf8c65",
+          "Status": "Failed",
+          "Duration": 0.0004788,
+          "Message": "  sum should be four\n  Expected: 4\n  But was:  5\n",
+          "StackTrace": "at Sample.Navigation.Tests.Editor.X.Y () [0x00000] in /Users/me/proj/Assets/Tests/X.cs:16\n"
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ebafd7e594a29cc269e3b320",
+          "Status": "Failed",
+          "Duration": 0.0005,
+          "Message": "OneTimeSetUp: System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "  at Sample.Navigation.Tests.Editor.Fixture.Setup () [0x00010] in /Users/me/proj/Library/PackageCache/com.example.nav@64eab070/Tests/Fixture.cs:22 \n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo method, System.Object fixture, System.Object[] args) [0x00000] in <8d660984f3>:0 "
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_455567bd3b0e909c6e644bce",
+          "Status": "Failed",
+          "Duration": 0.0005,
+          "Message": "OneTimeSetUp: System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "  at Sample.Navigation.Tests.Editor.Fixture.Setup () [0x00010] in /Users/me/proj/Library/PackageCache/com.example.nav@64eab070/Tests/Fixture.cs:22 \n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo method, System.Object fixture, System.Object[] args) [0x00000] in <8d660984f3>:0 "
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ef7212c746b7ab1affbee007",
+          "Status": "Failed",
+          "Duration": 0.0005,
+          "Message": "OneTimeSetUp: System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "  at Sample.Navigation.Tests.Editor.Fixture.Setup () [0x00010] in /Users/me/proj/Library/PackageCache/com.example.nav@64eab070/Tests/Fixture.cs:22 \n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo method, System.Object fixture, System.Object[] args) [0x00000] in <8d660984f3>:0 "
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_a32bcfcab4eb642c405b0333",
+          "Status": "Skipped",
+          "Duration": 0.0,
+          "Message": "not ready",
+          "StackTrace": null
+        }
+      ],
+      "Duration": 451.3,
+      "StatusPath": null,
+      "Mode": "EditMode",
+      "FilterApplied": "assembly: Sample.Navigation.Tests.Editor",
+      "success": true,
+      "result": null
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/dev/projects/SampleGame"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

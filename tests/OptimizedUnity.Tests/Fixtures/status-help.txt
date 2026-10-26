@@ -1,0 +1,43 @@
+Usage: unity status [options]
+
+Show live state of every connected Unity Editor (port, project, version, PID,
+state)
+
+Options:
+  --port <number>        Filter to a single Editor instance on this port
+  --project-path <path>  Filter by project path: an existing directory matches
+                         that project exactly, and any other value matches as a
+                         case-insensitive substring (env: UNITY_PROJECT_PATH)
+  --until-ready          Wait until a matching Editor reports ready, then print
+                         its status
+  --timeout <seconds>    Seconds to keep waiting for a ready Editor (default:
+                         300)
+  -h, --help             display help for command
+
+Global Options:
+  --format <format>      Output format: human, json, tsv, ndjson, github (env:
+                         UNITY_FORMAT)
+  --json                 Shorthand for --format json
+  --no-banner            Suppress the startup banner (env: UNITY_NO_BANNER)
+  --no-header            Leave out the header row in tsv output
+  --no-pager             Disable the pager for long output (env: UNITY_NO_PAGER)
+  --non-interactive      Disable interactive prompts. Useful in CI/CD
+                         environments. (env: UNITY_NON_INTERACTIVE)
+  --quiet                Suppress informational output (env: UNITY_QUIET)
+  --verbose              Show full error details including stack traces on
+                         failure (env: UNITY_VERBOSE)
+  --color <mode>         Control colored output (choices: "auto", "always",
+                         "never")
+  --no-color             Disable colored output (shorthand for --color never)
+  --proxy <url>          HTTP/HTTPS/SOCKS/PAC proxy URL. Examples:
+                         http://<user>:<pass>@host:8080, socks5://host:1080,
+                         pac+http://wpad/proxy.pac (env: UNITY_PROXY)
+  --proxy-disable        Disable proxy for this invocation, ignoring all sources
+  --log-proxy            Log every outbound request to proxy-request.json for
+                         this run. Off by default; typically used once when
+                         reproducing a proxy issue for support. Also settable
+                         via UNITY_LOG_PROXY=1 or the proxyRequestLogging user
+                         setting. (env: UNITY_LOG_PROXY)
+  --no-log-proxy         Opt out of --log-proxy / UNITY_LOG_PROXY / the
+                         persisted user setting for this run. Use when logging
+                         is enabled globally but you want one clean invocation.

@@ -1,0 +1,58 @@
+{
+  "success": true,
+  "command": "command scene get_hierarchy",
+  "data": {
+    "command": "scene get_hierarchy",
+    "parameters": {},
+    "result": {
+      "sceneName": "Sample",
+      "scenePath": "Assets/Scenes/Sample.unity",
+      "isDirty": false,
+      "isActive": true,
+      "roots": [
+        {
+          "name": "Main Camera",
+          "instanceId": 52445,
+          "hierarchyPath": "/Main Camera",
+          "activeSelf": true,
+          "components": [
+            "Transform",
+            "Camera",
+            "AudioListener"
+          ],
+          "children": []
+        },
+        {
+          "name": "Level",
+          "instanceId": 61750,
+          "hierarchyPath": "/Level",
+          "activeSelf": true,
+          "components": [
+            "Transform",
+            "LevelLoader",
+            "Spawner"
+          ],
+          "children": [
+            {
+              "name": "Stage 0",
+              "instanceId": 29772,
+              "hierarchyPath": "/Level/Stage 0",
+              "activeSelf": false,
+              "components": [
+                "Transform"
+              ],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/dev/projects/SampleGame"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,311 @@
+{
+  "success": true,
+  "command": "command console get",
+  "data": {
+    "command": "console get",
+    "parameters": {
+      "tail": "30"
+    },
+    "result": {
+      "entries": [
+        {
+          "seq": 2281,
+          "timestampUtc": "2026-01-15T10:00:00.832948Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Loaded 12 scenes from the build list",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 2282,
+          "timestampUtc": "2026-01-15T10:00:01.917710Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Shader 'Custom/Water' uses the deprecated keyword _FOAM_ON",
+          "stackTrace": "UnityEditor.ShaderUtil:CompileShader (UnityEngine.Shader)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 2283,
+          "timestampUtc": "2026-01-15T10:00:02.355953Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Shader 'Custom/Water' uses the deprecated keyword _FOAM_ON",
+          "stackTrace": "UnityEditor.ShaderUtil:CompileShader (UnityEngine.Shader)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 2284,
+          "timestampUtc": "2026-01-15T10:00:03.185831Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Config request to https://config.example.com/v1/settings timed out; retrying in 2 s",
+          "stackTrace": "UnityEngine.Debug:LogWarning (object)\nSample.Net.ConfigClient/<Fetch>d__4:MoveNext () (at Assets/Scripts/Net/ConfigClient.cs:58)\nSystem.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Sample.Net.Response>:SetResult (Sample.Net.Response)\nSample.Net.HttpTransport/<Send>d__9:MoveNext () (at Assets/Scripts/Net/HttpTransport.cs:77)\nSystem.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start<Sample.Net.HttpTransport/<Send>d__9> (Sample.Net.HttpTransport/<Send>d__9&)\nUnityEngine.UnitySynchronizationContext:ExecuteTasks ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 2285,
+          "timestampUtc": "2026-01-15T10:00:04.702326Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "MissingReferenceException: The object of type Sprite has been destroyed but you are still trying to access it.\nYour script should either check if it is null or you should not destroy the object.",
+          "stackTrace": "Sample.UI.IconView.Refresh () (at Assets/Scripts/UI/IconView.cs:31)\nSample.UI.ShopScreen.OnEnable () (at Assets/Scripts/UI/ShopScreen.cs:18)\n",
+          "seeded": false
+        },
+        {
+          "seq": 2286,
+          "timestampUtc": "2026-01-15T10:00:05.414834Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Shader 'Custom/Water' uses the deprecated keyword _FOAM_ON",
+          "stackTrace": "UnityEditor.ShaderUtil:CompileShader (UnityEngine.Shader)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 2287,
+          "timestampUtc": "2026-01-15T10:00:06.650708Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Loaded 12 scenes from the build list",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 2288,
+          "timestampUtc": "2026-01-15T10:00:07.619167Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Shader 'Custom/Water' uses the deprecated keyword _FOAM_ON",
+          "stackTrace": "UnityEditor.ShaderUtil:CompileShader (UnityEngine.Shader)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 2289,
+          "timestampUtc": "2026-01-15T10:00:08.460160Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Shader 'Custom/Water' uses the deprecated keyword _FOAM_ON",
+          "stackTrace": "UnityEditor.ShaderUtil:CompileShader (UnityEngine.Shader)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 2290,
+          "timestampUtc": "2026-01-15T10:00:09.864878Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Config request to https://config.example.com/v1/settings timed out; retrying in 2 s",
+          "stackTrace": "UnityEngine.Debug:LogWarning (object)\nSample.Net.ConfigClient/<Fetch>d__4:MoveNext () (at Assets/Scripts/Net/ConfigClient.cs:58)\nSystem.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Sample.Net.Response>:SetResult (Sample.Net.Response)\nSample.Net.HttpTransport/<Send>d__9:MoveNext () (at Assets/Scripts/Net/HttpTransport.cs:77)\nSystem.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start<Sample.Net.HttpTransport/<Send>d__9> (Sample.Net.HttpTransport/<Send>d__9&)\nUnityEngine.UnitySynchronizationContext:ExecuteTasks ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 2291,
+          "timestampUtc": "2026-01-15T10:00:10.570636Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "MissingReferenceException: The object of type Sprite has been destroyed but you are still trying to access it.\nYour script should either check if it is null or you should not destroy the object.",
+          "stackTrace": "Sample.UI.IconView.Refresh () (at Assets/Scripts/UI/IconView.cs:31)\nSample.UI.ShopScreen.OnEnable () (at Assets/Scripts/UI/ShopScreen.cs:18)\n",
+          "seeded": false
+        },
+        {
+          "seq": 2292,
+          "timestampUtc": "2026-01-15T10:00:11.401924Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Shader 'Custom/Water' uses the deprecated keyword _FOAM_ON",
+          "stackTrace": "UnityEditor.ShaderUtil:CompileShader (UnityEngine.Shader)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 2293,
+          "timestampUtc": "2026-01-15T10:00:12.738539Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Loaded 12 scenes from the build list",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 2294,
+          "timestampUtc": "2026-01-15T10:00:13.176756Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Shader 'Custom/Water' uses the deprecated keyword _FOAM_ON",
+          "stackTrace": "UnityEditor.ShaderUtil:CompileShader (UnityEngine.Shader)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 2295,
+          "timestampUtc": "2026-01-15T10:00:14.223800Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Shader 'Custom/Water' uses the deprecated keyword _FOAM_ON",
+          "stackTrace": "UnityEditor.ShaderUtil:CompileShader (UnityEngine.Shader)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 2296,
+          "timestampUtc": "2026-01-15T10:00:15.636800Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Config request to https://config.example.com/v1/settings timed out; retrying in 2 s",
+          "stackTrace": "UnityEngine.Debug:LogWarning (object)\nSample.Net.ConfigClient/<Fetch>d__4:MoveNext () (at Assets/Scripts/Net/ConfigClient.cs:58)\nSystem.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Sample.Net.Response>:SetResult (Sample.Net.Response)\nSample.Net.HttpTransport/<Send>d__9:MoveNext () (at Assets/Scripts/Net/HttpTransport.cs:77)\nSystem.Runtime.CompilerServices.AsyncVoidMethodBuilder:Start<Sample.Net.HttpTransport/<Send>d__9> (Sample.Net.HttpTransport/<Send>d__9&)\nUnityEngine.UnitySynchronizationContext:ExecuteTasks ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 2297,
+          "timestampUtc": "2026-01-15T10:00:16.538433Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "MissingReferenceException: The object of type Sprite has been destroyed but you are still trying to access it.\nYour script should either check if it is null or you should not destroy the object.",
+          "stackTrace": "Sample.UI.IconView.Refresh () (at Assets/Scripts/UI/IconView.cs:31)\nSample.UI.ShopScreen.OnEnable () (at Assets/Scripts/UI/ShopScreen.cs:18)\n",
+          "seeded": false
+        },
+        {
+          "seq": 2298,
+          "timestampUtc": "2026-01-15T10:00:17.272975Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Shader 'Custom/Water' uses the deprecated keyword _FOAM_ON",
+          "stackTrace": "UnityEditor.ShaderUtil:CompileShader (UnityEngine.Shader)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 2299,
+          "timestampUtc": "2026-01-15T10:00:18.893919Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Loaded 12 scenes from the build list",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 2300,
+          "timestampUtc": "2026-01-15T10:00:19.458671Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Texture Assets/Art/UI/Icons/icon_19.png is larger than 2048 px and will be downscaled",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 2301,
+          "timestampUtc": "2026-01-15T10:00:20.259367Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Texture Assets/Art/UI/Icons/icon_20.png is larger than 2048 px and will be downscaled",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 2302,
+          "timestampUtc": "2026-01-15T10:00:21.612714Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Texture Assets/Art/UI/Icons/icon_21.png is larger than 2048 px and will be downscaled",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 2303,
+          "timestampUtc": "2026-01-15T10:00:22.542182Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "MissingReferenceException: The object of type Sprite has been destroyed but you are still trying to access it.\nYour script should either check if it is null or you should not destroy the object.",
+          "stackTrace": "Sample.UI.IconView.Refresh () (at Assets/Scripts/UI/IconView.cs:31)\nSample.UI.ShopScreen.OnEnable () (at Assets/Scripts/UI/ShopScreen.cs:18)\n",
+          "seeded": false
+        },
+        {
+          "seq": 2304,
+          "timestampUtc": "2026-01-15T10:00:23.141111Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Texture Assets/Art/UI/Icons/icon_23.png is larger than 2048 px and will be downscaled",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 2305,
+          "timestampUtc": "2026-01-15T10:00:24.800675Z",
+          "level": "log",
+          "logType": "Log",
+          "message": "Loaded 12 scenes from the build list",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 2306,
+          "timestampUtc": "2026-01-15T10:00:25.181390Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Texture Assets/Art/UI/Icons/icon_25.png is larger than 2048 px and will be downscaled",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 2307,
+          "timestampUtc": "2026-01-15T10:00:26.901710Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Texture Assets/Art/UI/Icons/icon_26.png is larger than 2048 px and will be downscaled",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 2308,
+          "timestampUtc": "2026-01-15T10:00:27.685184Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Texture Assets/Art/UI/Icons/icon_27.png is larger than 2048 px and will be downscaled",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 2309,
+          "timestampUtc": "2026-01-15T10:00:28.700861Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "MissingReferenceException: The object of type Sprite has been destroyed but you are still trying to access it.\nYour script should either check if it is null or you should not destroy the object.",
+          "stackTrace": "Sample.UI.IconView.Refresh () (at Assets/Scripts/UI/IconView.cs:31)\nSample.UI.ShopScreen.OnEnable () (at Assets/Scripts/UI/ShopScreen.cs:18)\n",
+          "seeded": false
+        },
+        {
+          "seq": 2310,
+          "timestampUtc": "2026-01-15T10:00:29.927425Z",
+          "level": "warn",
+          "logType": "Warning",
+          "message": "Texture Assets/Art/UI/Icons/icon_29.png is larger than 2048 px and will be downscaled",
+          "stackTrace": "",
+          "seeded": false
+        }
+      ],
+      "cursor": 2310,
+      "session": "aabfe228f219e9cb0eb53f16947ccf25",
+      "returned": 30,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 5,
+        "warn": 20,
+        "log": 5
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-01-15T10:01:00.000000Z",
+        "ageMs": 120,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 5,
+        "consoleWarnings": 20,
+        "consoleLogs": 5,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/dev/projects/SampleGame"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

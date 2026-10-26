@@ -1,0 +1,284 @@
+{
+  "success": true,
+  "command": "command",
+  "data": {
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/dev/projects/SampleGame"
+    },
+    "server": {
+      "version": "0.0.1",
+      "port": 7800
+    },
+    "commands": [
+      {
+        "command": "console clear",
+        "name": "clear",
+        "group": "console",
+        "description": "Clear the captured log buffer and the Unity Editor console.",
+        "tags": [
+          "observability/console"
+        ],
+        "package": "Unity.Pipeline",
+        "mainThreadRequired": true,
+        "parameters": [],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "console clear",
+          "description": "Clear the captured log buffer and the Unity Editor console.",
+          "properties": {},
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Runtime.Commands.ConsoleCommand.Clear"
+          }
+        }
+      },
+      {
+        "command": "console get",
+        "name": "get",
+        "group": "console",
+        "description": "Get captured Unity console output (Editor or Player; supports tail, level filtering, and follow via a cursor)",
+        "tags": [
+          "observability/console"
+        ],
+        "package": "Unity.Pipeline",
+        "mainThreadRequired": false,
+        "parameters": [
+          {
+            "name": "tail",
+            "description": "Maximum number of most-recent entries to return",
+            "type": "Int32",
+            "required": false,
+            "defaultValue": 100
+          },
+          {
+            "name": "level",
+            "description": "Minimum severity to include: log | warn | error",
+            "type": "String",
+            "required": false,
+            "defaultValue": "log"
+          },
+          {
+            "name": "since",
+            "description": "Cursor: only return entries newer than this seq. Use the 'cursor' from a previous response to follow.",
+            "type": "Int64",
+            "required": false,
+            "defaultValue": -1
+          },
+          {
+            "name": "since_session",
+            "description": "Session the 'since' cursor came from: pass the 'session' from a previous response. A cursor from another session is refused and the tail returned with reset=true.",
+            "type": "String",
+            "required": false,
+            "defaultValue": null
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "console get",
+          "description": "Get captured Unity console output (Editor or Player; supports tail, level filtering, and follow via a cursor)",
+          "properties": {
+            "tail": {
+              "type": "integer",
+              "description": "Maximum number of most-recent entries to return",
+              "default": 100
+            },
+            "level": {
+              "type": "string",
+              "description": "Minimum severity to include: log | warn | error",
+              "default": "log"
+            },
+            "since": {
+              "type": "integer",
+              "description": "Cursor: only return entries newer than this seq. Use the 'cursor' from a previous response to follow.",
+              "default": -1
+            },
+            "since_session": {
+              "type": "string",
+              "description": "Session the 'since' cursor came from: pass the 'session' from a previous response. A cursor from another session is refused and the tail returned with reset=true."
+            }
+          },
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": false,
+            "methodName": "Unity.Pipeline.Runtime.Commands.ConsoleCommand.Get"
+          }
+        }
+      },
+      {
+        "command": "console status",
+        "name": "status",
+        "group": "console",
+        "description": "Console ground truth and buffer counters without pulling entries: compile-failure flag, Editor console counts, and the buffer's retained counts and cursor.",
+        "tags": [
+          "observability/console"
+        ],
+        "package": "Unity.Pipeline",
+        "mainThreadRequired": false,
+        "parameters": [],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "console status",
+          "description": "Console ground truth and buffer counters without pulling entries: compile-failure flag, Editor console counts, and the buffer's retained counts and cursor.",
+          "properties": {},
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": false,
+            "methodName": "Unity.Pipeline.Runtime.Commands.ConsoleCommand.Status"
+          }
+        }
+      },
+      {
+        "command": "console write",
+        "name": "write",
+        "group": "console",
+        "description": "Write a message to Unity console",
+        "tags": [
+          "observability/console",
+          "runtime"
+        ],
+        "package": "Unity.Pipeline",
+        "mainThreadRequired": true,
+        "parameters": [
+          {
+            "name": "message",
+            "description": "Message to log to console",
+            "type": "String",
+            "required": true,
+            "defaultValue": null
+          },
+          {
+            "name": "level",
+            "description": "Log level: info, warning, error",
+            "type": "String",
+            "required": false,
+            "defaultValue": "info"
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "console write",
+          "description": "Write a message to Unity console",
+          "properties": {
+            "message": {
+              "type": "string",
+              "description": "Message to log to console"
+            },
+            "level": {
+              "type": "string",
+              "description": "Log level: info, warning, error",
+              "default": "info"
+            }
+          },
+          "required": [
+            "message"
+          ],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": true,
+            "methodName": "Unity.Pipeline.Runtime.Commands.RuntimeLogCommand.Write"
+          }
+        }
+      }
+    ],
+    "count": 4,
+    "total": 4,
+    "offset": 0,
+    "limit": null,
+    "search": {
+      "pattern": "console",
+      "count": 7,
+      "matches": [
+        {
+          "kind": "pipeline",
+          "name": "console clear",
+          "path": "console clear",
+          "description": "Clear the captured log buffer and the Unity Editor console.",
+          "matchedOn": "name",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command console clear"
+        },
+        {
+          "kind": "pipeline",
+          "name": "console get",
+          "path": "console get",
+          "description": "Get captured Unity console output (Editor or Player; supports tail, level filtering, and follow via a cursor)",
+          "matchedOn": "name",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command console get"
+        },
+        {
+          "kind": "pipeline",
+          "name": "console status",
+          "path": "console status",
+          "description": "Console ground truth and buffer counters without pulling entries: compile-failure flag, Editor console counts, and the buffer's retained counts and cursor.",
+          "matchedOn": "name",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command console status"
+        },
+        {
+          "kind": "pipeline",
+          "name": "console write",
+          "path": "console write",
+          "description": "Write a message to Unity console",
+          "matchedOn": "name",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity command console write"
+        },
+        {
+          "kind": "command",
+          "name": "build",
+          "path": "build",
+          "description": "Build a Unity project from the command line. Spawns the editor in batch mode and forwards conventional CI flags.",
+          "matchedOn": "option",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity build"
+        },
+        {
+          "kind": "command",
+          "name": "logs",
+          "path": "logs",
+          "description": "Read and tail the Hub log file",
+          "matchedOn": "option",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity logs"
+        },
+        {
+          "kind": "command",
+          "name": "run",
+          "path": "run",
+          "description": "Run a Unity project in batch mode and forward args to the editor",
+          "matchedOn": "option",
+          "state": null,
+          "installed": null,
+          "installCommand": null,
+          "invoke": "unity run"
+        }
+      ],
+      "hint": ""
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

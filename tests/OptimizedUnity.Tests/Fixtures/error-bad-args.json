@@ -1,0 +1,12 @@
+{
+  "success": false,
+  "command": "bogus",
+  "data": null,
+  "errors": [
+    {
+      "code": "INVALID_COMMAND_ARGS",
+      "message": "unknown command 'bogus'"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,3856 @@
+{
+  "success": true,
+  "command": "list",
+  "data": {
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800
+    },
+    "count": 166,
+    "tools": [
+      {
+        "name": "animation.animator add_layer",
+        "description": "Add a layer to an AnimatorController.",
+        "group": "animation.animator",
+        "parameters": [
+          {
+            "name": "controller",
+            "type": "string",
+            "description": "Reference to the AnimatorController to edit (path / guid / globalId).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Layer name.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "weight",
+            "type": "number",
+            "description": "Layer weight (default 1).",
+            "required": false,
+            "default": 1
+          },
+          {
+            "name": "blendingMode",
+            "type": "string",
+            "description": "Blending mode: Override | Additive (default Override).",
+            "required": false,
+            "default": "Override"
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate inputs without writing the layer.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "animation.animator add_parameter",
+        "description": "Add a parameter (Float | Int | Bool | Trigger) to an AnimatorController. A duplicate name returns code 'duplicate_parameter'.",
+        "group": "animation.animator",
+        "parameters": [
+          {
+            "name": "controller",
+            "type": "string",
+            "description": "Reference to the AnimatorController to edit (path / guid / globalId).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Parameter name.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "Parameter type: Float | Int | Bool | Trigger.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "defaultValue",
+            "type": "string",
+            "description": "Default value for Float/Int/Bool (ignored for Trigger).",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate inputs without writing the parameter.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "animation.animator add_state",
+        "description": "Add a state to a layer, optionally with a motion (AnimationClip or BlendTree) and as the layer default. A layer name with no match returns code 'layer_not_found'.",
+        "group": "animation.animator",
+        "parameters": [
+          {
+            "name": "controller",
+            "type": "string",
+            "description": "Reference to the AnimatorController to edit (path / guid / globalId).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "layer",
+            "type": "string",
+            "description": "Layer index (int) or name (string). Default 0 (Base Layer).",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "State name.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "motion",
+            "type": "string",
+            "description": "Optional AnimationClip or BlendTree asset to assign as the state's motion.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "isDefault",
+            "type": "boolean",
+            "description": "If true, set this state as the layer's default state.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "position",
+            "type": "string",
+            "description": "Optional [x, y] node position in the graph (cosmetic).",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate inputs without writing the state.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "animation.animator add_transition",
+        "description": "Add a transition between two states (or from AnyState/Entry, to Exit) on a layer, with optional conditions. Validates that the states exist and each condition's parameter exists and its mode matches the parameter type.",
+        "group": "animation.animator",
+        "parameters": [
+          {
+            "name": "controller",
+            "type": "string",
+            "description": "Reference to the AnimatorController to edit (path / guid / globalId).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "layer",
+            "type": "string",
+            "description": "Layer index (int) or name (string). Default 0 (Base Layer).",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "fromState",
+            "type": "string",
+            "description": "Source state name, or the special \"AnyState\" / \"Entry\".",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "toState",
+            "type": "string",
+            "description": "Destination state name, or the special \"Exit\".",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "conditions",
+            "type": "string",
+            "description": "Optional conditions: [{ parameter, mode: \"If\"|\"IfNot\"|\"Greater\"|\"Less\"|\"Equals\"|\"NotEqual\", threshold? }].",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "hasExitTime",
+            "type": "boolean",
+            "description": "If true, the transition uses exit time (default false).",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "exitTime",
+            "type": "number",
+            "description": "Normalized exit time (0..1) when hasExitTime is set.",
+            "required": false,
+            "default": 0
+          },
+          {
+            "name": "duration",
+            "type": "number",
+            "description": "Transition duration in seconds (default 0.25).",
+            "required": false,
+            "default": 0.25
+          },
+          {
+            "name": "hasFixedDuration",
+            "type": "boolean",
+            "description": "If true, duration is in seconds; otherwise normalized (default true).",
+            "required": false,
+            "default": true
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate everything (states, parameters, mode/type) without writing the transition.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "animation.animator create_controller",
+        "description": "Create an .controller AnimatorController asset (with a default Base Layer) under the authoring root.",
+        "group": "animation.animator",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "description": "Asset path ending in .controller, relative to the authoring root. The Assets/ prefix is optional.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Required (true) only when overwriting an existing asset at the path.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate inputs and report what would be created without writing anything.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "animation.animator get_controller",
+        "description": "Read an AnimatorController's full structure: parameters, layers, states (with motion / default), and transitions (with conditions).",
+        "group": "animation.animator",
+        "parameters": [
+          {
+            "name": "controller",
+            "type": "string",
+            "description": "Reference to the AnimatorController to read (path / guid / globalId).",
+            "required": true,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "animation.clip create",
+        "description": "Create an empty .anim AnimationClip asset under the authoring root, with an optional frame rate and loop flag.",
+        "group": "animation.clip",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "description": "Asset path ending in .anim, relative to the authoring root. The Assets/ prefix is optional.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "frameRate",
+            "type": "number",
+            "description": "Sampling frame rate of the clip (default 60).",
+            "required": false,
+            "default": 60
+          },
+          {
+            "name": "loop",
+            "type": "boolean",
+            "description": "If true, set the clip's loop-time flag in its AnimationClipSettings (default false).",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Required (true) only when overwriting an existing asset at the path.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate inputs and report what would be created without writing anything.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "animation.clip get",
+        "description": "Read an AnimationClip's metadata and all float curve bindings (optionally with keyframes).",
+        "group": "animation.clip",
+        "parameters": [
+          {
+            "name": "clip",
+            "type": "string",
+            "description": "Reference to the AnimationClip to read (path / guid / globalId).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "includeKeys",
+            "type": "boolean",
+            "description": "If true, include each binding's keyframes (default false).",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "animation.clip remove_curve",
+        "description": "Remove a float curve binding from an AnimationClip (SetEditorCurve(clip, binding, null)). Destructive: requires confirm=true.",
+        "group": "animation.clip",
+        "parameters": [
+          {
+            "name": "clip",
+            "type": "string",
+            "description": "Reference to the AnimationClip to edit (path / guid / globalId).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "path",
+            "type": "string",
+            "description": "GameObject path relative to the animated root the binding lives on. Empty string (default) targets the root.",
+            "required": false,
+            "default": ""
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "Component type of the binding to remove, e.g. \"Transform\". Resolved via the component TypeResolver.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "property",
+            "type": "string",
+            "description": "Curve property name to remove, e.g. \"m_LocalPosition.x\".",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Must be true to actually remove the binding (destructive guard).",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, report the binding that would be removed without removing it.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "animation.clip set_curve",
+        "description": "Add or replace a single float curve binding on an AnimationClip (via AnimationUtility.SetEditorCurve). Replacing an existing binding overwrites it rather than duplicating.",
+        "group": "animation.clip",
+        "parameters": [
+          {
+            "name": "clip",
+            "type": "string",
+            "description": "Reference to the AnimationClip to edit (path / guid / globalId).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "path",
+            "type": "string",
+            "description": "GameObject path relative to the animated root the property lives on. Empty string (default) targets the root.",
+            "required": false,
+            "default": ""
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "Component type the property lives on, e.g. \"Transform\", \"UnityEngine.Light\". Resolved via the component TypeResolver.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "property",
+            "type": "string",
+            "description": "Curve property name, e.g. \"m_LocalPosition.x\", \"m_LocalScale.y\", \"localEulerAnglesRaw.z\".",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "keys",
+            "type": "string",
+            "description": "Keyframes: [{ time, value, inTangent?, outTangent?, weightedMode?: \"None\"|\"In\"|\"Out\"|\"Both\" }]. Omitted tangents default to 0 (flat); this is NOT Unity's Auto tangent mode.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate type/property/keys without writing the curve.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "animation.timeline add_clip",
+        "description": "Add a clip to a named track on a TimelineAsset. For Animation tracks pass an AnimationClip asset; for Audio tracks an AudioClip. Requires the com.unity.timeline package.",
+        "group": "animation.timeline",
+        "parameters": [
+          {
+            "name": "timeline",
+            "type": "string",
+            "description": "Reference to the TimelineAsset to edit (path / guid / globalId).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "track",
+            "type": "string",
+            "description": "Target track name.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "start",
+            "type": "number",
+            "description": "Clip start time in seconds.",
+            "required": true,
+            "default": 0
+          },
+          {
+            "name": "duration",
+            "type": "number",
+            "description": "Clip duration in seconds.",
+            "required": true,
+            "default": 0
+          },
+          {
+            "name": "asset",
+            "type": "string",
+            "description": "Source asset: for Animation tracks an AnimationClip; for Audio tracks an AudioClip. Required for those track types.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate inputs without writing the clip.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "animation.timeline add_track",
+        "description": "Add a track (Animation | Audio | Activation | Control | Playable | Signal | Marker) to a TimelineAsset, optionally nested under a parent group/track. Requires the com.unity.timeline package.",
+        "group": "animation.timeline",
+        "parameters": [
+          {
+            "name": "timeline",
+            "type": "string",
+            "description": "Reference to the TimelineAsset to edit (path / guid / globalId).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "trackType",
+            "type": "string",
+            "description": "Track type: Animation | Audio | Activation | Control | Playable | Signal | Marker.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Optional track display name.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "parentTrack",
+            "type": "string",
+            "description": "Optional name of an existing group/track to nest the new track under.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate inputs without writing the track.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "animation.timeline create",
+        "description": "Create a .playable TimelineAsset under the authoring root (optional frame rate). Requires the com.unity.timeline package.",
+        "group": "animation.timeline",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "description": "Asset path ending in .playable, relative to the authoring root. The Assets/ prefix is optional.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "frameRate",
+            "type": "number",
+            "description": "Timeline frame rate (default 60).",
+            "required": false,
+            "default": 60
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Required (true) only when overwriting an existing asset at the path.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate inputs and report what would be created without writing anything.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "animation.timeline get",
+        "description": "Read a TimelineAsset's structure: frame rate, duration, and its tracks with their clips. Requires the com.unity.timeline package.",
+        "group": "animation.timeline",
+        "parameters": [
+          {
+            "name": "timeline",
+            "type": "string",
+            "description": "Reference to the TimelineAsset to read (path / guid / globalId).",
+            "required": true,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "asset copy",
+        "description": "Copy an asset to a new path under the authoring root. The copy gets a fresh GUID.",
+        "group": "asset",
+        "parameters": [
+          {
+            "name": "asset",
+            "type": "string",
+            "description": "Reference to the asset to copy (path / guid / globalId).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "destination",
+            "type": "string",
+            "description": "Destination asset path relative to the authoring root, including extension. The Assets/ prefix is optional.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Required (true) only when overwriting an existing asset at the destination path.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate inputs and report what would be copied without writing anything.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "asset create",
+        "description": "Create a new ScriptableObject (or other UnityEngine.Object) asset of the given type at a path under the authoring root.",
+        "group": "asset",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "description": "Asset path relative to the authoring root, including extension (e.g. Data/Config.asset or Materials/Wall.mat). The Assets/ prefix is optional.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "Fully-qualified or short type name to instantiate (e.g. UnityEngine.Material, MyGame.GameConfig). Must derive from UnityEngine.Object and be creatable.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "shader",
+            "type": "string",
+            "description": "Material-only (ignored otherwise): shader name to assign (e.g. Standard, \"Universal Render Pipeline/Lit\"). When omitted, defaults to \"Universal Render Pipeline/Lit\" if a Scriptable Render Pipeline is active, otherwise the built-in \"Standard\" shader (falling back to \"Standard\" if URP/Lit is unavailable).",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Required (true) only when overwriting an existing asset at the path. Ignored when the path is empty.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate inputs and report what would be created without writing anything.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "asset create_folder",
+        "description": "Create a folder under the authoring root (creates intermediate folders).",
+        "group": "asset",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "description": "Folder path relative to the authoring root (default Assets/); the Assets/ prefix is optional. e.g. Gameplay/Enemies or Assets/Gameplay/Enemies",
+            "required": true,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "asset delete",
+        "description": "Delete an asset from the project. Destructive: requires confirm=true.",
+        "group": "asset",
+        "parameters": [
+          {
+            "name": "asset",
+            "type": "string",
+            "description": "Reference to the asset to delete (path / guid / globalId).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Must be true to actually delete. Without it the command refuses (destructive guard).",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, report the asset that would be deleted without deleting it.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "asset find",
+        "description": "Find assets by type and/or name and/or label, returning their path, GUID and type. At least one filter is required.",
+        "group": "asset",
+        "parameters": [
+          {
+            "name": "type",
+            "type": "string",
+            "description": "Type name to filter by (e.g. Material, GameObject, ScriptableObject, MyGame.GameConfig). Resolved to a System.Type and matched against each asset's actual main type.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Name substring to filter by (AssetDatabase name filter).",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "label",
+            "type": "string",
+            "description": "Asset label to filter by (AssetDatabase 'l:' filter).",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "search_in",
+            "type": "string",
+            "description": "Folder to scope the search to, relative to the authoring root (default: the authoring root).",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "limit",
+            "type": "integer",
+            "description": "Maximum number of results to return (default 200).",
+            "required": false,
+            "default": 200
+          }
+        ]
+      },
+      {
+        "name": "asset get_import_settings",
+        "description": "Read an asset's import settings, structured by importer type (texture/model/audio), including the default-platform fields and (for textures/audio) one platform override block.",
+        "group": "asset",
+        "parameters": [
+          {
+            "name": "asset",
+            "type": "string",
+            "description": "Reference to the asset whose importer to read (path / guid / globalId).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "platform",
+            "type": "string",
+            "description": "Platform whose override to read: Default | Standalone | iOS | Android | WebGL | tvOS. Defaults to Default.",
+            "required": false,
+            "default": "Default"
+          }
+        ]
+      },
+      {
+        "name": "asset import",
+        "description": "Import an external file (e.g. a texture, model, audio clip) into the project by copying it to a path under the authoring root, then importing it.",
+        "group": "asset",
+        "parameters": [
+          {
+            "name": "source",
+            "type": "string",
+            "description": "Absolute filesystem path to the external file to import.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "path",
+            "type": "string",
+            "description": "Destination asset path relative to the authoring root, including extension. The Assets/ prefix is optional.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Required (true) only when overwriting an existing asset at the destination path.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate inputs and report what would be imported without writing anything.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "asset move",
+        "description": "Move (or rename via a new path) an asset to a new location under the authoring root. Preserves the asset's GUID.",
+        "group": "asset",
+        "parameters": [
+          {
+            "name": "asset",
+            "type": "string",
+            "description": "Reference to the asset to move (path / guid / globalId).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "destination",
+            "type": "string",
+            "description": "Destination asset path relative to the authoring root, including extension. The Assets/ prefix is optional.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate the move (via AssetDatabase.ValidateMoveAsset) without performing it.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "asset read_text",
+        "description": "Read a UTF-8 text file under the authoring root and return its contents.",
+        "group": "asset",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "description": "Text file path relative to the authoring root. The Assets/ prefix is optional.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "max_bytes",
+            "type": "integer",
+            "description": "Reject files larger than this many bytes (default 1048576 = 1 MiB) to avoid huge payloads.",
+            "required": false,
+            "default": 1048576
+          }
+        ]
+      },
+      {
+        "name": "asset rename",
+        "description": "Rename an asset in place (keeps it in the same folder, keeps its GUID).",
+        "group": "asset",
+        "parameters": [
+          {
+            "name": "asset",
+            "type": "string",
+            "description": "Reference to the asset to rename (path / guid / globalId).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "new_name",
+            "type": "string",
+            "description": "New file name WITHOUT a folder path. The extension is preserved if omitted.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate the rename without performing it.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "asset set_import_settings",
+        "description": "Set import settings on an asset's AssetImporter (default platform top-level properties, or a texture/audio per-platform override) and re-import it.",
+        "group": "asset",
+        "parameters": [
+          {
+            "name": "asset",
+            "type": "string",
+            "description": "Reference to the asset whose importer to edit (path / guid / globalId).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "settings",
+            "type": "string",
+            "description": "JSON object of importer property/field names to values, e.g. {\"isReadable\": true, \"textureType\": \"NormalMap\"}. For platform != Default on a texture/audio importer, keys map onto the platform-settings struct (e.g. maxTextureSize, format, compressionFormat, quality, and overridden).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "platform",
+            "type": "string",
+            "description": "Target platform: Default | Standalone | iOS | Android | WebGL | tvOS. Defaults to Default (top-level importer properties). A real platform writes a per-platform override (textures/audio only).",
+            "required": false,
+            "default": "Default"
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate which settings would apply (and which are unknown) without writing or re-importing.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "asset write_text",
+        "description": "Write UTF-8 text to a file under the authoring root, then import it. Overwriting an existing file requires confirm=true.",
+        "group": "asset",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "description": "Text file path relative to the authoring root, including extension. The Assets/ prefix is optional.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "contents",
+            "type": "string",
+            "description": "The full text content to write (replaces the file).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Required (true) only when overwriting an existing file at the path.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate inputs and report what would be written without writing anything.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "authoring get_root",
+        "description": "Get the base folder (under Assets/) that bare authoring paths resolve against.",
+        "group": "authoring",
+        "parameters": []
+      },
+      {
+        "name": "authoring set_root",
+        "description": "Set the base folder (under Assets/) that bare authoring paths resolve against and are confined to. Use 'Assets' for full project access.",
+        "group": "authoring",
+        "parameters": [
+          {
+            "name": "root",
+            "type": "string",
+            "description": "Project-relative folder under Assets/, e.g. Assets/AgentWork. Use 'Assets' to allow the whole project.",
+            "required": true,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "build create_profile",
+        "description": "Create a Build Profile asset for a platform (Unity 6 only). Call build list_platforms first to get a platform id. Returns feature_unavailable on earlier versions.",
+        "group": "build",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Profile name (e.g. \"Meta Quest\"). A Build Profile is named after its file, so this is also the file name and the name build run --profileName matches.",
+            "required": true,
+            "default": ""
+          },
+          {
+            "name": "platform",
+            "type": "string",
+            "description": "Platform id, display name (\"Meta Quest\") or BuildTarget name (\"Android\"). See build list_platforms.",
+            "required": true,
+            "default": ""
+          },
+          {
+            "name": "subtarget",
+            "type": "string",
+            "description": "Standalone only: Player | Server. Disambiguates desktop platforms; ignored elsewhere.",
+            "required": false,
+            "default": ""
+          },
+          {
+            "name": "folder",
+            "type": "string",
+            "description": "Folder to create the profile in. Defaults to Assets/Settings/Build Profiles.",
+            "required": false,
+            "default": ""
+          },
+          {
+            "name": "activate",
+            "type": "boolean",
+            "description": "Make the new profile the active Build Profile after creating it.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Required (true) only when overwriting an existing profile of the same name in the folder.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "Validate the name, platform and folder and report what would be created, without writing anything.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "build get_settings",
+        "description": "Read the current build configuration from EditorUserBuildSettings / EditorBuildSettings.",
+        "group": "build",
+        "parameters": []
+      },
+      {
+        "name": "build list_platforms",
+        "description": "List the platforms a Build Profile can target, with their platform id (Unity 6 only). Lists only platforms whose build support is installed; pass showAll=true for every known platform.",
+        "group": "build",
+        "parameters": [
+          {
+            "name": "showAll",
+            "type": "boolean",
+            "description": "Include platforms whose build support module is not installed.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "build list_profiles",
+        "description": "List Build Profile assets in the project (Unity 6 only). Returns feature_unavailable on earlier versions.",
+        "group": "build",
+        "parameters": []
+      },
+      {
+        "name": "build run",
+        "description": "Trigger an async Player build and report the full BuildReport. Returns immediately (queued); poll build status until status is 'completed'. DetailedBuildReport is included by default unless 'options' is supplied. Use dry_run to validate without building.",
+        "group": "build",
+        "parameters": [
+          {
+            "name": "target",
+            "type": "string",
+            "description": "BuildTarget name (e.g. StandaloneWindows64). Defaults to the active target. Must be installed.",
+            "required": false,
+            "default": ""
+          },
+          {
+            "name": "outputPath",
+            "type": "string",
+            "description": "Output path (absolute, or relative to the project root). Defaults to the last/auto path.",
+            "required": false,
+            "default": ""
+          },
+          {
+            "name": "profileName",
+            "type": "string",
+            "description": "Build Profile name to activate before building (Unity 6 only; ignored otherwise).",
+            "required": false,
+            "default": ""
+          },
+          {
+            "name": "options",
+            "type": "array",
+            "description": "BuildOptions names. Omit to get just DetailedBuildReport; supplying any disables that default.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "scenes",
+            "type": "array",
+            "description": "Scene asset paths to build (e.g. Assets/Scenes/Main.unity). Defaults to EditorBuildSettings.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Acknowledge and run the build; without it the call is refused. Use dry_run to validate only.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "Validate target/outputPath/scenes without building.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "timeout",
+            "type": "number",
+            "description": "Seconds to wait for the build to be validated and queued (the build itself is polled via build status).",
+            "required": false,
+            "default": 60
+          }
+        ]
+      },
+      {
+        "name": "build set_profile",
+        "description": "Edit an existing Build Profile's scene list and scripting defines (Unity 6 only). Every setting is optional; only the ones supplied change. The platform cannot be changed here: recreate the profile with build create_profile and confirm=true. Returns feature_unavailable on earlier versions.",
+        "group": "build",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Name of the profile to edit (see build list_profiles).",
+            "required": true,
+            "default": ""
+          },
+          {
+            "name": "folder",
+            "type": "string",
+            "description": "Folder holding the profile. Only needed when several profiles share the name.",
+            "required": false,
+            "default": ""
+          },
+          {
+            "name": "overrideGlobalScenes",
+            "type": "boolean",
+            "description": "Build with the profile's own scene list instead of the global Build Settings list. Omit to leave unchanged.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "scenes",
+            "type": "array",
+            "description": "Scene asset paths in build order, replacing the profile's scene list; all are enabled. An empty list clears it. Omit to leave unchanged.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "scriptingDefines",
+            "type": "array",
+            "description": "Scripting define symbols replacing the profile's own. An empty list clears them. Omit to leave unchanged.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Accepted for parity; not required, since the edit is undoable.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "Validate the changes and report what would change, without writing anything.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "build set_settings",
+        "description": "Set mutable EditorUserBuildSettings fields. Does NOT manage scenes (use scene add_to_build / scene remove_from_build) or switch target (use build.target switch). Use dry_run to preview.",
+        "group": "build",
+        "parameters": [
+          {
+            "name": "settings",
+            "type": "object",
+            "description": "Fields to change; omitted fields are left unchanged.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Apply the changes. Without it the call is refused.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "Preview the change without applying it.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "build status",
+        "description": "Status of the current/most recent build: idle | queued | building | completed, with the full BuildReport (files, packedAssets, buildSteps, errors, warnings) once completed. Retained until the next build.",
+        "group": "build",
+        "parameters": []
+      },
+      {
+        "name": "build.target list",
+        "description": "List the known BuildTarget values with their group and whether build support is installed.",
+        "group": "build.target",
+        "parameters": []
+      },
+      {
+        "name": "build.target switch",
+        "description": "Switch the active build target (destructive, long-running: triggers a full reimport + domain reload). Requires confirm=true. Returns immediately; poll build.target switch_status.",
+        "group": "build.target",
+        "parameters": [
+          {
+            "name": "target",
+            "type": "string",
+            "description": "BuildTarget name to switch to (must be installed; see build.target list).",
+            "required": true,
+            "default": ""
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Apply the switch. Without it the call is refused.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "timeout",
+            "type": "number",
+            "description": "Seconds to wait for the switch to be validated and queued (poll build.target switch_status).",
+            "required": false,
+            "default": 60
+          }
+        ]
+      },
+      {
+        "name": "build.target switch_status",
+        "description": "Status of the last target switch: idle | switching | completed (with success + activeBuildTarget).",
+        "group": "build.target",
+        "parameters": []
+      },
+      {
+        "name": "capture game_view",
+        "description": "Capture the game view as a PNG. source=screen (default) captures what the Game window shows, incl. Screen Space - Overlay UI; source=camera renders a single camera instead and misses overlay UI. Returns it inline as base64, unless save_path is set (path-only result; pass include_inline_image=true to get both).",
+        "group": "capture",
+        "parameters": [
+          {
+            "name": "width",
+            "type": "integer",
+            "description": "Output width in px (default 1280; capped 4096).",
+            "required": false,
+            "default": 1280
+          },
+          {
+            "name": "height",
+            "type": "integer",
+            "description": "Output height in px (default 720; capped 4096).",
+            "required": false,
+            "default": 720
+          },
+          {
+            "name": "camera",
+            "type": "string",
+            "description": "Optional camera name (source=camera only); defaults to Camera.main, else the first enabled camera.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "save_path",
+            "type": "string",
+            "description": "Optional project-relative path to write the PNG (e.g. Screenshots/foo.png). When set, the result omits the inline base64 image unless include_inline_image=true.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "include_inline_image",
+            "type": "boolean",
+            "description": "Also return the image inline as base64 when save_path is set (default false: path-only result). Only meaningful together with save_path.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "max_resolution",
+            "type": "integer",
+            "description": "Cap on the inline image's longest edge (e.g. 512). Only applies when an inline image is returned (no save_path, or save_path + include_inline_image=true); the save_path file keeps the requested resolution.",
+            "required": false,
+            "default": 0
+          },
+          {
+            "name": "source",
+            "type": "string",
+            "description": "What to capture: 'screen' (default) captures the game view's own render target — what the Game window shows, incl. Screen Space - Overlay UI (HUDs) in Play Mode; 'camera' renders a single camera off-screen instead and never sees overlay canvases. Defaults to 'camera' when a camera name is given.",
+            "required": false,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "capture scene_view",
+        "description": "Render the active Scene View to a PNG. Returns it inline as base64, unless save_path is set (path-only result; pass include_inline_image=true to get both).",
+        "group": "capture",
+        "parameters": [
+          {
+            "name": "width",
+            "type": "integer",
+            "description": "Output width in px (default 1280; capped 4096).",
+            "required": false,
+            "default": 1280
+          },
+          {
+            "name": "height",
+            "type": "integer",
+            "description": "Output height in px (default 720; capped 4096).",
+            "required": false,
+            "default": 720
+          },
+          {
+            "name": "save_path",
+            "type": "string",
+            "description": "Optional project-relative path to write the PNG (e.g. Screenshots/foo.png). When set, the result omits the inline base64 image unless include_inline_image=true.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "include_inline_image",
+            "type": "boolean",
+            "description": "Also return the image inline as base64 when save_path is set (default false: path-only result). Only meaningful together with save_path.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "max_resolution",
+            "type": "integer",
+            "description": "Cap on the inline image's longest edge (e.g. 512). Only applies when an inline image is returned (no save_path, or save_path + include_inline_image=true); the save_path file keeps the requested resolution.",
+            "required": false,
+            "default": 0
+          }
+        ]
+      },
+      {
+        "name": "capture screenshot",
+        "description": "Capture the Scene or Game view as a PNG and return its file path",
+        "group": "capture",
+        "parameters": [
+          {
+            "name": "view",
+            "type": "string",
+            "description": "Which view to capture: 'game' (default) or 'scene'",
+            "required": false,
+            "default": "game"
+          },
+          {
+            "name": "output",
+            "type": "string",
+            "description": "Output PNG path (absolute, or relative to the project root). Defaults to a timestamped file under <project>/Temp/pipeline-screenshots/.",
+            "required": false,
+            "default": ""
+          },
+          {
+            "name": "width",
+            "type": "integer",
+            "description": "Output width in pixels. 0 (default) uses the view camera's current width.",
+            "required": false,
+            "default": 0
+          },
+          {
+            "name": "height",
+            "type": "integer",
+            "description": "Output height in pixels. 0 (default) uses the view camera's current height.",
+            "required": false,
+            "default": 0
+          }
+        ]
+      },
+      {
+        "name": "component add",
+        "description": "Add a component (by type name) to a GameObject.",
+        "group": "component",
+        "parameters": [
+          {
+            "name": "target",
+            "type": "string",
+            "description": "Handle of the GameObject.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "Component type name (e.g. 'Rigidbody' or 'UnityEngine.Camera').",
+            "required": true,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "component get_fields",
+        "description": "Read serialized fields of a component/asset. Returns each top-level field's name, type and value (object references are returned as re-usable handles). Pass 'field' to read a single SerializedProperty path. Pass format='value' to return just the value(s) — a token-efficient read for scalars.",
+        "group": "component",
+        "parameters": [
+          {
+            "name": "target",
+            "type": "string",
+            "description": "Reference to the component or asset to read (globalId/path/guid/instanceId/hierarchyPath). May be a GameObject when 'component' is given.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "field",
+            "type": "string",
+            "description": "Optional single SerializedProperty path to read (e.g. 'speed' or 'items.Array.data[0]'). Omit to read all top-level fields.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "component",
+            "type": "string",
+            "description": "Component type name on the target GameObject (e.g. 'Rigidbody'). Use when 'target' is a GameObject; omit when 'target' is already a component handle.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "format",
+            "type": "string",
+            "description": "Output shape. Omit (default) for a full descriptor per field {name,path,propertyType,isArray,arrayLength,value}; 'value' returns just the value(s): the raw value for a single 'field', or a {name: value} map for all fields.",
+            "required": false,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "component get_properties",
+        "description": "Get a component's serialized properties as a JSON map. Address the component by handle, or by GameObject handle + type.",
+        "group": "component",
+        "parameters": [
+          {
+            "name": "target",
+            "type": "string",
+            "description": "Handle of the component, OR of the GameObject when 'type' is given.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "Component type name on the target GameObject (omit when 'target' is a component handle).",
+            "required": false,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "component remove",
+        "description": "Remove a component from a GameObject. Provide either a component handle (target) or a GameObject handle (target) plus a type name.",
+        "group": "component",
+        "parameters": [
+          {
+            "name": "target",
+            "type": "string",
+            "description": "Handle of the component to remove, OR of the GameObject when 'type' is given.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "Component type name to remove from the target GameObject (omit when 'target' already points at a component).",
+            "required": false,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "component set_field",
+        "description": "Set a serialized field on a component/asset. Supports primitives, enums, Vector/Color/Rect/Bounds, object references (value = an ObjectRef: asset by guid/fileId/path or scene object by instanceId/hierarchyPath), and array elements via 'name.Array.data[i]' (or 'name.Array.size' to resize).",
+        "group": "component",
+        "parameters": [
+          {
+            "name": "target",
+            "type": "string",
+            "description": "Reference to the component or asset to modify (globalId/path/guid/instanceId/hierarchyPath). May be a GameObject when 'component' is given.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "field",
+            "type": "string",
+            "description": "SerializedProperty path, e.g. 'speed', 'settings.speed', or 'waypoints.Array.data[0]'.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "value",
+            "type": "string",
+            "description": "JSON value to assign. For object references pass an ObjectRef object (or null to clear). For enums pass the value name.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "component",
+            "type": "string",
+            "description": "Component type name on the target GameObject (e.g. 'Rigidbody'). Use when 'target' is a GameObject; omit when 'target' is already a component handle.",
+            "required": false,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "component set_properties",
+        "description": "Set serialized properties on a component (one Undo step). 'properties' maps property name -> value; object references accept an ObjectRef handle.",
+        "group": "component",
+        "parameters": [
+          {
+            "name": "target",
+            "type": "string",
+            "description": "Handle of the component, OR of the GameObject when 'type' is given.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "properties",
+            "type": "string",
+            "description": "Map of serialized property name to value. Vectors/colors are arrays; object refs are handle objects.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "Component type name on the target GameObject (omit when 'target' is a component handle).",
+            "required": false,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "console clear",
+        "description": "Clear the captured log buffer and the Unity Editor console.",
+        "group": "console",
+        "parameters": []
+      },
+      {
+        "name": "console get",
+        "description": "Get captured Unity console output (Editor or Player; supports tail, level filtering, and follow via a cursor)",
+        "group": "console",
+        "parameters": [
+          {
+            "name": "tail",
+            "type": "integer",
+            "description": "Maximum number of most-recent entries to return",
+            "required": false,
+            "default": 100
+          },
+          {
+            "name": "level",
+            "type": "string",
+            "description": "Minimum severity to include: log | warn | error",
+            "required": false,
+            "default": "log"
+          },
+          {
+            "name": "since",
+            "type": "integer",
+            "description": "Cursor: only return entries newer than this seq. Use the 'cursor' from a previous response to follow.",
+            "required": false,
+            "default": -1
+          },
+          {
+            "name": "since_session",
+            "type": "string",
+            "description": "Session the 'since' cursor came from: pass the 'session' from a previous response. A cursor from another session is refused and the tail returned with reset=true.",
+            "required": false,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "console status",
+        "description": "Console ground truth and buffer counters without pulling entries: compile-failure flag, Editor console counts, and the buffer's retained counts and cursor.",
+        "group": "console",
+        "parameters": []
+      },
+      {
+        "name": "console write",
+        "description": "Write a message to Unity console",
+        "group": "console",
+        "parameters": [
+          {
+            "name": "message",
+            "type": "string",
+            "description": "Message to log to console",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "level",
+            "type": "string",
+            "description": "Log level: info, warning, error",
+            "required": false,
+            "default": "info"
+          }
+        ]
+      },
+      {
+        "name": "diagnostics audit_status",
+        "description": "Get the status of the last audit: idle | scanning | completed | failed | interrupted | unavailable.",
+        "group": "diagnostics",
+        "parameters": []
+      },
+      {
+        "name": "diagnostics get_performance",
+        "description": "Read render, memory, and frame-timing stats (structured, read-only).",
+        "group": "diagnostics",
+        "parameters": []
+      },
+      {
+        "name": "diagnostics report_evals",
+        "description": "Aggregate local eval-usage telemetry into a ranked report: API fingerprint frequency, one-liner percentage, error rate, and command-coverage suggestions.",
+        "group": "diagnostics",
+        "parameters": [
+          {
+            "name": "top",
+            "type": "integer",
+            "description": "Maximum entries in each ranked list (API fingerprints, and uncovered patterns suggested as commands). Accepted range: 0 or greater; negative values fall back to the default (50).",
+            "required": false,
+            "default": 50
+          }
+        ]
+      },
+      {
+        "name": "diagnostics run_audit",
+        "description": "Run a Project Auditor static-analysis scan. Returns immediately; poll diagnostics audit_status until status is 'completed', then read the CSV.",
+        "group": "diagnostics",
+        "parameters": [
+          {
+            "name": "categories",
+            "type": "string",
+            "description": "Comma-separated issue categories to scan (e.g. Code,ProjectSetting,Texture). Default: all categories.",
+            "required": false,
+            "default": ""
+          },
+          {
+            "name": "output",
+            "type": "string",
+            "description": "CSV output path (absolute or relative to the project root). Defaults to Temp/pipeline-audit/<scanId>.csv.",
+            "required": false,
+            "default": ""
+          }
+        ]
+      },
+      {
+        "name": "editor focus",
+        "description": "Bring the Unity Editor window to the foreground",
+        "group": "editor",
+        "parameters": []
+      },
+      {
+        "name": "editor invoke_menu",
+        "description": "Execute an Editor menu item by path, or list available items when no path is given",
+        "group": "editor",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "description": "Menu item path to execute, e.g. \"Assets/Reimport All\". Omit to list available menu items.",
+            "required": false,
+            "default": ""
+          }
+        ]
+      },
+      {
+        "name": "editor save_all",
+        "description": "Save all open scenes that have unsaved changes.",
+        "group": "editor",
+        "parameters": []
+      },
+      {
+        "name": "editor search",
+        "description": "Run a Unity Search query and return structured results.",
+        "group": "editor",
+        "parameters": [
+          {
+            "name": "query",
+            "type": "string",
+            "description": "Unity Search query string, e.g. 't:Material', 'p: my asset', 'h: Main Camera'.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "limit",
+            "type": "integer",
+            "description": "Max results to return (capped 200).",
+            "required": false,
+            "default": 50
+          }
+        ]
+      },
+      {
+        "name": "editor set_auto_tick",
+        "description": "Keep the editor ticking while unfocused by forcing EditorApplication.SignalTick at a throttled rate",
+        "group": "editor",
+        "parameters": [
+          {
+            "name": "enable",
+            "type": "boolean",
+            "description": "Enable (true) or disable (false) auto-tick mode",
+            "required": false,
+            "default": true
+          },
+          {
+            "name": "interval_ms",
+            "type": "integer",
+            "description": "Minimum milliseconds between forced ticks. 0 = every update (max rate, pegs a CPU core). Default 16 (~60Hz).",
+            "required": false,
+            "default": 16
+          },
+          {
+            "name": "persist",
+            "type": "boolean",
+            "description": "Persist this choice to SessionState so it survives a domain reload. Set false for a one-off/expensive setting (e.g. interval_ms=0) that should revert to the last persisted choice (or the default) after the next recompile instead of sticking for the rest of the session.",
+            "required": false,
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "editor status",
+        "description": "Get detailed Unity Editor status and state information",
+        "group": "editor",
+        "parameters": []
+      },
+      {
+        "name": "editor.playmode list_instances",
+        "description": "List running Editor instances reachable over Pipeline (this Editor + its MPPM virtual player clones). Connect to one with 'unity command --project-path <its projectPath>'.",
+        "group": "editor.playmode",
+        "parameters": []
+      },
+      {
+        "name": "editor.playmode pause",
+        "description": "Toggle pause state of Unity Editor play mode",
+        "group": "editor.playmode",
+        "parameters": []
+      },
+      {
+        "name": "editor.playmode set_run_in_background",
+        "description": "Override the project's Run In Background Player Setting, recording enough state to restore it later and to keep it out of builds",
+        "group": "editor.playmode",
+        "parameters": [
+          {
+            "name": "enable",
+            "type": "boolean",
+            "description": "Turn the override on (true, default) or stop it (false) and restore the project's own value, unless the \"Ensure editor runs in background in PlayMode\" setting is still forcing it on right now",
+            "required": false,
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "editor.playmode start",
+        "description": "Enter Unity Editor play mode",
+        "group": "editor.playmode",
+        "parameters": []
+      },
+      {
+        "name": "editor.playmode stop",
+        "description": "Exit Unity Editor play mode",
+        "group": "editor.playmode",
+        "parameters": []
+      },
+      {
+        "name": "gameobject create",
+        "description": "Create an empty GameObject or a built-in primitive (cube/sphere/capsule/cylinder/plane/quad) in the active scene.",
+        "group": "gameobject",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Name for the new GameObject. Defaults to 'GameObject' (or the primitive name).",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "primitive",
+            "type": "string",
+            "description": "Optional primitive type: cube, sphere, capsule, cylinder, plane, quad. Omit for an empty GameObject.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "parent",
+            "type": "string",
+            "description": "Optional parent handle (globalId/path/guid/instanceId/hierarchyPath). The new object becomes a child of it.",
+            "required": false,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "gameobject create_many",
+        "description": "Batch-create N empty GameObjects or primitives in one call. Optional positions/rotations/scales are arrays of [x,y,z] (length must equal count). Returns the created identities.",
+        "group": "gameobject",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Base name. With count>1 and no explicit names, objects are suffixed Name1..NameN.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "primitive",
+            "type": "string",
+            "description": "Optional primitive type: cube, sphere, capsule, cylinder, plane, quad. Omit for empty GameObjects.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "parent",
+            "type": "string",
+            "description": "Optional parent handle. Every created object becomes a child of it.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "count",
+            "type": "integer",
+            "description": "How many GameObjects to create. Default 1.",
+            "required": false,
+            "default": 1
+          },
+          {
+            "name": "positions",
+            "type": "array",
+            "description": "Local positions, one [x,y,z] per object. Length must equal count when supplied.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "rotations",
+            "type": "array",
+            "description": "Local Euler rotations (degrees), one [x,y,z] per object. Length must equal count when supplied.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "scales",
+            "type": "array",
+            "description": "Local scales, one [x,y,z] per object. Length must equal count when supplied.",
+            "required": false,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "gameobject delete",
+        "description": "Delete a GameObject from the scene (reversible via Undo).",
+        "group": "gameobject",
+        "parameters": [
+          {
+            "name": "target",
+            "type": "string",
+            "description": "Handle of the GameObject to delete.",
+            "required": true,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "gameobject find",
+        "description": "Find GameObjects in loaded scenes by name, tag, component type, and/or hierarchy path (filters are combined). Returns structured identities.",
+        "group": "gameobject",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Exact name to match.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "tag",
+            "type": "string",
+            "description": "Tag to match (e.g. 'Player').",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "Component type name to match (e.g. 'Rigidbody', 'UnityEngine.Camera').",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "hierarchy_path",
+            "type": "string",
+            "description": "Exact hierarchy path to match (e.g. '/Root/Child').",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "include_inactive",
+            "type": "boolean",
+            "description": "Include inactive GameObjects. Default true.",
+            "required": false,
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "gameobject get_selection",
+        "description": "Read the current Editor selection as structured object identities.",
+        "group": "gameobject",
+        "parameters": []
+      },
+      {
+        "name": "gameobject rename",
+        "description": "Rename a GameObject.",
+        "group": "gameobject",
+        "parameters": [
+          {
+            "name": "target",
+            "type": "string",
+            "description": "Handle of the GameObject.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "New name.",
+            "required": true,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "gameobject set_active",
+        "description": "Set a GameObject's active self-state (activeSelf).",
+        "group": "gameobject",
+        "parameters": [
+          {
+            "name": "target",
+            "type": "string",
+            "description": "Handle of the GameObject.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "active",
+            "type": "boolean",
+            "description": "Desired active state.",
+            "required": true,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "gameobject set_layer",
+        "description": "Set a GameObject's layer by name or numeric index (0-31).",
+        "group": "gameobject",
+        "parameters": [
+          {
+            "name": "target",
+            "type": "string",
+            "description": "Handle of the GameObject.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "layer",
+            "type": "string",
+            "description": "Layer name (e.g. 'UI') or numeric index 0-31.",
+            "required": true,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "gameobject set_parent",
+        "description": "Reparent a GameObject under a new parent, or detach it to scene root when no parent is given.",
+        "group": "gameobject",
+        "parameters": [
+          {
+            "name": "target",
+            "type": "string",
+            "description": "Handle of the GameObject to reparent.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "parent",
+            "type": "string",
+            "description": "Handle of the new parent. Omit (or empty) to move the object to the scene root.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "world_position_stays",
+            "type": "boolean",
+            "description": "Keep the object's world position when reparenting. Default true.",
+            "required": false,
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "gameobject set_selection",
+        "description": "Set the Editor selection to the given assets/scene objects.",
+        "group": "gameobject",
+        "parameters": [
+          {
+            "name": "instance_ids",
+            "type": "array",
+            "description": "Scene/loaded object instance IDs to select.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "paths",
+            "type": "array",
+            "description": "Asset paths to select (e.g. Assets/Foo.prefab).",
+            "required": false,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "gameobject set_tag",
+        "description": "Set a GameObject's tag (the tag must already exist in the project).",
+        "group": "gameobject",
+        "parameters": [
+          {
+            "name": "target",
+            "type": "string",
+            "description": "Handle of the GameObject.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "tag",
+            "type": "string",
+            "description": "Tag to assign (must exist in the Tag Manager).",
+            "required": true,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "gameobject set_transform",
+        "description": "Set a GameObject's local position/rotation(euler)/scale. Omitted channels are left unchanged.",
+        "group": "gameobject",
+        "parameters": [
+          {
+            "name": "target",
+            "type": "string",
+            "description": "Handle of the GameObject to modify.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "position",
+            "type": "array",
+            "description": "Local position as [x,y,z].",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "rotation",
+            "type": "array",
+            "description": "Local rotation as Euler angles [x,y,z] in degrees.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "scale",
+            "type": "array",
+            "description": "Local scale as [x,y,z].",
+            "required": false,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "job batch",
+        "description": "Run multiple registered commands in one transactional request. Later ops can reference earlier results with \"$<id-or-index>.<jsonPath>\" (e.g. \"$0.instanceId\"; \"$$\" escapes a literal '$'). transactional=true (default) groups every op into one Undo step and reverts all applied ops if any op fails; commands that mutate outside the Undo system (asset/file/settings writes) are rejected unless transactional=false. on_error=abort|continue (continue forces transactional=false); dry_run validates without mutating; timeout (seconds, default 60) bounds execution — when it is about to run out the remaining ops are skipped and a transactional batch rolls back (submit long batches with \"job\": true). Excludes build run, build.target switch, the package commands, editor.playmode start/stop/pause, script recompile, script eval, script eval_file, script run, editor invoke_menu, scene open/scene create, async commands (test run/test list), runtime-only commands, and nested job batch.",
+        "group": "job",
+        "parameters": [
+          {
+            "name": "operations",
+            "type": "array",
+            "description": "Ordered operations to run; each is { id?, command, params }, with command written as \"<group> <name>\" (e.g. \"gameobject create\"). Max 200.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "transactional",
+            "type": "boolean",
+            "description": "Group all ops into one Undo step and revert every applied op if any op fails. Default true. Forced false when on_error=continue. Rejects commands whose mutations Undo cannot revert (asset/file/settings writes).",
+            "required": false,
+            "default": true
+          },
+          {
+            "name": "on_error",
+            "type": "string",
+            "description": "abort (default): stop at the first failing op. continue: run every op, collecting per-op errors (forces transactional=false).",
+            "required": false,
+            "default": "abort"
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "Validate command names, parameters, reference topology and excluded commands without mutating anything.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "result_fields",
+            "type": "string",
+            "description": "Optional per-op result projection: map of op id-or-index -> array of result field paths to keep (context economy).",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "timeout",
+            "type": "number",
+            "description": "Timeout for the whole batch in seconds (default 60). Checked before each op after the first; when it is about to run out the remaining ops are skipped and a transactional batch rolls back. Use \"job\": true for long batches.",
+            "required": false,
+            "default": 60
+          }
+        ]
+      },
+      {
+        "name": "job wait",
+        "description": "Wait server-side until a member condition holds, then optionally act in the same frame. Sync waits hold the exec queue (every other command waits behind them, including one the condition may depend on) — keep them short and self-contained; set async=true and poll job wait_status for anything else.",
+        "group": "job",
+        "parameters": [
+          {
+            "name": "condition",
+            "type": "object",
+            "description": "Condition to wait for: { member, target?, findType?, op, value }. member is a dotted path (static, or instance under target/findType); op is equals|notEquals|greaterThan|lessThan|contains|changed.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "timeout",
+            "type": "number",
+            "description": "Maximum seconds to wait (default 30, clamped to 0-600). A sync wait reports timedOut slightly before it, so the reply lands first.",
+            "required": false,
+            "default": 30
+          },
+          {
+            "name": "poll_interval_ms",
+            "type": "number",
+            "description": "How often to re-check the condition, in milliseconds (default 100, clamped to 16-5000; must be finite).",
+            "required": false,
+            "default": 100
+          },
+          {
+            "name": "on_met",
+            "type": "object",
+            "description": "Follow-up run in the same editor frame the condition first holds: { capture: { view, source, save_path, width, height, include_image }, pause }.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "return_history",
+            "type": "boolean",
+            "description": "Include the observed value/timestamp samples (a ring buffer of the last 200, so the tail near the transition is kept).",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "tolerate_missing",
+            "type": "boolean",
+            "description": "Treat resolution failures (type/member/instance not found) as condition-not-met and retry until timeout, instead of failing fast. Enables waiting for something to exist (e.g. a spawned object via findType).",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "async",
+            "type": "boolean",
+            "description": "Return a wait_id immediately and evaluate in the background; poll job wait_status and cancel with job wait_cancel. Use this for long waits and whenever the condition depends on a command you still need to issue — a sync wait blocks it.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "job wait_cancel",
+        "description": "Cancel an async wait started with job wait (async=true).",
+        "group": "job",
+        "parameters": [
+          {
+            "name": "wait_id",
+            "type": "string",
+            "description": "The wait id to cancel.",
+            "required": true,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "job wait_status",
+        "description": "Get the status/result of an async wait started with job wait (async=true).",
+        "group": "job",
+        "parameters": [
+          {
+            "name": "wait_id",
+            "type": "string",
+            "description": "The wait id returned by job wait when async=true.",
+            "required": true,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "lighting bake",
+        "description": "Trigger an async lightmap bake of the open scene(s) via Lightmapping.BakeAsync(). Returns immediately; poll lighting bake_status until completed.",
+        "group": "lighting",
+        "parameters": [
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Recommended (true): a bake overwrites existing lightmap data. Accepted for parity; not required.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate there is an open bakeable scene and return the current lighting settings without baking.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "lighting bake_status",
+        "description": "Get the status of the last lighting bake: idle | baking | completed.",
+        "group": "lighting",
+        "parameters": []
+      },
+      {
+        "name": "lighting cancel_bake",
+        "description": "Cancel an in-progress lighting bake (Lightmapping.Cancel()).",
+        "group": "lighting",
+        "parameters": []
+      },
+      {
+        "name": "lighting clear_bake",
+        "description": "Clear baked lightmap data for the open scene(s). Destructive: requires confirm=true.",
+        "group": "lighting",
+        "parameters": [
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Must be true to actually clear (destructive, not undoable via Unity's Undo).",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "include_disk_cache",
+            "type": "boolean",
+            "description": "If true, also clear the GI disk cache (Lightmapping.ClearDiskCache()).",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, report what would be cleared without clearing.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "lighting get_settings",
+        "description": "Read the active LightingSettings (lightmapper, bounces, resolution, directional mode, AO, etc.).",
+        "group": "lighting",
+        "parameters": []
+      },
+      {
+        "name": "lighting set_settings",
+        "description": "Apply a subset of lighting settings to the active LightingSettings. Returns { applied[], unknown[] }.",
+        "group": "lighting",
+        "parameters": [
+          {
+            "name": "settings",
+            "type": "string",
+            "description": "JSON object with a subset of lighting fields to set (same names/enums as lighting get_settings).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate the keys and report applied/unknown without changing anything.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "material get_properties",
+        "description": "Read a material's shader, render queue, enabled keywords, and all shader properties with their current values (Color as [r,g,b,a], Vector as [x,y,z,w], Texture as an object reference).",
+        "group": "material",
+        "parameters": [
+          {
+            "name": "material",
+            "type": "string",
+            "description": "Reference to the .mat asset (or a loaded material) to read (path / guid / globalId / instanceId).",
+            "required": true,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "material get_shader_properties",
+        "description": "Introspect a shader's declared property list (name, description, type Color|Vector|Float|Range|TexEnv|Int, range, textureDimension, flags). Provide 'shader' (by name) OR 'material' (read the shader off that material).",
+        "group": "material",
+        "parameters": [
+          {
+            "name": "shader",
+            "type": "string",
+            "description": "Shader name (e.g. \"Universal Render Pipeline/Lit\"). Provide this OR 'material'.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "material",
+            "type": "string",
+            "description": "Reference to a material to read the shader from instead of naming it. Provide this OR 'shader'.",
+            "required": false,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "material list_shaders",
+        "description": "Discover available shaders so an agent can pick a valid name for material set_properties / asset create. Returns [{ name, assetPath|null, isBuiltin, isSupported }].",
+        "group": "material",
+        "parameters": [
+          {
+            "name": "filter",
+            "type": "string",
+            "description": "Case-insensitive substring matched against the shader name (e.g. \"URP\", \"Lit\").",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "includeBuiltin",
+            "type": "boolean",
+            "description": "Include built-in/engine shaders (those with no project asset path). Default true.",
+            "required": false,
+            "default": true
+          },
+          {
+            "name": "limit",
+            "type": "integer",
+            "description": "Maximum number of shaders to return (default 200).",
+            "required": false,
+            "default": 200
+          }
+        ]
+      },
+      {
+        "name": "material set_properties",
+        "description": "Set shader properties on a material (Float/Range/Int=number; Color=[r,g,b,a] or \"#RRGGBBAA\" hex; Vector=[x,y,z,w]; Texture=an object reference or null to clear), optionally reassign the shader, set the render queue, and toggle keywords. Unknown names / type mismatches are reported in unknown[].",
+        "group": "material",
+        "parameters": [
+          {
+            "name": "material",
+            "type": "string",
+            "description": "Reference to the .mat asset (or a loaded material) to edit (path / guid / globalId / instanceId).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "shader",
+            "type": "string",
+            "description": "Reassign the material's shader by name (e.g. \"Standard\", \"Universal Render Pipeline/Lit\", or a Shader Graph shader name). Applied before properties so new property names resolve against the new shader.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "properties",
+            "type": "string",
+            "description": "JSON object of shader property name -> value. Names must include the leading underscore (e.g. _BaseColor). Float/Range/Int=number; Color=[r,g,b,a] or hex string; Vector=[x,y,z,w]; Texture=an object reference {guid/path} or null.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "renderQueue",
+            "type": "integer",
+            "description": "Explicit render queue, or -1 to inherit from the shader. Omit to leave unchanged.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "enableKeywords",
+            "type": "array",
+            "description": "Shader keywords to enable (e.g. _NORMALMAP, _EMISSION).",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "disableKeywords",
+            "type": "array",
+            "description": "Shader keywords to disable.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Reserved for parity; editing an existing material is non-destructive and undoable, so it is not required.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate the shader, resolve property names and texture refs, and report applied[]/unknown[] without writing anything.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "navmesh bake",
+        "description": "Trigger an async legacy NavMesh bake of the open scene(s) via UnityEditor.AI.NavMeshBuilder. Returns immediately; poll navmesh bake_status until completed.",
+        "group": "navmesh",
+        "parameters": [
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Accepted for parity (a bake overwrites the existing NavMesh); not required.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate there is an open scene and return current NavMesh settings without baking.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "navmesh bake_status",
+        "description": "Get the status of the last NavMesh bake: idle | baking | completed.",
+        "group": "navmesh",
+        "parameters": []
+      },
+      {
+        "name": "navmesh bake_surfaces",
+        "description": "Bake NavMeshSurface components (AI Navigation package). v1 stub: returns package_not_found when the package is absent.",
+        "group": "navmesh",
+        "parameters": []
+      },
+      {
+        "name": "navmesh cancel_bake",
+        "description": "Cancel an in-progress NavMesh bake (NavMeshBuilder.Cancel()).",
+        "group": "navmesh",
+        "parameters": []
+      },
+      {
+        "name": "navmesh clear_bake",
+        "description": "Clear the baked NavMesh for the open scene(s). Destructive: requires confirm=true.",
+        "group": "navmesh",
+        "parameters": [
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Must be true to actually clear (destructive, not undoable via Unity's Undo).",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, report what would be cleared without clearing.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "navmesh get_settings",
+        "description": "Read the default agent's legacy NavMesh bake settings (agentRadius/Height/Slope/Climb, minRegionArea, voxelSize).",
+        "group": "navmesh",
+        "parameters": []
+      },
+      {
+        "name": "navmesh set_settings",
+        "description": "Apply a subset of legacy NavMesh bake settings to the default agent. Returns { applied[], unknown[] }.",
+        "group": "navmesh",
+        "parameters": [
+          {
+            "name": "settings",
+            "type": "string",
+            "description": "JSON object with a subset of NavMesh fields to set (same names as navmesh get_settings).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate the keys and report applied/unknown without changing anything.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "occlusion bake",
+        "description": "Trigger an async occlusion-culling bake of the open scene(s) via StaticOcclusionCulling.GenerateInBackground(). Returns immediately; poll occlusion bake_status until completed.",
+        "group": "occlusion",
+        "parameters": [
+          {
+            "name": "smallest_occluder",
+            "type": "number",
+            "description": "Smallest object that will occlude others (meters). Defaults to Unity's current value.",
+            "required": false,
+            "default": -3.4028234700000002e+38
+          },
+          {
+            "name": "smallest_hole",
+            "type": "number",
+            "description": "Smallest gap geometry can have that the view can see through (meters). Defaults to Unity's current value.",
+            "required": false,
+            "default": -3.4028234700000002e+38
+          },
+          {
+            "name": "backface_threshold",
+            "type": "number",
+            "description": "Backface threshold (1-100); lower trims more backfaces. Defaults to Unity's current value.",
+            "required": false,
+            "default": -3.4028234700000002e+38
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Accepted for parity (a bake overwrites existing occlusion data); not required.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, validate there is an open scene and report the parameters that would be used without baking.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "occlusion bake_status",
+        "description": "Get the status of the last occlusion bake: idle | baking | completed.",
+        "group": "occlusion",
+        "parameters": []
+      },
+      {
+        "name": "occlusion cancel_bake",
+        "description": "Cancel an in-progress occlusion bake (StaticOcclusionCulling.Cancel()).",
+        "group": "occlusion",
+        "parameters": []
+      },
+      {
+        "name": "occlusion clear_bake",
+        "description": "Clear baked occlusion-culling data for the open scene(s). Destructive: requires confirm=true.",
+        "group": "occlusion",
+        "parameters": [
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Must be true to actually clear (destructive, not undoable via Unity's Undo).",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "If true, report what would be cleared without clearing.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "package add",
+        "description": "Add a UPM package by name@version, git URL, or 'file:' local path. Async by default (returns in_progress; poll package status); pass wait=true to block until added. A recompile/domain reload follows — poll script recompile_status. Requires confirm=true; use dry_run to preview.",
+        "group": "package",
+        "parameters": [
+          {
+            "name": "identifier",
+            "type": "string",
+            "description": "Package to add: 'com.unity.foo@1.2.3', a git URL, or 'file:../Path'.",
+            "required": true,
+            "default": ""
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Apply the change. Without it the call is refused.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "Preview the change without applying it.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "wait",
+            "type": "boolean",
+            "description": "Block until the operation completes and return the result (synchronous). Default: return immediately and poll package status.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "timeout",
+            "type": "number",
+            "description": "Seconds to wait when wait=true.",
+            "required": false,
+            "default": 300
+          }
+        ]
+      },
+      {
+        "name": "package list",
+        "description": "List packages by scope: installed (default) | available (registry) | all (both). Returns the full result synchronously — available/all block until the registry query completes.",
+        "group": "package",
+        "parameters": [
+          {
+            "name": "scope",
+            "type": "string",
+            "description": "Which packages to list: installed (default) | available | all.",
+            "required": false,
+            "default": "installed"
+          },
+          {
+            "name": "include_indirect",
+            "type": "boolean",
+            "description": "Include indirect (transitive) installed dependencies (applies to scope=installed/all).",
+            "required": false,
+            "default": true
+          },
+          {
+            "name": "offline",
+            "type": "boolean",
+            "description": "For available/all: query the local cache instead of the registry.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "timeout",
+            "type": "number",
+            "description": "Seconds to wait for the registry (available/all).",
+            "required": false,
+            "default": 60
+          }
+        ]
+      },
+      {
+        "name": "package remove",
+        "description": "Remove a UPM package by name. Async by default (returns in_progress; poll package status); pass wait=true to block until removed. A recompile/domain reload follows — poll script recompile_status. Requires confirm=true; use dry_run to preview.",
+        "group": "package",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Package name to remove (e.g. com.unity.foo).",
+            "required": true,
+            "default": ""
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Apply the change. Without it the call is refused.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "Preview the change without applying it.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "wait",
+            "type": "boolean",
+            "description": "Block until the operation completes and return the result (synchronous). Default: return immediately and poll package status.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "timeout",
+            "type": "number",
+            "description": "Seconds to wait when wait=true.",
+            "required": false,
+            "default": 300
+          }
+        ]
+      },
+      {
+        "name": "package resolve",
+        "description": "Resolve/refresh packages from the manifest (re-fetch and re-link). May trigger a recompile/domain reload — poll script recompile_status. Its outcome is recorded for package status.",
+        "group": "package",
+        "parameters": []
+      },
+      {
+        "name": "package search",
+        "description": "Search packages available in the registry. Provide a name (e.g. com.unity.foo) or omit to list all. Returns the full result synchronously (blocks until the registry query completes).",
+        "group": "package",
+        "parameters": [
+          {
+            "name": "query",
+            "type": "string",
+            "description": "Package name to search for. Omit/empty to list all available packages.",
+            "required": false,
+            "default": ""
+          },
+          {
+            "name": "offline",
+            "type": "boolean",
+            "description": "Search the local cache only.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "timeout",
+            "type": "number",
+            "description": "Seconds to wait for the registry.",
+            "required": false,
+            "default": 60
+          }
+        ]
+      },
+      {
+        "name": "package status",
+        "description": "Status of the last async package operation (add/remove/resolve): idle | in_progress | completed | failed, with the added package, manifest, and any error.",
+        "group": "package",
+        "parameters": []
+      },
+      {
+        "name": "prefab apply_overrides",
+        "description": "Apply a prefab instance's overrides back to its source prefab asset.",
+        "group": "prefab",
+        "parameters": [
+          {
+            "name": "instance",
+            "type": "string",
+            "description": "Reference to a prefab instance GameObject in a scene (instanceId/hierarchyPath/globalId).",
+            "required": true,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "prefab create",
+        "description": "Save a GameObject as a prefab asset at a project path; the source becomes a connected instance.",
+        "group": "prefab",
+        "parameters": [
+          {
+            "name": "source",
+            "type": "string",
+            "description": "Reference to the source GameObject to save as a prefab (globalId/path/guid/instanceId/hierarchyPath).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "path",
+            "type": "string",
+            "description": "Prefab asset path relative to the authoring root (the Assets/ prefix is optional and the .prefab extension is added if missing). e.g. Prefabs/Enemy or Prefabs/Enemy.prefab",
+            "required": true,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "prefab create_variant",
+        "description": "Create a prefab variant asset that inherits from a base prefab.",
+        "group": "prefab",
+        "parameters": [
+          {
+            "name": "base",
+            "type": "string",
+            "description": "Reference to the base prefab asset (path/guid/globalId).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "path",
+            "type": "string",
+            "description": "Variant prefab asset path relative to the authoring root (.prefab added if missing).",
+            "required": true,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "prefab instantiate",
+        "description": "Instantiate a prefab asset into a loaded scene and return the created instance.",
+        "group": "prefab",
+        "parameters": [
+          {
+            "name": "prefab",
+            "type": "string",
+            "description": "Reference to the prefab asset to instantiate (path/guid/globalId).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "scene_path",
+            "type": "string",
+            "description": "Optional path of a loaded scene to instantiate into; defaults to the active scene.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Optional name for the created instance; defaults to the prefab name.",
+            "required": false,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "prefab revert_overrides",
+        "description": "Revert a prefab instance's overrides so it matches its source prefab asset.",
+        "group": "prefab",
+        "parameters": [
+          {
+            "name": "instance",
+            "type": "string",
+            "description": "Reference to a prefab instance GameObject in a scene (instanceId/hierarchyPath/globalId).",
+            "required": true,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "prefab save_contents",
+        "description": "Open a prefab asset in an isolated prefab stage, apply a declarative edit, and save it back (nested-prefab safe).",
+        "group": "prefab",
+        "parameters": [
+          {
+            "name": "prefab",
+            "type": "string",
+            "description": "Reference to the prefab asset to edit (path/guid/globalId).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "rename_child",
+            "type": "string",
+            "description": "Optional child name (relative path under the root, e.g. 'Body/Head') to rename.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "new_name",
+            "type": "string",
+            "description": "New name for the child identified by rename_child.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "set_active_child",
+            "type": "string",
+            "description": "Optional child name (relative path under the root) whose active state to set.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "active",
+            "type": "boolean",
+            "description": "Active state to apply when set_active_child is provided.",
+            "required": false,
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "prefab unpack",
+        "description": "Unpack a prefab instance into plain GameObjects (outermost level or completely).",
+        "group": "prefab",
+        "parameters": [
+          {
+            "name": "instance",
+            "type": "string",
+            "description": "Reference to a prefab instance GameObject in a scene (instanceId/hierarchyPath/globalId).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "completely",
+            "type": "boolean",
+            "description": "If true, unpack all nested prefab levels (Completely); if false, only the outermost level (OutermostRoot).",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "runtime quit",
+        "description": "Gracefully quit the Unity application",
+        "group": "runtime",
+        "parameters": [
+          {
+            "name": "exitCode",
+            "type": "integer",
+            "description": "Exit code for the application",
+            "required": false,
+            "default": 0
+          }
+        ]
+      },
+      {
+        "name": "runtime set_target_frame_rate",
+        "description": "Set the target frame rate for the application",
+        "group": "runtime",
+        "parameters": [
+          {
+            "name": "frameRate",
+            "type": "integer",
+            "description": "Target frame rate (-1 for platform default, 0 for unlimited)",
+            "required": true,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "runtime set_time_scale",
+        "description": "Set the time scale for the application",
+        "group": "runtime",
+        "parameters": [
+          {
+            "name": "scale",
+            "type": "number",
+            "description": "Time scale multiplier (0.0 to pause, 1.0 for normal speed)",
+            "required": true,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "runtime simulate_key",
+        "description": "Simulate a keyboard key event (Input System). Drives the running app.",
+        "group": "runtime",
+        "parameters": [
+          {
+            "name": "key",
+            "type": "string",
+            "description": "Input System Key name, e.g. Space, W, Enter, LeftArrow",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "action",
+            "type": "string",
+            "description": "down | up | press (down+up). Default: press",
+            "required": false,
+            "default": "press"
+          }
+        ]
+      },
+      {
+        "name": "runtime simulate_pointer",
+        "description": "Simulate a mouse/pointer event at screen coordinates (Input System).",
+        "group": "runtime",
+        "parameters": [
+          {
+            "name": "x",
+            "type": "number",
+            "description": "Screen X in pixels (origin bottom-left)",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "y",
+            "type": "number",
+            "description": "Screen Y in pixels (origin bottom-left)",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "action",
+            "type": "string",
+            "description": "move | down | up | click (down+up). Default: click",
+            "required": false,
+            "default": "click"
+          },
+          {
+            "name": "button",
+            "type": "string",
+            "description": "left | right | middle. Default: left",
+            "required": false,
+            "default": "left"
+          }
+        ]
+      },
+      {
+        "name": "runtime status",
+        "description": "Get comprehensive runtime application status",
+        "group": "runtime",
+        "parameters": []
+      },
+      {
+        "name": "scene add_to_build",
+        "description": "Add a scene to the Build Settings scene list (idempotent). Optionally enable it.",
+        "group": "scene",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "description": "Scene path to add (authoring-root relative; Assets/ prefix and .unity optional).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "enabled",
+            "type": "boolean",
+            "description": "Whether the scene is enabled in the build list.",
+            "required": false,
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "scene create",
+        "description": "Create a new scene and save it to the given path under the authoring root.",
+        "group": "scene",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "description": "Scene path relative to the authoring root (default Assets/); the Assets/ prefix and the .unity extension are optional. e.g. Scenes/Level1",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "additive",
+            "type": "boolean",
+            "description": "Open the new scene additively alongside currently open scenes instead of replacing them.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "template",
+            "type": "string",
+            "description": "Initial contents: 'empty' (default) for a blank scene, or 'default' to seed a Main Camera + Directional Light matching Unity's built-in 3D template.",
+            "required": false,
+            "default": "empty"
+          }
+        ]
+      },
+      {
+        "name": "scene get_hierarchy",
+        "description": "Return the GameObject tree of an open scene (or the active scene). Each node carries instanceId + hierarchyPath usable by GameObject commands.",
+        "group": "scene",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "description": "Path of the open scene to snapshot (authoring-root relative; Assets/ prefix and .unity optional). Omit for the active scene.",
+            "required": false,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "scene list_open",
+        "description": "List all currently open scenes with their load/active/dirty state.",
+        "group": "scene",
+        "parameters": []
+      },
+      {
+        "name": "scene open",
+        "description": "Open an existing scene from the given path.",
+        "group": "scene",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "description": "Scene path relative to the authoring root (default Assets/); the Assets/ prefix and the .unity extension are optional.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "additive",
+            "type": "boolean",
+            "description": "Open additively alongside currently open scenes instead of replacing them.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "scene remove_from_build",
+        "description": "Remove a scene from the Build Settings scene list (idempotent).",
+        "group": "scene",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "description": "Scene path to remove (authoring-root relative; Assets/ prefix and .unity optional).",
+            "required": true,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "scene save",
+        "description": "Save an open scene. Saves the active scene when no path is given.",
+        "group": "scene",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "description": "Path of the open scene to save (authoring-root relative; Assets/ prefix and .unity optional). Omit to save the active scene.",
+            "required": false,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "scene set_active",
+        "description": "Set which open scene is the active scene (new objects are created in the active scene).",
+        "group": "scene",
+        "parameters": [
+          {
+            "name": "path",
+            "type": "string",
+            "description": "Path of an already-open scene to make active (authoring-root relative; Assets/ prefix and .unity optional).",
+            "required": true,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "script attach",
+        "description": "Add a MonoBehaviour to a GameObject by its (compiled) type name OR by its script asset path. Provide exactly one of 'type' or 'script'. If the type isn't compiled yet, returns a recoverable error: script recompile, poll script recompile_status, then retry.",
+        "group": "script",
+        "parameters": [
+          {
+            "name": "target",
+            "type": "string",
+            "description": "Reference to the GameObject to add the component to (globalId/path/guid/instanceId/hierarchyPath).",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "Component type name to add, e.g. PlayerController or Game.Player.PlayerController. Must already be compiled. Mutually exclusive with 'script'.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "script",
+            "type": "string",
+            "description": "Script asset path, e.g. 'Assets/Pool/Scripts/CueShooter.cs'. The backing class is resolved via MonoScript.GetClass(), so the class name may differ from the filename. Mutually exclusive with 'type'.",
+            "required": false,
+            "default": null
+          }
+        ]
+      },
+      {
+        "name": "script create",
+        "description": "Create a new C# script (default base class MonoBehaviour) from a template under the authoring root. NOTE: the type does not exist until a recompile completes — to attach it, call script recompile, poll script recompile_status, then script attach.",
+        "group": "script",
+        "parameters": [
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Class/file name without extension, e.g. PlayerController. Must be a valid C# identifier.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "path",
+            "type": "string",
+            "description": "Folder (relative to the authoring root; the Assets/ prefix is optional) to write the .cs into. Defaults to the authoring root.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "namespace",
+            "type": "string",
+            "description": "Optional namespace to wrap the class in. Omit for the global namespace.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "base_class",
+            "type": "string",
+            "description": "Base class to derive from. Defaults to MonoBehaviour.",
+            "required": false,
+            "default": "MonoBehaviour"
+          },
+          {
+            "name": "overwrite",
+            "type": "boolean",
+            "description": "Overwrite the file if it already exists. Defaults to false (an existing file is an error).",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "script eval",
+        "description": "Evaluate C# code dynamically using Roslyn compiler",
+        "group": "script",
+        "parameters": [
+          {
+            "name": "code",
+            "type": "string",
+            "description": "C# code to evaluate",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "timeout",
+            "type": "number",
+            "description": "Timeout in seconds",
+            "required": false,
+            "default": 30
+          }
+        ]
+      },
+      {
+        "name": "script eval_file",
+        "description": "Evaluate C# code read from a .cs file on disk",
+        "group": "script",
+        "parameters": [
+          {
+            "name": "file",
+            "type": "string",
+            "description": "Path to a .cs file to evaluate",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "timeout",
+            "type": "number",
+            "description": "Timeout in seconds",
+            "required": false,
+            "default": 30
+          }
+        ]
+      },
+      {
+        "name": "script recompile",
+        "description": "Force a script recompile (works while unfocused/minimized). Poll script recompile_status for completion.",
+        "group": "script",
+        "parameters": [
+          {
+            "name": "focus",
+            "type": "boolean",
+            "description": "If true, bring the Editor to the foreground before compiling. Off by default.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "script recompile_status",
+        "description": "Get the status of the last recompile: idle | triggered | compiling | completed | up_to_date.",
+        "group": "script",
+        "parameters": []
+      },
+      {
+        "name": "script run",
+        "description": "Compile a project C# file in memory (no domain reload) and execute a named static entry point. The builder-pattern path for bulk construction. Still arbitrary code execution — shares script eval's capability gate.",
+        "group": "script",
+        "parameters": [
+          {
+            "name": "file",
+            "type": "string",
+            "description": "Path to a .cs file to compile. Relative paths resolve against the PROJECT ROOT (the parent of Assets/), not the process working directory. May live OUTSIDE Assets/ (e.g. AgentScripts/) so writing it never triggers an asset import or domain reload.",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "entry",
+            "type": "string",
+            "description": "Entry point as Namespace.Type.Method (or Type.Method, or a bare Method name). Default: the single public static method if unambiguous, else a method named Main. Static methods only in v1. Ephemeral mode only (rejected with mode=hotpatch, which never invokes an entry point).",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "args",
+            "type": "string",
+            "description": "JSON array of arguments passed to the entry point, coerced to its parameter types: primitives, enum names, string[], and a string/object handle (ObjectRef) for UnityEngine.Object parameters. Ephemeral mode only (rejected with mode=hotpatch).",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "mode",
+            "type": "string",
+            "description": "ephemeral (default): compile to an in-memory assembly, run the entry, discard. hotpatch: apply [MethodReload] method replacements to already-loaded types (script.methodreload reload semantics).",
+            "required": false,
+            "default": "ephemeral"
+          },
+          {
+            "name": "references",
+            "type": "array",
+            "description": "Extra assembly name prefixes to reference beyond the auto-resolved set. In the Editor all loaded assemblies are already referenced, so this is effectively a no-op there. Ephemeral mode only; not applied by hotpatch (which delegates to script.methodreload reload's own compile).",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "defines",
+            "type": "array",
+            "description": "Extra scripting define symbols APPENDED to the project's active editor defines (UNITY_EDITOR etc. are already set) for the compilation's #if directives. Ephemeral mode only; not applied by hotpatch.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "pdb",
+            "type": "boolean",
+            "description": "Emit a portable PDB mapped to the source file so breakpoints bind and exception stack traces map to file:line. Compiles unoptimized.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "timeout",
+            "type": "number",
+            "description": "Timeout in seconds. Bounds the whole run, including how long an async entry point's Task is awaited (on expiry the task keeps running detached).",
+            "required": false,
+            "default": 60
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "Compile only: return diagnostics; the emitted assembly is NOT loaded into the domain and nothing executes. Ephemeral mode only (rejected with mode=hotpatch, which would apply live method replacements).",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "script.methodreload cleanup",
+        "description": "Remove old method reload DLL versions and clear registry",
+        "group": "script.methodreload",
+        "parameters": [
+          {
+            "name": "assemblyDir",
+            "type": "string",
+            "description": "Directory containing assemblies to cleanup",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "force_domain_reload",
+            "type": "boolean",
+            "description": "Force Unity domain reload after cleanup",
+            "required": false,
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "script.methodreload generate_link_xml",
+        "description": "Generate ProjectSettings/Packages/com.unity.pipeline/MethodReload.link.xml: per-type preservation of the engine/package types the game's assemblies reference and of the game's own types, plus the interpreter's host surface and [MethodReload] targets. Applied to IL2CPP development builds only, while the Pipeline is enabled in development builds. Pass delete=true to remove the file instead.",
+        "group": "script.methodreload",
+        "parameters": [
+          {
+            "name": "delete",
+            "type": "boolean",
+            "description": "Remove the generated file instead of (re)generating it.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "script.methodreload reload",
+        "description": "Compile and apply in-place [MethodReload] edits from a source file",
+        "group": "script.methodreload",
+        "parameters": [
+          {
+            "name": "filename",
+            "type": "string",
+            "description": "Source file containing [MethodReload] methods (e.g. Assets/Scripts/Player.cs)",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "timeout",
+            "type": "number",
+            "description": "Compilation timeout in seconds",
+            "required": false,
+            "default": 60
+          },
+          {
+            "name": "assemblyDir",
+            "type": "string",
+            "description": "Directory to save compiled assemblies to disk (optional, default is in-memory only)",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "pdb",
+            "type": "boolean",
+            "description": "Emit debug symbols (portable PDB) mapped to the original source so breakpoints bind in your editor. Compiles unoptimized.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "script.methodreload reload_editor",
+        "description": "Compile in-place [MethodReload] edits and run them through the IlInterpreter VM in this process instead of Assembly.Load (IL2CPP-safe; only a minimal host API + the target type are available)",
+        "group": "script.methodreload",
+        "parameters": [
+          {
+            "name": "filename",
+            "type": "string",
+            "description": "Source file containing [MethodReload] methods (e.g. Assets/Scripts/Player.cs)",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "timeout",
+            "type": "number",
+            "description": "Compilation timeout in seconds",
+            "required": false,
+            "default": 60
+          },
+          {
+            "name": "assemblyDir",
+            "type": "string",
+            "description": "Directory to save compiled assemblies to disk (optional, default is in-memory only)",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "pdb",
+            "type": "boolean",
+            "description": "Emit debug symbols (portable PDB) mapped to the original source so breakpoints bind in your editor. Compiles unoptimized.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "script.methodreload reload_player",
+        "description": "Compile a file's (or folder's) [MethodReload] method(s) and push the IL to a connected player (IL2CPP-safe) over PlayerConnection. Folders are walked recursively and pushed once.",
+        "group": "script.methodreload",
+        "parameters": [
+          {
+            "name": "filename",
+            "type": "string",
+            "description": "Source .cs file or a folder containing [MethodReload] methods (e.g. Assets/pong.cs or Assets/Scripts)",
+            "required": true,
+            "default": null
+          },
+          {
+            "name": "player",
+            "type": "integer",
+            "description": "Target connected player id; -1 = broadcast to all connected players",
+            "required": false,
+            "default": -1
+          }
+        ]
+      },
+      {
+        "name": "script.methodreload status",
+        "description": "Show current method reload registry status and statistics",
+        "group": "script.methodreload",
+        "parameters": []
+      },
+      {
+        "name": "settings.audio get",
+        "description": "Read project Audio settings (volume, rolloff scale, doppler factor).",
+        "group": "settings.audio",
+        "parameters": []
+      },
+      {
+        "name": "settings.audio set",
+        "description": "Change project Audio settings. Requires confirm=true; use dry_run to preview. Not undoable via Ctrl+Z.",
+        "group": "settings.audio",
+        "parameters": [
+          {
+            "name": "settings",
+            "type": "object",
+            "description": "Fields to change; omitted fields are left unchanged.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Apply the change. Without it the call is refused.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "Preview the change without applying it.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "settings.graphics get",
+        "description": "Read GraphicsSettings (default render pipeline).",
+        "group": "settings.graphics",
+        "parameters": []
+      },
+      {
+        "name": "settings.graphics set",
+        "description": "Set the default render pipeline asset. Requires confirm=true; use dry_run to preview. Not undoable via Ctrl+Z.",
+        "group": "settings.graphics",
+        "parameters": [
+          {
+            "name": "settings",
+            "type": "object",
+            "description": "Fields to change; omitted fields are left unchanged.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Apply the change. Without it the call is refused.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "Preview the change without applying it.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "settings.input get",
+        "description": "Read the legacy Input Manager axes (names and count).",
+        "group": "settings.input",
+        "parameters": []
+      },
+      {
+        "name": "settings.input set",
+        "description": "Tune a legacy Input Manager axis (sensitivity/gravity/dead) by name. Requires confirm=true; use dry_run to preview. Not undoable via Ctrl+Z.",
+        "group": "settings.input",
+        "parameters": [
+          {
+            "name": "settings",
+            "type": "object",
+            "description": "Axis change. 'axis' selects the axis by name; omitted numeric fields are left unchanged.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Apply the change. Without it the call is refused.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "Preview the change without applying it.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "settings.physics get",
+        "description": "Read Physics settings (gravity, solver iterations, bounce threshold).",
+        "group": "settings.physics",
+        "parameters": []
+      },
+      {
+        "name": "settings.physics set",
+        "description": "Change Physics settings. Requires confirm=true; use dry_run to preview. Not undoable via Ctrl+Z.",
+        "group": "settings.physics",
+        "parameters": [
+          {
+            "name": "settings",
+            "type": "object",
+            "description": "Fields to change; omitted fields are left unchanged.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Apply the change. Without it the call is refused.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "Preview the change without applying it.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "settings.player get",
+        "description": "Read PlayerSettings (company/product/version, scripting backend, API level).",
+        "group": "settings.player",
+        "parameters": []
+      },
+      {
+        "name": "settings.player set",
+        "description": "Change PlayerSettings. Requires confirm=true; use dry_run to preview. Not undoable via Ctrl+Z. Scripting backend / API level changes trigger a domain reload.",
+        "group": "settings.player",
+        "parameters": [
+          {
+            "name": "settings",
+            "type": "object",
+            "description": "Fields to change; omitted fields are left unchanged.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Apply the change. Without it the call is refused.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "Preview the change without applying it.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "settings.quality get",
+        "description": "Read QualitySettings (current level, level names, vSync, anti-aliasing).",
+        "group": "settings.quality",
+        "parameters": []
+      },
+      {
+        "name": "settings.quality set",
+        "description": "Change QualitySettings. Requires confirm=true; use dry_run to preview. Not undoable via Ctrl+Z.",
+        "group": "settings.quality",
+        "parameters": [
+          {
+            "name": "settings",
+            "type": "object",
+            "description": "Fields to change; omitted fields are left unchanged.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Apply the change. Without it the call is refused.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "Preview the change without applying it.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "settings.runtime_pipeline get",
+        "description": "Read Pipeline Runtime settings (enableInDevelopmentBuilds, enableInReleaseBuilds, port, enableAuditLogging, autoStart, maxWorkItemsPerFrame). Reports the settings in effect, falling back to built-in defaults when none have been authored; never creates the settings file. The two toggles are reported for the active build target.",
+        "group": "settings.runtime_pipeline",
+        "parameters": []
+      },
+      {
+        "name": "settings.runtime_pipeline set",
+        "description": "Change Pipeline Runtime settings. Requires confirm=true; use dry_run to preview. Not undoable via Ctrl+Z. Refused while in Play Mode: the running driver already loaded its own settings, so a change would silently not apply until the next Play session or build. port and maxWorkItemsPerFrame are rejected outright if outside the same bounds the Project Settings page enforces.",
+        "group": "settings.runtime_pipeline",
+        "parameters": [
+          {
+            "name": "settings",
+            "type": "object",
+            "description": "Fields to change; omitted fields are left unchanged.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Apply the change. Without it the call is refused.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "Preview the change without applying it.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "settings.tags_layers get",
+        "description": "Read the project's tags and (named) layers.",
+        "group": "settings.tags_layers",
+        "parameters": []
+      },
+      {
+        "name": "settings.tags_layers set",
+        "description": "Add/remove tags and assign user layer names (index 8-31). Requires confirm=true; use dry_run to preview. Not undoable via Ctrl+Z.",
+        "group": "settings.tags_layers",
+        "parameters": [
+          {
+            "name": "settings",
+            "type": "object",
+            "description": "Tag/layer changes to make.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Apply the change. Without it the call is refused.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "Preview the change without applying it.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "settings.time get",
+        "description": "Read Time settings (fixedDeltaTime, maximumDeltaTime, timeScale).",
+        "group": "settings.time",
+        "parameters": []
+      },
+      {
+        "name": "settings.time set",
+        "description": "Change Time settings. Requires confirm=true; use dry_run to preview. Not undoable via Ctrl+Z.",
+        "group": "settings.time",
+        "parameters": [
+          {
+            "name": "settings",
+            "type": "object",
+            "description": "Fields to change; omitted fields are left unchanged.",
+            "required": false,
+            "default": null
+          },
+          {
+            "name": "confirm",
+            "type": "boolean",
+            "description": "Apply the change. Without it the call is refused.",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "dry_run",
+            "type": "boolean",
+            "description": "Preview the change without applying it.",
+            "required": false,
+            "default": false
+          }
+        ]
+      },
+      {
+        "name": "test cancel",
+        "description": "Cancel running test execution",
+        "group": "test",
+        "parameters": []
+      },
+      {
+        "name": "test list",
+        "description": "List all available tests (EditMode and/or PlayMode) without running them",
+        "group": "test",
+        "parameters": [
+          {
+            "name": "mode",
+            "type": "string",
+            "description": "Test mode: all, editor, playmode (default: all)",
+            "required": false,
+            "default": "all"
+          }
+        ]
+      },
+      {
+        "name": "test run",
+        "description": "Execute Unity tests with filtering options",
+        "group": "test",
+        "parameters": [
+          {
+            "name": "mode",
+            "type": "string",
+            "description": "Test mode: all, editor, playmode (default: all)",
+            "required": false,
+            "default": "all"
+          },
+          {
+            "name": "filter",
+            "type": "string",
+            "description": "Test name filter pattern (case-insensitive partial match)",
+            "required": false,
+            "default": ""
+          },
+          {
+            "name": "filter_type",
+            "type": "string",
+            "description": "Filter type: testName, assembly, category (default: testName)",
+            "required": false,
+            "default": "testName"
+          },
+          {
+            "name": "include_explicit",
+            "type": "boolean",
+            "description": "Include tests marked with [Explicit] attribute",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "async_tests",
+            "type": "boolean",
+            "description": "Run asynchronously - return immediately, poll /test-status for results",
+            "required": false,
+            "default": false
+          },
+          {
+            "name": "timeout",
+            "type": "number",
+            "description": "Test execution timeout in seconds (default: 600)",
+            "required": false,
+            "default": 600
+          }
+        ]
+      },
+      {
+        "name": "test status",
+        "description": "Get status of running async test execution",
+        "group": "test",
+        "parameters": []
+      }
+    ]
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,97 @@
+{
+  "success": true,
+  "command": "command",
+  "data": {
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/dev/projects/SampleGame"
+    },
+    "server": {
+      "version": "0.0.1",
+      "port": 7800
+    },
+    "commands": [
+      {
+        "command": "console get",
+        "name": "get",
+        "group": "console",
+        "description": "Get captured Unity console output (Editor or Player; supports tail, level filtering, and follow via a cursor)",
+        "tags": [
+          "observability/console"
+        ],
+        "package": "Unity.Pipeline",
+        "mainThreadRequired": false,
+        "parameters": [
+          {
+            "name": "tail",
+            "description": "Maximum number of most-recent entries to return",
+            "type": "Int32",
+            "required": false,
+            "defaultValue": 100
+          },
+          {
+            "name": "level",
+            "description": "Minimum severity to include: log | warn | error",
+            "type": "String",
+            "required": false,
+            "defaultValue": "log"
+          },
+          {
+            "name": "since",
+            "description": "Cursor: only return entries newer than this seq. Use the 'cursor' from a previous response to follow.",
+            "type": "Int64",
+            "required": false,
+            "defaultValue": -1
+          },
+          {
+            "name": "since_session",
+            "description": "Session the 'since' cursor came from: pass the 'session' from a previous response. A cursor from another session is refused and the tail returned with reset=true.",
+            "type": "String",
+            "required": false,
+            "defaultValue": null
+          }
+        ],
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "title": "console get",
+          "description": "Get captured Unity console output (Editor or Player; supports tail, level filtering, and follow via a cursor)",
+          "properties": {
+            "tail": {
+              "type": "integer",
+              "description": "Maximum number of most-recent entries to return",
+              "default": 100
+            },
+            "level": {
+              "type": "string",
+              "description": "Minimum severity to include: log | warn | error",
+              "default": "log"
+            },
+            "since": {
+              "type": "integer",
+              "description": "Cursor: only return entries newer than this seq. Use the 'cursor' from a previous response to follow.",
+              "default": -1
+            },
+            "since_session": {
+              "type": "string",
+              "description": "Session the 'since' cursor came from: pass the 'session' from a previous response. A cursor from another session is refused and the tail returned with reset=true."
+            }
+          },
+          "required": [],
+          "additionalProperties": false,
+          "x-command-metadata": {
+            "mainThreadRequired": false,
+            "methodName": "Unity.Pipeline.Runtime.Commands.ConsoleCommand.Get"
+          }
+        }
+      }
+    ],
+    "count": 1,
+    "total": 1,
+    "offset": 0,
+    "limit": null
+  },
+  "errors": [],
+  "warnings": []
+}

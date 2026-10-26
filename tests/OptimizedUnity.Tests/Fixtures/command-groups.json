@@ -1,0 +1,171 @@
+{
+  "success": true,
+  "command": "command",
+  "data": {
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/dev/projects/SampleGame"
+    },
+    "server": {
+      "version": "0.0.1",
+      "port": 7800
+    },
+    "groups": [
+      {
+        "group": "animation",
+        "count": 14
+      },
+      {
+        "group": "animation.animator",
+        "count": 6
+      },
+      {
+        "group": "animation.clip",
+        "count": 4
+      },
+      {
+        "group": "animation.timeline",
+        "count": 4
+      },
+      {
+        "group": "asset",
+        "count": 12
+      },
+      {
+        "group": "authoring",
+        "count": 2
+      },
+      {
+        "group": "build",
+        "count": 11
+      },
+      {
+        "group": "build.target",
+        "count": 3
+      },
+      {
+        "group": "capture",
+        "count": 3
+      },
+      {
+        "group": "component",
+        "count": 6
+      },
+      {
+        "group": "console",
+        "count": 4
+      },
+      {
+        "group": "diagnostics",
+        "count": 4
+      },
+      {
+        "group": "editor",
+        "count": 11
+      },
+      {
+        "group": "editor.playmode",
+        "count": 5
+      },
+      {
+        "group": "gameobject",
+        "count": 12
+      },
+      {
+        "group": "job",
+        "count": 4
+      },
+      {
+        "group": "lighting",
+        "count": 6
+      },
+      {
+        "group": "material",
+        "count": 4
+      },
+      {
+        "group": "navmesh",
+        "count": 7
+      },
+      {
+        "group": "occlusion",
+        "count": 4
+      },
+      {
+        "group": "package",
+        "count": 6
+      },
+      {
+        "group": "prefab",
+        "count": 7
+      },
+      {
+        "group": "runtime",
+        "count": 6
+      },
+      {
+        "group": "scene",
+        "count": 8
+      },
+      {
+        "group": "script",
+        "count": 13
+      },
+      {
+        "group": "script.methodreload",
+        "count": 6
+      },
+      {
+        "group": "settings",
+        "count": 18
+      },
+      {
+        "group": "settings.audio",
+        "count": 2
+      },
+      {
+        "group": "settings.graphics",
+        "count": 2
+      },
+      {
+        "group": "settings.input",
+        "count": 2
+      },
+      {
+        "group": "settings.physics",
+        "count": 2
+      },
+      {
+        "group": "settings.player",
+        "count": 2
+      },
+      {
+        "group": "settings.quality",
+        "count": 2
+      },
+      {
+        "group": "settings.runtime_pipeline",
+        "count": 2
+      },
+      {
+        "group": "settings.tags_layers",
+        "count": 2
+      },
+      {
+        "group": "settings.time",
+        "count": 2
+      },
+      {
+        "group": "test",
+        "count": 4
+      }
+    ],
+    "count": 37,
+    "total": 37,
+    "offset": 0,
+    "limit": null
+  },
+  "errors": [],
+  "warnings": []
+}

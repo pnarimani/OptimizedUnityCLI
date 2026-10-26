@@ -1,0 +1,724 @@
+{
+  "success": true,
+  "command": "command editor search",
+  "data": {
+    "command": "editor search",
+    "parameters": {
+      "query": "t:Texture2D",
+      "limit": "100"
+    },
+    "result": {
+      "query": "t:Texture2D",
+      "count": 100,
+      "results": [
+        {
+          "id": "GlobalObjectId_V1-1-e10cd79e048c07dd7753eda83d7c58df-2800000-0",
+          "label": "iconBlack.png",
+          "description": "Assets/Debug/iconBlack.png (155 B)",
+          "provider": "asset",
+          "path": "Assets/Debug/iconBlack.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-e0d5a0cf318656b3e6f0bade65c3b188-2800000-0",
+          "label": "iconGrey.png",
+          "description": "Assets/Debug/iconGrey.png (160 B)",
+          "provider": "asset",
+          "path": "Assets/Debug/iconGrey.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-cc102ddb8379c7ce65426f74bde94fb7-2800000-0",
+          "label": "icon_01.png",
+          "description": "Assets/Art/UI/Icons/icon_01.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_01.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-8c8d5f08b79affd2b49c12a4b0062983-2800000-0",
+          "label": "icon_02.png",
+          "description": "Assets/Art/UI/Icons/icon_02.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_02.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-475eb46c5296f62e338d74ff1fe4f7f5-2800000-0",
+          "label": "icon_03.png",
+          "description": "Assets/Art/UI/Icons/icon_03.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_03.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-05aef9ebdd25b001a3ff416d4a3baf69-2800000-0",
+          "label": "icon_04.png",
+          "description": "Assets/Art/UI/Icons/icon_04.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_04.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-dad8199bfca8b6f3a6a9421cc1c93016-2800000-0",
+          "label": "icon_05.png",
+          "description": "Assets/Art/UI/Icons/icon_05.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_05.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-f1c4261e5351d30b49895d1a0d1f13dc-2800000-0",
+          "label": "icon_06.png",
+          "description": "Assets/Art/UI/Icons/icon_06.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_06.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-e20c4fd32f640d0032634f087e51b429-2800000-0",
+          "label": "icon_07.png",
+          "description": "Assets/Art/UI/Icons/icon_07.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_07.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-fe8110102c995f1abef543b5dfce8a98-2800000-0",
+          "label": "icon_08.png",
+          "description": "Assets/Art/UI/Icons/icon_08.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_08.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-1a049d7ccc7e90a88d519448fb2fc679-2800000-0",
+          "label": "icon_09.png",
+          "description": "Assets/Art/UI/Icons/icon_09.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_09.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-1ce680ce2b27c8af6666259bbc471fb3-2800000-0",
+          "label": "icon_10.png",
+          "description": "Assets/Art/UI/Icons/icon_10.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_10.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-be24a0b80316f688d3e481a65c2011be-2800000-0",
+          "label": "icon_11.png",
+          "description": "Assets/Art/UI/Icons/icon_11.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_11.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-f2c328a72c5e5b77518b1018f134a069-2800000-0",
+          "label": "icon_12.png",
+          "description": "Assets/Art/UI/Icons/icon_12.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_12.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-e3fab8c3bfc5e740e61572b4e3c02eaa-2800000-0",
+          "label": "icon_13.png",
+          "description": "Assets/Art/UI/Icons/icon_13.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_13.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-7f3b4a715e4e48dd74089a58f3aef341-2800000-0",
+          "label": "icon_14.png",
+          "description": "Assets/Art/UI/Icons/icon_14.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_14.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-6f9386bd8773c9d51940ea4e095bd1d6-2800000-0",
+          "label": "icon_15.png",
+          "description": "Assets/Art/UI/Icons/icon_15.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_15.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-854575622f856469602d1ba9f20df487-2800000-0",
+          "label": "icon_16.png",
+          "description": "Assets/Art/UI/Icons/icon_16.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_16.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-5b15b0be23b7ac193fe0407275539800-2800000-0",
+          "label": "icon_17.png",
+          "description": "Assets/Art/UI/Icons/icon_17.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_17.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-3680e7e3b35183ef8333c4774ec50cd1-2800000-0",
+          "label": "icon_18.png",
+          "description": "Assets/Art/UI/Icons/icon_18.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_18.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-c1bac7adac1a4b7d0b352ad6074dce11-2800000-0",
+          "label": "icon_19.png",
+          "description": "Assets/Art/UI/Icons/icon_19.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_19.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-18813830d71939b53182e4e349d98729-2800000-0",
+          "label": "icon_20.png",
+          "description": "Assets/Art/UI/Icons/icon_20.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_20.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-e7c6be9ff907a76cc0b57aaf89691052-2800000-0",
+          "label": "icon_21.png",
+          "description": "Assets/Art/UI/Icons/icon_21.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_21.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-be1ceb374dab4683f84d30d3fc4d83ce-2800000-0",
+          "label": "icon_22.png",
+          "description": "Assets/Art/UI/Icons/icon_22.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_22.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-e9b9bcca0fce9594dc72aa7a6d0018f9-2800000-0",
+          "label": "icon_23.png",
+          "description": "Assets/Art/UI/Icons/icon_23.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_23.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-9ddceb1be0273dbc46dfcea25bab2953-2800000-0",
+          "label": "icon_24.png",
+          "description": "Assets/Art/UI/Icons/icon_24.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_24.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-9ad5966d513b1d00909c30065f846d34-2800000-0",
+          "label": "icon_25.png",
+          "description": "Assets/Art/UI/Icons/icon_25.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_25.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-530325fed10a47b851832b6ec017c1e1-2800000-0",
+          "label": "icon_26.png",
+          "description": "Assets/Art/UI/Icons/icon_26.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_26.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-777155a0e9d8f27c7d9cf07255bc509c-2800000-0",
+          "label": "icon_27.png",
+          "description": "Assets/Art/UI/Icons/icon_27.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_27.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-b3acac23db7c6e9b7d180a4742684ee7-2800000-0",
+          "label": "icon_28.png",
+          "description": "Assets/Art/UI/Icons/icon_28.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_28.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-5bb6cc69f67e48eb7c64328c0490c257-2800000-0",
+          "label": "icon_29.png",
+          "description": "Assets/Art/UI/Icons/icon_29.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_29.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-a632b96292794c9bce4850bbd0e7cb35-2800000-0",
+          "label": "icon_30.png",
+          "description": "Assets/Art/UI/Icons/icon_30.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Art/UI/Icons/icon_30.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-93871c15d694c1957f8db03911731a6b-2800000-0",
+          "label": "arrowLeft.png",
+          "description": "Assets/Editor Default Resources/arrowLeft.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Editor Default Resources/arrowLeft.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-2dc782bdeae16d4f6185578715bbd269-2800000-0",
+          "label": "arrowRight.png",
+          "description": "Assets/Editor Default Resources/arrowRight.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Editor Default Resources/arrowRight.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-44ff770e4b9447a3d54ec6390bf61189-2800000-0",
+          "label": "arrowUp.png",
+          "description": "Assets/Editor Default Resources/arrowUp.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Editor Default Resources/arrowUp.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-639e35aeeb95210ef2a83fdf6a0b2987-2800000-0",
+          "label": "arrowDown.png",
+          "description": "Assets/Editor Default Resources/arrowDown.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Editor Default Resources/arrowDown.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-2400c49b5539ac5ba7b4b87113c16fdf-2800000-0",
+          "label": "close.png",
+          "description": "Assets/Editor Default Resources/close.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Editor Default Resources/close.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-5924754ec21ef66b01d4921da2e055c9-2800000-0",
+          "label": "menu.png",
+          "description": "Assets/Editor Default Resources/menu.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Editor Default Resources/menu.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-0eb6f2aed4c21a9dbf49a067e24bdb7e-2800000-0",
+          "label": "search.png",
+          "description": "Assets/Editor Default Resources/search.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Editor Default Resources/search.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-c83756378368f7e732d2e433ec56f24b-2800000-0",
+          "label": "settings.png",
+          "description": "Assets/Editor Default Resources/settings.png (1024 B)",
+          "provider": "asset",
+          "path": "Assets/Editor Default Resources/settings.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-1c71b106e934d263b5ba0837bbf1b3ba-2800000-0",
+          "label": "Font Texture",
+          "description": "Assets/Fonts/Display-Bold.otf (20480 B)",
+          "provider": "asset",
+          "path": "Assets/Fonts/Display-Bold.otf"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-3178b6e0e30f328549c488e00a4ff112-2800000-0",
+          "label": "Font Texture",
+          "description": "Assets/Fonts/Display-Regular.otf (19456 B)",
+          "provider": "asset",
+          "path": "Assets/Fonts/Display-Regular.otf"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-5cf5ec72ba694165beaecba0afa707e1-2800000-0",
+          "label": "forest_albedo.png",
+          "description": "Assets/Art/Environments/Forest/Textures/forest_albedo.png (262144 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Environments/Forest/Textures/forest_albedo.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-448c828b4136d3b97429ab7bca1aafb7-2800000-0",
+          "label": "forest_normal.png",
+          "description": "Assets/Art/Environments/Forest/Textures/forest_normal.png (262144 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Environments/Forest/Textures/forest_normal.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-7b4460ecec9524998a26259bebd2fa58-2800000-0",
+          "label": "forest_mask.png",
+          "description": "Assets/Art/Environments/Forest/Textures/forest_mask.png (262144 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Environments/Forest/Textures/forest_mask.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-80587061ce6936714122a40680a06aa0-2800000-0",
+          "label": "forest_detail.png",
+          "description": "Assets/Art/Environments/Forest/Textures/forest_detail.png (262144 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Environments/Forest/Textures/forest_detail.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-fca51d12afc8e00aa1da5204642bbdb4-2800000-0",
+          "label": "forest_height.png",
+          "description": "Assets/Art/Environments/Forest/Textures/forest_height.png (262144 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Environments/Forest/Textures/forest_height.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-a78f19e8b8480f3b47c20431658b4550-2800000-0",
+          "label": "desert_albedo.png",
+          "description": "Assets/Art/Environments/Desert/Textures/desert_albedo.png (262144 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Environments/Desert/Textures/desert_albedo.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-b7ef6bce6a0302cb17cdc70808d77b6a-2800000-0",
+          "label": "desert_normal.png",
+          "description": "Assets/Art/Environments/Desert/Textures/desert_normal.png (262144 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Environments/Desert/Textures/desert_normal.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-d89f65f84992a0f75ae616b1e5d49034-2800000-0",
+          "label": "desert_mask.png",
+          "description": "Assets/Art/Environments/Desert/Textures/desert_mask.png (262144 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Environments/Desert/Textures/desert_mask.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-0494b35ec2daca1760147d301a233f4d-2800000-0",
+          "label": "desert_detail.png",
+          "description": "Assets/Art/Environments/Desert/Textures/desert_detail.png (262144 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Environments/Desert/Textures/desert_detail.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-05743bf2b672850882161db80a1e9ad8-2800000-0",
+          "label": "desert_height.png",
+          "description": "Assets/Art/Environments/Desert/Textures/desert_height.png (262144 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Environments/Desert/Textures/desert_height.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-cdadc4ccd4078c763211caeae0ffac7c-2800000-0",
+          "label": "snow_albedo.png",
+          "description": "Assets/Art/Environments/Snow/Textures/snow_albedo.png (262144 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Environments/Snow/Textures/snow_albedo.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-b2c8a2788fbf742b65b754e51acbd3d4-2800000-0",
+          "label": "snow_normal.png",
+          "description": "Assets/Art/Environments/Snow/Textures/snow_normal.png (262144 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Environments/Snow/Textures/snow_normal.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-8c3bb9e28c9e3ef5404bf7bac8060815-2800000-0",
+          "label": "snow_mask.png",
+          "description": "Assets/Art/Environments/Snow/Textures/snow_mask.png (262144 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Environments/Snow/Textures/snow_mask.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-98a878e2f264d9b1ecb19dd8b7c46b26-2800000-0",
+          "label": "snow_detail.png",
+          "description": "Assets/Art/Environments/Snow/Textures/snow_detail.png (262144 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Environments/Snow/Textures/snow_detail.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-a22eccdf03eeddf52ecf4076c19ace32-2800000-0",
+          "label": "snow_height.png",
+          "description": "Assets/Art/Environments/Snow/Textures/snow_height.png (262144 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Environments/Snow/Textures/snow_height.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-7203f26e16af1d4d14aa605882ac89cd-2800000-0",
+          "label": "swamp_albedo.png",
+          "description": "Assets/Art/Environments/Swamp/Textures/swamp_albedo.png (262144 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Environments/Swamp/Textures/swamp_albedo.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-1997cd896416bef4ba6e1a02da187e96-2800000-0",
+          "label": "swamp_normal.png",
+          "description": "Assets/Art/Environments/Swamp/Textures/swamp_normal.png (262144 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Environments/Swamp/Textures/swamp_normal.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-6ece6615d3142f505f7965463e3621d7-2800000-0",
+          "label": "swamp_mask.png",
+          "description": "Assets/Art/Environments/Swamp/Textures/swamp_mask.png (262144 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Environments/Swamp/Textures/swamp_mask.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-8ed41415e97a498a647c1ac49726e45d-2800000-0",
+          "label": "swamp_detail.png",
+          "description": "Assets/Art/Environments/Swamp/Textures/swamp_detail.png (262144 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Environments/Swamp/Textures/swamp_detail.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-ac31b3629fb0f26f89264f879130b649-2800000-0",
+          "label": "swamp_height.png",
+          "description": "Assets/Art/Environments/Swamp/Textures/swamp_height.png (262144 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Environments/Swamp/Textures/swamp_height.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-15abef7ab5392e335ce1113d4db2b5b5-2800000-0",
+          "label": "knight_062.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_062.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_062.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-2a0f94833734f83ae7518b69c6477303-2800000-0",
+          "label": "knight_063.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_063.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_063.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-1f6725480dc3932677172a31659a2e50-2800000-0",
+          "label": "knight_064.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_064.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_064.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-add127454b4667a20f1fa2261bd2b5ff-2800000-0",
+          "label": "knight_065.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_065.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_065.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-4891e5dc9328776e7f1ccacc27ad909f-2800000-0",
+          "label": "knight_066.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_066.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_066.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-03fdd9e4a62bce19a285ed7361c5c8a4-2800000-0",
+          "label": "knight_067.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_067.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_067.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-b57bc9fa65c00537e8b3c48d2ae89b9c-2800000-0",
+          "label": "knight_068.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_068.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_068.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-1ffb013ce94e1af408461c58790dd2cf-2800000-0",
+          "label": "knight_069.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_069.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_069.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-b8a5f1b461595919cb589f6aec38bcac-2800000-0",
+          "label": "knight_070.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_070.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_070.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-f836ed5a148fd28cbc938e019bb8723d-2800000-0",
+          "label": "knight_071.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_071.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_071.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-39553ccaccfab54d946a2d207dc68447-2800000-0",
+          "label": "knight_072.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_072.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_072.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-7391c94c8286793b2b023a60e4e81e11-2800000-0",
+          "label": "knight_073.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_073.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_073.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-e3f79aa766907508db2823ccd71ba82f-2800000-0",
+          "label": "knight_074.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_074.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_074.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-4dee6a63c59620e66869002b6d08b5ab-2800000-0",
+          "label": "knight_075.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_075.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_075.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-9315bd0e3a34bff2aaf438c6b8068dc5-2800000-0",
+          "label": "knight_076.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_076.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_076.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-d44036c002e162aaef6076bc3346eee2-2800000-0",
+          "label": "knight_077.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_077.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_077.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-1f5c7ff43fc2770c7173601e1c771d81-2800000-0",
+          "label": "knight_078.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_078.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_078.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-4e0f33545a3c0202219ec0605e636d32-2800000-0",
+          "label": "knight_079.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_079.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_079.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-b32732b89994fa6022136ced620104d1-2800000-0",
+          "label": "knight_080.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_080.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_080.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-59e8489b0ac35e5fa870d0a7ba07a253-2800000-0",
+          "label": "knight_081.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_081.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_081.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-1adab23e5617d266908d35e59c7a8026-2800000-0",
+          "label": "knight_082.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_082.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_082.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-8422c922202b243f8e5389cd5e3eaa60-2800000-0",
+          "label": "knight_083.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_083.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_083.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-c736ba80622598514f31c827129084bb-2800000-0",
+          "label": "knight_084.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_084.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_084.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-54b8bb53759c0767cb7f8013cb790fef-2800000-0",
+          "label": "knight_085.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_085.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_085.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-33ef2c3ff57de13628bef7a127f6c31d-2800000-0",
+          "label": "knight_086.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_086.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_086.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-175a632f8ee42ea368b23ff8500f17f4-2800000-0",
+          "label": "knight_087.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_087.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_087.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-b4ca1b570e2e619e469a62c050bf72fb-2800000-0",
+          "label": "knight_088.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_088.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_088.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-f666f69e87a1d5ad0b57048efc48738d-2800000-0",
+          "label": "knight_089.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_089.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_089.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-444a157d52ed8748d31d3092954d2c93-2800000-0",
+          "label": "knight_090.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_090.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_090.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-e7fb6d28c587db821f6a0efa5ea7d26d-2800000-0",
+          "label": "knight_091.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_091.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_091.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-c47bbcfb4768314cd2feabbda5f05cb3-2800000-0",
+          "label": "knight_092.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_092.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_092.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-9676b9852e160d802052705758700322-2800000-0",
+          "label": "knight_093.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_093.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_093.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-64fa2ba9df8a1285822184aaf4614dc9-2800000-0",
+          "label": "knight_094.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_094.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_094.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-0792f3246ee72fd40663e78da1070796-2800000-0",
+          "label": "knight_095.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_095.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_095.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-e656984517ea9ca91a291a7457e06a3b-2800000-0",
+          "label": "knight_096.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_096.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_096.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-f9232cdf287eafdbea13e284142e192a-2800000-0",
+          "label": "knight_097.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_097.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_097.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-d24c3119432a5d575cdab37e328cf759-2800000-0",
+          "label": "knight_098.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_098.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_098.png"
+        },
+        {
+          "id": "GlobalObjectId_V1-1-ec646f3a708f4aa5a6d107b0811a7a8b-2800000-0",
+          "label": "knight_099.png",
+          "description": "Assets/Art/Characters/Knight/Textures/knight_099.png (65536 B)",
+          "provider": "asset",
+          "path": "Assets/Art/Characters/Knight/Textures/knight_099.png"
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/dev/projects/SampleGame"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

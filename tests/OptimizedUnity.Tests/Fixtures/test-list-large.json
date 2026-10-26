@@ -1,0 +1,3176 @@
+{
+  "success": true,
+  "command": "command test list",
+  "data": {
+    "command": "test list",
+    "parameters": {
+      "mode": "editor"
+    },
+    "result": {
+      "Mode": "EditMode",
+      "Count": 350,
+      "Tests": [
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_994e2d0cd34b9d7308bfecef",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_5175d66ab86d09e5e683a0f8",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_89ad1346cf8497443d85d1fb",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_30bd30a68a3809f03880cafa",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_5ca916a822cd998b97480970",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_578b036dad345da10c669db7",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_4cf1607acf55ddf0bc79013d",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_dd4b7c1d54294f40fd76bafc",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_6c5f1631b54daa3020c8ccc3",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_5e0fd5607c5ea0ec13378286",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_49f0220d728be1ffbec4e316",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_6f2ba26f7b17f1a70caf35ba",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_8d90298faaaa04e3a6cecfb3",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_7a47a3ba7e25f193be9f8939",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_3bbb24243331e23fdb46ea70",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_46373ab4cf2e616b32d7d9bb",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_e5af3032fee07b959212f1b2",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_358c2e1c2c1ad7d802044b07",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9a2e55921222e8fb4a5a5e8a",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9ba35ae1a3d643dbe0a7699e",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_8619130b0812850848baf967",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_4b52c5d6e425bcb401178134",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_240f524f65e958b1871e6d0f",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_129fb931af398dd5dc8911b4",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_45194078ebc1a27d37555f01",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9b946327b191c4d5325d39b6",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ca7b803ac9abafd49147fc0d",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ea1136bcdbaae77752e261ca",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_3f7acf6c5de5c1c40735319b",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_611a76927b44d9d0dbbb8ae6",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_307490a09c6e917659a9aa17",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ea112eba683c889b083e5aa2",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_f9f656d33d532c7b1d5b5027",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_69bb1f140b3b0f2c092dbe0d",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_2507f5e15341d07c69693b75",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_7ac6d0b90a0eb1e8c180a879",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_a85c00c1147ed275cccd4495",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_2112b783e9cfedbeb134b8e3",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_88ce68eb27e0866b60459df4",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_aa0e10403e0a033853bd4610",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_390602e331b12372557114ae",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_c991fc3d7fb5c9a9eab520dd",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ccb313407c0e4fb49aa99583",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ba73b70d2db43715ad2cd000",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_cc33134d7ad3cf4ce38070e6",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_db1f8593d6bbb52842b93b0d",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_57b7ff04890ce0c31a72e627",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ab670fde4228430d5ee7d280",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_f43f13ea667854619d4ef23b",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_6fc0b01388215093a457eafb",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9bc9d46ea8a62fe935336dea",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_1f215dea9fa57a1aabcd012e",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_718bd4c3a3df9882aaf55444",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_2cc226ae08fd49dae07f3f08",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_5b8dbdd59791d3926c9150fd",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_399e90a9d55532361799fb97",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_fb38a5e1022cecf8b37f06f3",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_d456e66e6aa19af3f895d91e",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_82c27a3d4e65e58c9e7e2dc7",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_d1322eb3242f9baf9e6d24cf",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_6cbbb5e948b5e505703847e6",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_c84bb15405fedfc2583f1bfe",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9e3287fe1de955cf9173cb32",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_582f366ab42bd82233d6355d",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_5fd5570a7966a10d5850bae7",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_215299e62315ff789bf0ccf8",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_54314ba1acaf5f4882e2fdfc",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_7f8f514229e345510d195259",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_20763b8def4a7e8a837b972a",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_f44e465639880c5e9bb46b2d",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_baa2da770f44f366bb4830e9",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_2ba111de92367082a4d1afaf",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ced8a6987bcd0e61ca7400c2",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_c7823dbeda1e625950ca9ab1",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_14b783d5423a596b34b7558c",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_996a75c6df7255e06eb7534c",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_fc9dd8809849a9fbd1b1f9a0",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_004131b9a479c3fe7dae1cd7",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_0ff1f7b88f5a331cae739879",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_84cfdce6a04f5edb44f1457d",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_4b8cd55308646883198f1bda",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_b20b7174cf1326c0111e113f",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_12c78337c50412f02029280b",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_d5005cda28dc39a7f067870e",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_2c174fa7aecb03e1da1b4e4a",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_3247fff114aa93d8f1a1dff0",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_d4db0ca9ba11315793d19834",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_dce445f2b78fc5795ce62f8c",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_a48b374b0e0123501965f07b",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_09927870b36115c845169278",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_c9f7bf24bdafdf325bacd0cc",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_07f24cb99961d153934a9e7d",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_5964d0ba1154ef5a29e5e40f",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_25c70ae36ab46332066d3ccb",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_3f613393732ef6d8c57d5d1a",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_b3bb1e3a3f06c05995c15e8f",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9a627f60072360843d65bf36",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ee8ebbb6b56eec618b6e81f5",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_c5c64729fcc78046590864d7",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_005e4eb77d9f04709b465dd9",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_09978043dfa35d3642153e1c",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ec19e526c2e1831b640d28e2",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_2d88aa4efe9157e48972c6b3",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_8d9dea181ffbed046ace6283",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_53d5bad0be9059bc6520b9a7",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_af568f058090c35cd3d9fe6f",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9989137515ca5ba9912f0e6a",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_d1e7c3911094a1db17c53389",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_2abe71539f24ec8b643018ff",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_0c4e77fa677e53f7c037527f",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_385b3a8667062a8c625a569f",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_626264b4e883db7431b22641",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_52e48f56d64af14ac649bcb6",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ed8f8ed0cf39e9ea11ef7239",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_1cc1cbca1322d7d572070624",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_72d02313f7b2550f077e38df",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_795c73f859227e9861418e18",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_be558f53130f6e943844d422",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_102c333bb8bd3191948b9755",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_e43f004785f792ab87a58a42",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_1c0b428acae83a606a2b38f3",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_2b93730b890a9c64243fcd27",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_a99b529930aaa6560b04fd50",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_66fd40f53fdda5df16722ba7",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_8d048c9cda370d9e4c3f56ca",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_dc319c36594f18eaf5031284",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_053efca8059f72fb297bcfd3",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_67c9ce01e86f7e036ecc88f6",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_7666b6f89b1b49d05bd1274d",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_c0c0b2f099b5135b278c2676",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_41345cd1eed5572a2d1fb38f",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_867d703351ba9bd4d572d05a",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_b55773537a76a7239b5bd161",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_e6f675ac69ff66ecccd4f9b9",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_92f62a302b265ceb1841ef1b",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_035c253173f10f9c26976e77",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_4e8012de4d901d8da432f6dd",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_41a4df9c013014aa119ebefd",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_a8af2465ba40091498041e8c",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_d5a2072a8bd1c491d5f293c0",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_001eb7bf33dfb24dc2708611",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_3bb4d805da20c9858465cb17",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_8da493d7acd6055da9cdab1c",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Navigation.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_fcad9f8d9d0b5ba6c9db506e",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_67bbf2f9349d5feb9aa057d6",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_0f7556c45b27d470fc92c0df",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_e3f775e386fc6910da6580ba",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ab9f79f29ca69837cb7bc8c2",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_95cf725d0a08e9e3e323636f",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_e49441dbc97b7098af6284cb",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_56fc189462184efe72b476e0",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_19305573b33553310e01fee0",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_0d7193cd1cd21309c414b080",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_2504c84f7c47b0847158f699",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_704548c095d39ba50efb2fad",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_adc2babb106f7d537f955d53",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_50cad5337d90e691a24916d1",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_03969b0cefc0375792f524bd",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_75f010e9a60151293986fd7a",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_26180449f75c1aae9d7e6e53",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_eebb29bff6ce1b06de8fb755",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ff2e888e290542fd9a63ae65",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_0ce9968b67835de6c3f594ff",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_0b39fdaadb7bf4abc27a0d5e",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_05072c6f0bbe1badfeb4e46d",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_a8f725cac48a599e50a70c4d",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_c17aebc2284829de7bbacb81",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_f90311ccb8f65ad42ec762b7",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9b41472a1c27a1b31979f9de",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_15b5030e7df461a63e9e364a",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_d326eb4240dfefa55af11fe5",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_6e0a577bb5216a245d74579e",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_8158f0d5b9666b7796c7a119",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9bc7945b0c8f26be6d77daaf",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_b3c983d9a4e0563f7fa9b06a",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_917c27f487c4ef01695df032",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_21d464427d80a0838efe72cc",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_5116b989db16911cc9c8b9ab",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_5a6deac70464f0292ed563d0",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_823a9b8ff2ed186b84878f16",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_338d237225548fb903412b64",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_5c4da1acb553142b3fb0fa15",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_e5de055211ef5414807e5bdf",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_7c2c6fc0969fb42e228c3972",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ed56fdfe86a2cd62f17c1e1e",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ea085a824b333e37b8cae121",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_90c12c77aae6450385052f3b",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ea17e4552a66e69a9fa04eef",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_e41f6c6b338e5ee484cc6011",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_157a18acc16913581519d1cc",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_1729d4a653f2769e99150d65",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_0dcbf7d5bf6d44c2b39ddd13",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_98af481b0d9f9f9b28162aa0",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_d6ec891392a21b7088a9b56a",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_d6b34d965f67a46072893524",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9a1a5d739d72487b9c08bd5a",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_2a799a5cc2954618f92ac58e",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_20105cf2ad039fb6e11ef9fd",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_0910a4f824815445ff64e905",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ba2bf883beb5e63238debdc8",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9861568e4ce585db4f735ef8",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_5cdc332dc1e203a80ba8194d",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_98ee9384a89cd2d92f5f725d",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_b70a2d356d7b8db9732cc7fe",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_4ce2cece9a4e8934f4d3deb5",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_21305b5bbb42e81ad9d070f0",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9b68365f18bad6afd95c8133",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_f3ec17d15a0a8a02a4edeedc",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_6ae5a0bcf82feec202f130eb",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_2bad4620079f96e46d0bf17b",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_603a21337ad5b1ffb3a7970c",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_093115fa1f5a5d65b29e2342",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_28f269b3aefc97d87e721a88",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_e022043e8f0e2d80ecbdb3b4",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_dff9a097fb482d462640d801",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_8b19ba276c96be8f780f7488",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_bcb32cb3c3be167ac8bc580c",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_3c9c1289588fe9448d63dd1f",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_836f5007769237956ede2e77",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_58cc8bd6fbe8658adc925288",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_11a77aedfb3488f00664aa49",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_016f5a2f7ff8630f7b386630",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_86a62aabdc09aa706a5d0d97",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_5829ca408ca18f4f8e3affb3",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_706ef172523160311d104c68",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_31f27e613da2c75760b0015f",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_51fdd4dedc8e5bb2c975478f",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_05e0a28f715ba4c539805111",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_bb56fa966536fca819f27457",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_5e6b3d6b9ea549e9c4963e51",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ce69b2532b7013a2ab507fe9",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_de2d9870f8b1228f5c09f12c",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_c347cb028f9c1a28760ac5ad",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_5866d3849f9b1efb6216a0d6",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_60c62ae873d24980360cb7d0",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_04a4766b36eac5aa0169570b",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_71f2b4aa59a0841898f47f18",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_86c9013ebcec2fdd4115293b",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_3b9bd6bef54d8adf32d4faa7",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ca6c323d06ad2eb539bd5391",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_14cf1e10ef0da9b223d77aec",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_e2b3dcaf5420044590ccfb3d",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_a3c8dc1760f5b534f919fe38",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_7c430b433dad4da114920a55",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_3560bb755f1af377e6d5b564",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_df766481e653ea076bb6e36e",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_e5db4df26d7562f10d31a774",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9d2db34b2e40e6fbda1205fe",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_b2ab7a0fc08314a874a3fc8c",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_39c9a1822041b6533f260350",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_4a15e7242cab878513178620",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_c50cdc75e42bd8dfbeb4cc4e",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_7a38d1af36d34290cdc1cfd6",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ca232b973fd1549c00e3fbd4",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_cb9d032902cf293cde576528",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_8b14ac67e35248062fdd38dd",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_3d66d2673bbb9a9bbe16a726",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_4798a36f4aa04414ed30dac9",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_92aaca4522de250d8e82bcbe",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_62811244cb6bf21928ea6f87",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_2348dbd1f8b9a3d48f850cb5",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ef585b3c82c4598235b1aa90",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_3359c27b62d2c8c3ddd5fb2f",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_dcd3abb2557c85e217abae60",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_4f4e38922cfb30fee489e294",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_712170635717a30688b1ee3a",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_4e562eaaa2d239dedac2b557",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_d2b147bbc4cb675e1f9d50b3",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_4c5c935dbbcf1efef9fb70d9",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_57b48a3771b7600424dbc96b",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_29de5589feb16db5978c2e9d",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_3b800c88eb5c15397ea85b0c",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_4df6ecde7aedaa53455dcd5d",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_6afc50457ac5217e5887fe60",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_6af9b814d1774b67f9f11f14",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_391c19f28d60c4b0e168c9be",
+          "Mode": "EditMode",
+          "Assembly": "Assembly-CSharp-Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_641b040bbb41af4f8b3cc00c",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_1af7689e941c68dc5b915e0f",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_2dbda2ec826af57e08cf8020",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_d145e488bbe3a89a6226cd78",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_02f30f0e10d3661ab1739d34",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_32d7f9545fcb2139318bb571",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_deafa4da4677ed9e7e0a0e13",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_00ba23efa15c3965c432bcc0",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_8217937bc06b8bd3dba7a188",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_f07f859f5683a0e476b14e61",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_18f8b4d3b75288b82e98d0a5",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ed76efcebfa5de5e9a6157a5",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ca165f221e5983c2c60ac281",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_f0aa15ce97e92c75ebf3d522",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_2f42763206aab72aa0dcbcdf",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_0b05f934a3f870262519c4b7",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_4eec8e733a0faa0d5ad90c3d",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_6011916ec54c2b030d172e14",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_975805f04f5e12228d24f7cf",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_cfddff869906bd500b83c162",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9d41f9f9afc06f2d8d0b6a59",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_4a2d64dab6916e993e5c33ea",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_ee3588cf1b33f0e54e6e40be",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_30fa4eb129e6028a9225ace7",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_01fdf47a96c37692beb7d00f",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_d53d64bc31450d10c33fc5ff",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_026375a65eeaa51a64bb28b9",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_01cb18fd23ee9e6ed36cfa64",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_c785ce6ea508c9ef6b86f40b",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_8e5a1a8ed8b58d91f25abc3c",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_a0b85d8432d5575bab595008",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_30c947024f26107a506d334e",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9cf17d5d0f57eaa41af88d34",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_89e2c81e55b254d8f04edfb2",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_12aa250885c899cfce9b8dcc",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_28341cf3011399c62021cd3f",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_e955fdf858ac8227a1a544ef",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_84bb451c70afd046e28bd085",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_30e0653df087f60460341bd9",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_79e25975dde22f1bb0d9dc6a",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_af397b0213c0e0703faf4c20",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_e2d660504997a21fc8e899d8",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_5603e365aab9562a6b24f20d",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_b48349aede9310cd42953adf",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_3b3d607870e72d79ab53d51b",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_613876d96cb2a1de4905eb15",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_48b555776837afa8b4fafead",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_fb3d540ff208bfe70a3d14b9",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_6267b2125bff4e3edc948dc8",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9899bab7d7b8740d42692a6f",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_eb4820085dc60c79756cacf2",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_16bf35124dc91746ed59c807",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_291c189a5a2fb7628d73ceeb",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_4afd4237229a16a3f830ad6c",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_84d14b7b5a5ff45e78f439d2",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_9a737ceb0e2499d3ba31d87b",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_be419e70b4cea4eca6117fd1",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_692f1255ee0162365bf27d4d",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_d36bbe785de6cb5cc3852f54",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_697afd926e766521049e07d2",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_0a434779eb3ac0733b6608bf",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_f50cf9442e9c2dd43a4510fe",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_477e49a41b02625908963846",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_caa266e5231390d2116161c3",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_859c34eec8031102fc11e501",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_cacc1c3b937676c96336d8f7",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_0d54db827bb444fae62a1560",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_bc6addc7b5de40ee68335d54",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_654b4c1e03d94ccdacfa8627",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_eff5768a7af2504c1046143d",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_28741cd39544f4087098128b",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_6c4804b5dc5638d5ad0b6196",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_f1e79373e73f67fe6a57b148",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        },
+        {
+          "FullName": "Sample.Generated.Tests.Editor.GeneratedTest_44fb48838fe4af657d2e578a",
+          "Mode": "EditMode",
+          "Assembly": "Sample.Inventory.Tests.Editor",
+          "Categories": [
+            "Uncategorized"
+          ],
+          "Explicit": false
+        }
+      ],
+      "success": true,
+      "result": null,
+      "message": "Found 350 test(s)."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/dev/projects/SampleGame"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

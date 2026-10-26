@@ -1,0 +1,22 @@
+{
+  "success": true,
+  "command": "status",
+  "data": {
+    "count": 1,
+    "instances": [
+      {
+        "port": 7800,
+        "project": "/Users/dev/projects/SampleGame",
+        "projectPath": "/Users/dev/projects/SampleGame",
+        "version": "6000.3.6f1",
+        "editorVersion": "6000.3.6f1",
+        "pid": 12345,
+        "state": "ready",
+        "role": "main",
+        "instanceName": "Main Editor"
+      }
+    ]
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="45" result="Failed(Child)" total="45" passed="41" failed="3" inconclusive="0" skipped="1" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.0665534">
+  <test-suite type="TestSuite" id="1000" name="TestProj" fullname="TestProj" runstate="Runnable" testcasecount="45" result="Failed" site="Child" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.066553" total="45" passed="41" failed="3" inconclusive="0" skipped="1" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1049" name="Demo.Tests.dll" fullname="/work/TestProj/Library/ScriptAssemblies/Demo.Tests.dll" runstate="Runnable" testcasecount="45" result="Failed" site="Child" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.063042" total="45" passed="41" failed="3" inconclusive="0" skipped="1" asserts="0">
+      <properties>
+        <property name="_PID" value="84794" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1050" name="Demo" fullname="Demo" runstate="Runnable" testcasecount="45" result="Failed" site="Child" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.062863" total="45" passed="41" failed="3" inconclusive="0" skipped="1" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1051" name="Tests" fullname="Demo.Tests" runstate="Runnable" testcasecount="45" result="Failed" site="Child" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.062722" total="45" passed="41" failed="3" inconclusive="0" skipped="1" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1001" name="MathTests" fullname="Demo.Tests.MathTests" classname="Demo.Tests.MathTests" runstate="Runnable" testcasecount="43" result="Failed" site="Child" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.017863" total="43" passed="40" failed="2" inconclusive="0" skipped="1" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="ParameterizedMethod" id="1042" name="Doubles" fullname="Demo.Tests.MathTests.Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" testcasecount="40" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.010806" total="40" passed="40" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1002" name="Sample.Generated.Tests.Editor.GeneratedTest_d21addbcf1eadeecbd8c0a7d" fullname="Sample.Generated.Tests.Editor.GeneratedTest_fd0a7976314a48ab36a43bb3" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="1927208344" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.005046" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1003" name="Sample.Generated.Tests.Editor.GeneratedTest_117743e4965ed4778b81897f" fullname="Sample.Generated.Tests.Editor.GeneratedTest_75593e95dc057fa803bde840" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="303269931" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000042" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1004" name="Sample.Generated.Tests.Editor.GeneratedTest_a11a917a0a5287c38a3d1aa8" fullname="Sample.Generated.Tests.Editor.GeneratedTest_c1b96a74ee1a19c2673245d2" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="994891760" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000026" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1005" name="Sample.Generated.Tests.Editor.GeneratedTest_51782de36cbe53bf1d9c44ea" fullname="Sample.Generated.Tests.Editor.GeneratedTest_abc326381734b2dcb46962fc" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="1957876630" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000026" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1006" name="Sample.Generated.Tests.Editor.GeneratedTest_0e92169d0684e9cbf6320ede" fullname="Sample.Generated.Tests.Editor.GeneratedTest_d3e2dc874ec9709275590412" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="458470734" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000017" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1007" name="Sample.Generated.Tests.Editor.GeneratedTest_f8809ea8ad01d6fdcf433ef8" fullname="Sample.Generated.Tests.Editor.GeneratedTest_7eaf6e39a25c1c72812f060b" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="1638541224" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000033" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1008" name="Sample.Generated.Tests.Editor.GeneratedTest_a1c9662c4c7a6628f2ac7a77" fullname="Sample.Generated.Tests.Editor.GeneratedTest_05be434364907a1bc4e642ba" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="1078854411" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000019" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1009" name="Sample.Generated.Tests.Editor.GeneratedTest_2071a7ccb139f6aa361d6645" fullname="Sample.Generated.Tests.Editor.GeneratedTest_56fdda35c208afebdea7af27" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="586508664" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000017" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1010" name="Sample.Generated.Tests.Editor.GeneratedTest_dfbae8345a10b824064f8198" fullname="Sample.Generated.Tests.Editor.GeneratedTest_aa92f8c718e8e3de02988463" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="83410270" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000017" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1011" name="Sample.Generated.Tests.Editor.GeneratedTest_19b61da7f52c9a502ce096c8" fullname="Sample.Generated.Tests.Editor.GeneratedTest_e569d881c2afa184434057a5" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="1359416251" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000018" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1012" name="Sample.Generated.Tests.Editor.GeneratedTest_f2770807dac2d84b203a1548" fullname="Sample.Generated.Tests.Editor.GeneratedTest_82e05afebc9351c00c46b039" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="220946795" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000020" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1013" name="Sample.Generated.Tests.Editor.GeneratedTest_b4a29231f65547da3f69cf87" fullname="Sample.Generated.Tests.Editor.GeneratedTest_e43fdd37d1e4c914cfdfacad" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="2107820451" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000018" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1014" name="Sample.Generated.Tests.Editor.GeneratedTest_1230f339d9f3a94cf147f73f" fullname="Sample.Generated.Tests.Editor.GeneratedTest_90c19a0b4593586bf91aa502" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="1594467413" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000019" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1015" name="Sample.Generated.Tests.Editor.GeneratedTest_2f50eaa323da4a2f062bfdc8" fullname="Sample.Generated.Tests.Editor.GeneratedTest_c562bc63e540fe9b0a7c3a81" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="1867973121" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000019" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1016" name="Sample.Generated.Tests.Editor.GeneratedTest_471fae3be0546c6e5516e7f8" fullname="Sample.Generated.Tests.Editor.GeneratedTest_754f35460f3b7b3c73cdc7bd" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="856900066" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000018" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1017" name="Sample.Generated.Tests.Editor.GeneratedTest_5571b7eb29db957aa8bc5269" fullname="Sample.Generated.Tests.Editor.GeneratedTest_5735de4a52c57213238f2996" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="887381993" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000020" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1018" name="Sample.Generated.Tests.Editor.GeneratedTest_5ceef3090418f661ca6e4cd8" fullname="Sample.Generated.Tests.Editor.GeneratedTest_4c9b5274d21e67d35c1703a9" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="748371253" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000019" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1019" name="Sample.Generated.Tests.Editor.GeneratedTest_084f2b08bdb1e0584bbe1756" fullname="Sample.Generated.Tests.Editor.GeneratedTest_005bd01d4c274b6d6a6e0a7c" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="379084260" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000018" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1020" name="Sample.Generated.Tests.Editor.GeneratedTest_d49c2daae84e46d2e7d132e0" fullname="Sample.Generated.Tests.Editor.GeneratedTest_b37018ab4e59243ebabe9180" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="1620206183" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000016" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1021" name="Sample.Generated.Tests.Editor.GeneratedTest_59b4d1a723d59dbf8610bb73" fullname="Sample.Generated.Tests.Editor.GeneratedTest_4fd265dea53720556afe09dd" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="405095292" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000017" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1022" name="Sample.Generated.Tests.Editor.GeneratedTest_8a9b334495706de716b25d24" fullname="Sample.Generated.Tests.Editor.GeneratedTest_8f53dac46fd9985d80ebbbe3" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="222348288" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000018" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1023" name="Sample.Generated.Tests.Editor.GeneratedTest_4e98c13423591bc8b2c9b691" fullname="Sample.Generated.Tests.Editor.GeneratedTest_8c5f5e796a308908eb9f6eb1" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="796813197" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000018" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1024" name="Sample.Generated.Tests.Editor.GeneratedTest_40494513948507c34cbcb886" fullname="Sample.Generated.Tests.Editor.GeneratedTest_52e59e4de41fce87dee1e650" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="272330576" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000018" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1025" name="Sample.Generated.Tests.Editor.GeneratedTest_408fbd1b7f7933e33fbe366f" fullname="Sample.Generated.Tests.Editor.GeneratedTest_3b3b0ea1d124196380b3674b" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="1627184834" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000017" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1026" name="Sample.Generated.Tests.Editor.GeneratedTest_2084662cd1206da25f6cf4b9" fullname="Sample.Generated.Tests.Editor.GeneratedTest_d94b5b41e54544585f8036f1" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="1078348903" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000018" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1027" name="Sample.Generated.Tests.Editor.GeneratedTest_de9552971322cba030e06362" fullname="Sample.Generated.Tests.Editor.GeneratedTest_03f238865872432e44a84ccb" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="1582704201" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000018" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1028" name="Sample.Generated.Tests.Editor.GeneratedTest_aa6cbf17d0e1fa489e31cc35" fullname="Sample.Generated.Tests.Editor.GeneratedTest_b5fcaea0a4a6f0d06fec995c" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="1778855832" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000018" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1029" name="Sample.Generated.Tests.Editor.GeneratedTest_75e682d37329d8f7351c2156" fullname="Sample.Generated.Tests.Editor.GeneratedTest_64caa80676789709e1ed0eb7" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="1024612699" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000018" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1030" name="Sample.Generated.Tests.Editor.GeneratedTest_7f683af65bf1c4e5aa7c48f6" fullname="Sample.Generated.Tests.Editor.GeneratedTest_811062274842406f7299f137" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="1337895816" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000018" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1031" name="Sample.Generated.Tests.Editor.GeneratedTest_119eee428ef3fffd2ae1be21" fullname="Sample.Generated.Tests.Editor.GeneratedTest_b74c4e6a52da3d4f89890ea9" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="1032428464" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000016" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1032" name="Sample.Generated.Tests.Editor.GeneratedTest_47ab0f55c6e3f9fd169624db" fullname="Sample.Generated.Tests.Editor.GeneratedTest_8d5a259a3acefa7c7a0a2e9d" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="1807003399" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000018" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1033" name="Sample.Generated.Tests.Editor.GeneratedTest_9519b73ac8b56a23386b9e5b" fullname="Sample.Generated.Tests.Editor.GeneratedTest_407f757e63629b6539f93a52" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="920826137" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000019" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1034" name="Sample.Generated.Tests.Editor.GeneratedTest_e21df4a88778a1953c61c44b" fullname="Sample.Generated.Tests.Editor.GeneratedTest_11140b9b8c6ffe3c5f23429d" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="196707091" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000017" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1035" name="Sample.Generated.Tests.Editor.GeneratedTest_8b35016c2eaf84b144aa581b" fullname="Sample.Generated.Tests.Editor.GeneratedTest_0bad3f06929f2de445eeb5fc" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="1022422250" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000018" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1036" name="Sample.Generated.Tests.Editor.GeneratedTest_8f06ada7411628b6264ace7b" fullname="Sample.Generated.Tests.Editor.GeneratedTest_1218cfde3cbf24638a5c9be6" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="531249405" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000017" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1037" name="Sample.Generated.Tests.Editor.GeneratedTest_3c98858aef9188ab7898cce7" fullname="Sample.Generated.Tests.Editor.GeneratedTest_56f262272dfd18361725a3de" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="1313360667" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000018" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1038" name="Sample.Generated.Tests.Editor.GeneratedTest_46715c29f8a9e555603c933a" fullname="Sample.Generated.Tests.Editor.GeneratedTest_2053ce5b8e33983b4edbb240" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="468993351" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000018" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1039" name="Sample.Generated.Tests.Editor.GeneratedTest_5f0c6955811bf56cc4562031" fullname="Sample.Generated.Tests.Editor.GeneratedTest_831f8a775529deb8372da6b4" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="1208896201" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000017" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1040" name="Sample.Generated.Tests.Editor.GeneratedTest_4b17e6669ad4cc44021d3365" fullname="Sample.Generated.Tests.Editor.GeneratedTest_e061452cfb2707246c48bcfe" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="171365618" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000020" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1041" name="Sample.Generated.Tests.Editor.GeneratedTest_602cddb47bfa77d368b3381d" fullname="Sample.Generated.Tests.Editor.GeneratedTest_cbd1346dc2015bd851e27022" methodname="Doubles" classname="Demo.Tests.MathTests" runstate="Runnable" seed="175285372" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000021" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1043" name="Sample.Generated.Tests.Editor.GeneratedTest_e97ee388afab7f97422fa687" fullname="Sample.Generated.Tests.Editor.GeneratedTest_58c3f0ba836926695119ed4c" methodname="FailsEquality" classname="Demo.Tests.MathTests" runstate="Runnable" seed="475823997" result="Failed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.003334" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  sum should be four
+  Expected: 4
+  But was:  5
+]]></message>
+                <stack-trace><![CDATA[at Demo.Tests.MathTests.FailsEquality () [0x00000] in /work/TestProj/Assets/Tests/DemoTests.cs:16
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1044" name="Sample.Generated.Tests.Editor.GeneratedTest_6cf35d323fef6dd031739b43" fullname="Sample.Generated.Tests.Editor.GeneratedTest_2422779c44fd7eb49c02129f" methodname="FailsWithException" classname="Demo.Tests.MathTests" runstate="Runnable" seed="325323235" result="Failed" label="Error" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000537" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[System.InvalidOperationException : boom from helper]]></message>
+                <stack-trace><![CDATA[  at Demo.Tests.Helper.Deeper () [0x00000] in /work/TestProj/Assets/Tests/DemoTests.cs:45 
+  at Demo.Tests.Helper.Explode () [0x00000] in /work/TestProj/Assets/Tests/DemoTests.cs:44 
+  at Demo.Tests.MathTests.FailsWithException () [0x00000] in /work/TestProj/Assets/Tests/DemoTests.cs:19 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <c5eeda5e65d44b388e164c6c5cfe0702>:0 ]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1045" name="Sample.Generated.Tests.Editor.GeneratedTest_6c93cd94a345bbaace293678" fullname="Sample.Generated.Tests.Editor.GeneratedTest_e5e9871b9f5c18a5d46cc8ef" methodname="Skipped" classname="Demo.Tests.MathTests" runstate="Ignored" seed="75403724" result="Skipped" label="Ignored" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.000064" asserts="0">
+              <properties>
+                <property name="_SKIPREASON" value="not ready" />
+              </properties>
+              <reason>
+                <message><![CDATA[not ready]]></message>
+              </reason>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1046" name="NoisyTests" fullname="Demo.Tests.NoisyTests" classname="Demo.Tests.NoisyTests" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.044551" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1048" name="Sample.Generated.Tests.Editor.GeneratedTest_a702a61d32748625ef9af016" fullname="Sample.Generated.Tests.Editor.GeneratedTest_3b71c5c98939796e78a90daf" methodname="FailsAfterLogging" classname="Demo.Tests.NoisyTests" runstate="Runnable" seed="1902491233" result="Failed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.001304" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: collection containing 4
+  But was:  < 1, 2, 3 >
+]]></message>
+                <stack-trace><![CDATA[at Demo.Tests.NoisyTests.FailsAfterLogging () [0x0000c] in /work/TestProj/Assets/Tests/DemoTests.cs:38
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[about to fail
+]]></output>
+            </test-case>
+            <test-case id="1047" name="Sample.Generated.Tests.Editor.GeneratedTest_a820e46363cab173bae63d34" fullname="Sample.Generated.Tests.Editor.GeneratedTest_298816617d09371235a678d0" methodname="LogsALot" classname="Demo.Tests.NoisyTests" runstate="Runnable" seed="1431584740" result="Passed" start-time="2026-10-26 13:29:21Z" end-time="2026-10-26 13:29:21Z" duration="0.042753" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <reason>
+                <message><![CDATA[]]></message>
+              </reason>
+              <output><![CDATA[noisy log line 0
+noisy log line 1
+noisy log line 2
+noisy log line 3
+noisy log line 4
+noisy log line 5
+noisy log line 6
+noisy log line 7
+noisy log line 8
+noisy log line 9
+noisy log line 10
+noisy log line 11
+noisy log line 12
+noisy log line 13
+noisy log line 14
+noisy log line 15
+noisy log line 16
+noisy log line 17
+noisy log line 18
+noisy log line 19
+noisy log line 20
+noisy log line 21
+noisy log line 22
+noisy log line 23
+noisy log line 24
+noisy log line 25
+noisy log line 26
+noisy log line 27
+noisy log line 28
+noisy log line 29
+noisy log line 30
+noisy log line 31
+noisy log line 32
+noisy log line 33
+noisy log line 34
+noisy log line 35
+noisy log line 36
+noisy log line 37
+noisy log line 38
+noisy log line 39
+noisy log line 40
+noisy log line 41
+noisy log line 42
+noisy log line 43
+noisy log line 44
+noisy log line 45
+noisy log line 46
+noisy log line 47
+noisy log line 48
+noisy log line 49
+noisy log line 50
+noisy log line 51
+noisy log line 52
+noisy log line 53
+noisy log line 54
+noisy log line 55
+noisy log line 56
+noisy log line 57
+noisy log line 58
+noisy log line 59
+noisy log line 60
+noisy log line 61
+noisy log line 62
+noisy log line 63
+noisy log line 64
+noisy log line 65
+noisy log line 66
+noisy log line 67
+noisy log line 68
+noisy log line 69
+noisy log line 70
+noisy log line 71
+noisy log line 72
+noisy log line 73
+noisy log line 74
+noisy log line 75
+noisy log line 76
+noisy log line 77
+noisy log line 78
+noisy log line 79
+noisy log line 80
+noisy log line 81
+noisy log line 82
+noisy log line 83
+noisy log line 84
+noisy log line 85
+noisy log line 86
+noisy log line 87
+noisy log line 88
+noisy log line 89
+noisy log line 90
+noisy log line 91
+noisy log line 92
+noisy log line 93
+noisy log line 94
+noisy log line 95
+noisy log line 96
+noisy log line 97
+noisy log line 98
+noisy log line 99
+noisy log line 100
+noisy log line 101
+noisy log line 102
+noisy log line 103
+noisy log line 104
+noisy log line 105
+noisy log line 106
+noisy log line 107
+noisy log line 108
+noisy log line 109
+noisy log line 110
+noisy log line 111
+noisy log line 112
+noisy log line 113
+noisy log line 114
+noisy log line 115
+noisy log line 116
+noisy log line 117
+noisy log line 118
+noisy log line 119
+noisy log line 120
+noisy log line 121
+noisy log line 122
+noisy log line 123
+noisy log line 124
+noisy log line 125
+noisy log line 126
+noisy log line 127
+noisy log line 128
+noisy log line 129
+noisy log line 130
+noisy log line 131
+noisy log line 132
+noisy log line 133
+noisy log line 134
+noisy log line 135
+noisy log line 136
+noisy log line 137
+noisy log line 138
+noisy log line 139
+noisy log line 140
+noisy log line 141
+noisy log line 142
+noisy log line 143
+noisy log line 144
+noisy log line 145
+noisy log line 146
+noisy log line 147
+noisy log line 148
+noisy log line 149
+noisy log line 150
+noisy log line 151
+noisy log line 152
+noisy log line 153
+noisy log line 154
+noisy log line 155
+noisy log line 156
+noisy log line 157
+noisy log line 158
+noisy log line 159
+noisy log line 160
+noisy log line 161
+noisy log line 162
+noisy log line 163
+noisy log line 164
+noisy log line 165
+noisy log line 166
+noisy log line 167
+noisy log line 168
+noisy log line 169
+noisy log line 170
+noisy log line 171
+noisy log line 172
+noisy log line 173
+noisy log line 174
+noisy log line 175
+noisy log line 176
+noisy log line 177
+noisy log line 178
+noisy log line 179
+noisy log line 180
+noisy log line 181
+noisy log line 182
+noisy log line 183
+noisy log line 184
+noisy log line 185
+noisy log line 186
+noisy log line 187
+noisy log line 188
+noisy log line 189
+noisy log line 190
+noisy log line 191
+noisy log line 192
+noisy log line 193
+noisy log line 194
+noisy log line 195
+noisy log line 196
+noisy log line 197
+noisy log line 198
+noisy log line 199
+Saving results to: /work/elsewhere/test-results.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

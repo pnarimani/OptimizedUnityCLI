@@ -1,0 +1,385 @@
+{
+  "success": true,
+  "command": "command asset find",
+  "data": {
+    "command": "asset find",
+    "parameters": {
+      "type": "Material",
+      "limit": "200"
+    },
+    "result": {
+      "filter": "",
+      "count": 200,
+      "truncated": true,
+      "assets": [
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Forest/Materials/mat_far.mat",
+          "guid": "ec84d8dbc74254770f58904dba41eccc",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Forest/Materials/mat_lamps.mat",
+          "guid": "c3fc1626e53a13043b026c48bbf33fef",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Forest/Materials/mat_middle.mat",
+          "guid": "f9243a8f506b40928b5b7a767c76fb00",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Forest/Materials/mat_mist.mat",
+          "guid": "8f86bebb2737f6a6f0fb23c6f5da2cec",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Forest/Materials/mat_near.mat",
+          "guid": "255404e4fb440034d6608697a8d41bed",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Desert/Materials/mat_dunes.mat",
+          "guid": "440e50454f31af3176813e02ea68ef78",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Desert/Materials/mat_rocks.mat",
+          "guid": "6e4d3cea27d26934b484e73cf575dcad",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Desert/Materials/mat_sky.mat",
+          "guid": "6ba2b0aee0ca923732881584d8c4fa28",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Snow/Materials/mat_Glow 1.mat",
+          "guid": "15d2802827283e0ad84173581569969e",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Snow/Materials/mat_Glow 2.mat",
+          "guid": "58b081006f7e3dfc967a64cb14028d51",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Snow/Materials/mat_Glow 3.mat",
+          "guid": "2c9791e558e08baa7196b50ac2f86702",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Snow/Materials/mat_Glow 4.mat",
+          "guid": "824c1c099724caf4941d4072014b3ce1",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Snow/Materials/mat_Glow 5.mat",
+          "guid": "07f80e222f828767efc2f91624a8940f",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Snow/Materials/mat_Glow 6.mat",
+          "guid": "1f836f99eee3692f09e2e8c662248b48",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Snow/Materials/mat_Glow 7.mat",
+          "guid": "3b7ffc050fec94dbca3a0aac36098b2c",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Snow/Materials/mat_Glow 8.mat",
+          "guid": "c2bd818319478da6bd0c621de49f145f",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Snow/Materials/mat_Glow 9.mat",
+          "guid": "da9988c79fc35526f7eaed46725a2a7b",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Snow/Materials/mat_Glow 10.mat",
+          "guid": "860dcd6c8a1f8b46287cced9041dff02",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Snow/Materials/mat_Glow 11.mat",
+          "guid": "cee737443e210471948d33296c87009e",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Snow/Materials/mat_ice.mat",
+          "guid": "8a7f770d9106fd287db7f1adbc60926f",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Snow/Materials/mat_snow.mat",
+          "guid": "6967e7893f57fd14c1604d115cea325a",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Swamp/Materials/mat_water.mat",
+          "guid": "65e19cbae530282bd36cb9d21f6be6ab",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Swamp/Materials/mat_mud.mat",
+          "guid": "f0d7c1c1e21862ab8a18a8902073fec8",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Environments/Swamp/Materials/mat_reeds.mat",
+          "guid": "df4f50947aaeb26c57d21fa5d328263d",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Props/Barrel/Barrel.mat",
+          "guid": "fe574de739988b886e7577496a2c8773",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Props/Crate/Crate.mat",
+          "guid": "e130f7eb19731662b5e803b61ba41681",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Props/Lamp/Lamp.mat",
+          "guid": "60adb59261ff2d3c425c8d99d19bdd0b",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Props/Sign/Sign.mat",
+          "guid": "6cc60d5d32cbe54014c2b54b95523cf6",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Props/Torch/Torch.mat",
+          "guid": "941fa1c257c6f561c5cb347611a3ce9d",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Art/Props/Well/Well.mat",
+          "guid": "97dcbee500fe7ee5fc324bdb2e1142a2",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Materials/Default.mat",
+          "guid": "1c402364f9572b85a8e48f687ab165c5",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Materials/Outline.mat",
+          "guid": "8ac5831be38cb8cb4ba2e751989a0174",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Materials/Shadow.mat",
+          "guid": "9ddb14f71010b93b7d946bf54074e324",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Materials/Unlit.mat",
+          "guid": "8c801bef750110c57513064d6d59291f",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Materials/Wireframe.mat",
+          "guid": "0cde2e5738713a818d8962058765a6ca",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Materials/Glass.mat",
+          "guid": "7cff00d796c25410335b400141212b62",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Materials/Metal.mat",
+          "guid": "c376631129f34369aad80b891baf90d0",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Materials/Wood.mat",
+          "guid": "d3bf16295d06910bf3f5fb85967f532f",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Materials/Cloth.mat",
+          "guid": "3ab3cc2d0b698d5c7e41ba4ea5ee874a",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        },
+        {
+          "globalId": null,
+          "assetPath": "Assets/Materials/Stone.mat",
+          "guid": "e7689447ab57a683536c4499d863386c",
+          "fileId": null,
+          "instanceId": null,
+          "hierarchyPath": null,
+          "type": "Material"
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/dev/projects/SampleGame"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

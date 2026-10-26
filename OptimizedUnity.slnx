@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/OptimizedUnity/OptimizedUnity.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/OptimizedUnity.Tests/OptimizedUnity.Tests.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,204 @@
+{
+  "success": true,
+  "command": "command console get",
+  "data": {
+    "command": "console get",
+    "parameters": {
+      "level": "error",
+      "tail": "50"
+    },
+    "result": {
+      "entries": [
+        {
+          "seq": 1,
+          "timestampUtc": "2026-01-15T10:00:01.782554Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[AssetValidator] Clip 'animations/walk.fbx' exists twice: 'Assets/Art/Characters/Knight/Animations/Walk.fbx', 'Assets/Art/Characters/Archer/Animations/Walk.fbx'. Keep one of them or move it to its own folder; imports stay blocked until then.",
+          "stackTrace": "UnityEngine.Debug:LogError (object)\nSample.Tools.Editor.AssetValidator:Report (string,System.Collections.Generic.IReadOnlyList`1<Sample.Tools.Editor.AssetPair>) (at ./Packages/com.example.tools/Editor/AssetValidator.cs:10)\nSample.Tools.Editor.AssetValidator:Run () (at ./Packages/com.example.tools/Editor/AssetValidator.cs:45)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 2,
+          "timestampUtc": "2026-01-15T10:00:01.150631Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[AssetValidator] Clip 'animations/run.fbx' exists twice: 'Assets/Art/Characters/Knight/Animations/Run.fbx', 'Assets/Art/Characters/Archer/Animations/Run.fbx'. Keep one of them or move it to its own folder; imports stay blocked until then.",
+          "stackTrace": "UnityEngine.Debug:LogError (object)\nSample.Tools.Editor.AssetValidator:Report (string,System.Collections.Generic.IReadOnlyList`1<Sample.Tools.Editor.AssetPair>) (at ./Packages/com.example.tools/Editor/AssetValidator.cs:10)\nSample.Tools.Editor.AssetValidator:Run () (at ./Packages/com.example.tools/Editor/AssetValidator.cs:45)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 3,
+          "timestampUtc": "2026-01-15T10:00:01.175954Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[AssetValidator] Clip 'animations/jump.fbx' exists twice: 'Assets/Art/Characters/Knight/Animations/Jump.fbx', 'Assets/Art/Characters/Archer/Animations/Jump.fbx'. Keep one of them or move it to its own folder; imports stay blocked until then.",
+          "stackTrace": "UnityEngine.Debug:LogError (object)\nSample.Tools.Editor.AssetValidator:Report (string,System.Collections.Generic.IReadOnlyList`1<Sample.Tools.Editor.AssetPair>) (at ./Packages/com.example.tools/Editor/AssetValidator.cs:10)\nSample.Tools.Editor.AssetValidator:Run () (at ./Packages/com.example.tools/Editor/AssetValidator.cs:45)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 4,
+          "timestampUtc": "2026-01-15T10:00:01.961168Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[AssetValidator] Clip 'animations/idle.fbx' exists twice: 'Assets/Art/Characters/Knight/Animations/Idle.fbx', 'Assets/Art/Characters/Archer/Animations/Idle.fbx'. Keep one of them or move it to its own folder; imports stay blocked until then.",
+          "stackTrace": "UnityEngine.Debug:LogError (object)\nSample.Tools.Editor.AssetValidator:Report (string,System.Collections.Generic.IReadOnlyList`1<Sample.Tools.Editor.AssetPair>) (at ./Packages/com.example.tools/Editor/AssetValidator.cs:10)\nSample.Tools.Editor.AssetValidator:Run () (at ./Packages/com.example.tools/Editor/AssetValidator.cs:45)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 5,
+          "timestampUtc": "2026-01-15T10:00:01.661913Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[AssetValidator] Clip 'animations/idle2.fbx' exists twice: 'Assets/Art/Characters/Knight/Animations/Idle2.fbx', 'Assets/Art/Characters/Archer/Animations/Idle2.fbx'. Keep one of them or move it to its own folder; imports stay blocked until then.",
+          "stackTrace": "UnityEngine.Debug:LogError (object)\nSample.Tools.Editor.AssetValidator:Report (string,System.Collections.Generic.IReadOnlyList`1<Sample.Tools.Editor.AssetPair>) (at ./Packages/com.example.tools/Editor/AssetValidator.cs:10)\nSample.Tools.Editor.AssetValidator:Run () (at ./Packages/com.example.tools/Editor/AssetValidator.cs:45)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 6,
+          "timestampUtc": "2026-01-15T10:00:01.198702Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[AssetValidator] Clip 'animations/attack.fbx' exists twice: 'Assets/Art/Characters/Knight/Animations/Attack.fbx', 'Assets/Art/Characters/Archer/Animations/Attack.fbx'. Keep one of them or move it to its own folder; imports stay blocked until then.",
+          "stackTrace": "UnityEngine.Debug:LogError (object)\nSample.Tools.Editor.AssetValidator:Report (string,System.Collections.Generic.IReadOnlyList`1<Sample.Tools.Editor.AssetPair>) (at ./Packages/com.example.tools/Editor/AssetValidator.cs:10)\nSample.Tools.Editor.AssetValidator:Run () (at ./Packages/com.example.tools/Editor/AssetValidator.cs:45)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 7,
+          "timestampUtc": "2026-01-15T10:00:01.483452Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[AssetValidator] Clip 'animations/block.fbx' exists twice: 'Assets/Art/Characters/Knight/Animations/Block.fbx', 'Assets/Art/Characters/Archer/Animations/Block.fbx'. Keep one of them or move it to its own folder; imports stay blocked until then.",
+          "stackTrace": "UnityEngine.Debug:LogError (object)\nSample.Tools.Editor.AssetValidator:Report (string,System.Collections.Generic.IReadOnlyList`1<Sample.Tools.Editor.AssetPair>) (at ./Packages/com.example.tools/Editor/AssetValidator.cs:10)\nSample.Tools.Editor.AssetValidator:Run () (at ./Packages/com.example.tools/Editor/AssetValidator.cs:45)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 8,
+          "timestampUtc": "2026-01-15T10:00:01.711097Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[AssetValidator] Clip 'animations/hit.fbx' exists twice: 'Assets/Art/Characters/Knight/Animations/Hit.fbx', 'Assets/Art/Characters/Archer/Animations/Hit.fbx'. Keep one of them or move it to its own folder; imports stay blocked until then.",
+          "stackTrace": "UnityEngine.Debug:LogError (object)\nSample.Tools.Editor.AssetValidator:Report (string,System.Collections.Generic.IReadOnlyList`1<Sample.Tools.Editor.AssetPair>) (at ./Packages/com.example.tools/Editor/AssetValidator.cs:10)\nSample.Tools.Editor.AssetValidator:Run () (at ./Packages/com.example.tools/Editor/AssetValidator.cs:45)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 9,
+          "timestampUtc": "2026-01-15T10:00:01.160816Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[AssetValidator] Clip 'animations/fall.fbx' exists twice: 'Assets/Art/Characters/Knight/Animations/Fall.fbx', 'Assets/Art/Characters/Archer/Animations/Fall.fbx'. Keep one of them or move it to its own folder; imports stay blocked until then.",
+          "stackTrace": "UnityEngine.Debug:LogError (object)\nSample.Tools.Editor.AssetValidator:Report (string,System.Collections.Generic.IReadOnlyList`1<Sample.Tools.Editor.AssetPair>) (at ./Packages/com.example.tools/Editor/AssetValidator.cs:10)\nSample.Tools.Editor.AssetValidator:Run () (at ./Packages/com.example.tools/Editor/AssetValidator.cs:45)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 10,
+          "timestampUtc": "2026-01-15T10:00:01.632084Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[AssetValidator] Clip 'animations/land.fbx' exists twice: 'Assets/Art/Characters/Knight/Animations/Land.fbx', 'Assets/Art/Characters/Archer/Animations/Land.fbx'. Keep one of them or move it to its own folder; imports stay blocked until then.",
+          "stackTrace": "UnityEngine.Debug:LogError (object)\nSample.Tools.Editor.AssetValidator:Report (string,System.Collections.Generic.IReadOnlyList`1<Sample.Tools.Editor.AssetPair>) (at ./Packages/com.example.tools/Editor/AssetValidator.cs:10)\nSample.Tools.Editor.AssetValidator:Run () (at ./Packages/com.example.tools/Editor/AssetValidator.cs:45)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 11,
+          "timestampUtc": "2026-01-15T10:00:01.325127Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[AssetValidator] Clip 'animations/climb.fbx' exists twice: 'Assets/Art/Characters/Knight/Animations/Climb.fbx', 'Assets/Art/Characters/Archer/Animations/Climb.fbx'. Keep one of them or move it to its own folder; imports stay blocked until then.",
+          "stackTrace": "UnityEngine.Debug:LogError (object)\nSample.Tools.Editor.AssetValidator:Report (string,System.Collections.Generic.IReadOnlyList`1<Sample.Tools.Editor.AssetPair>) (at ./Packages/com.example.tools/Editor/AssetValidator.cs:10)\nSample.Tools.Editor.AssetValidator:Run () (at ./Packages/com.example.tools/Editor/AssetValidator.cs:45)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 12,
+          "timestampUtc": "2026-01-15T10:00:01.139317Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[AssetValidator] Clip 'animations/swim.fbx' exists twice: 'Assets/Art/Characters/Knight/Animations/Swim.fbx', 'Assets/Art/Characters/Archer/Animations/Swim.fbx'. Keep one of them or move it to its own folder; imports stay blocked until then.",
+          "stackTrace": "UnityEngine.Debug:LogError (object)\nSample.Tools.Editor.AssetValidator:Report (string,System.Collections.Generic.IReadOnlyList`1<Sample.Tools.Editor.AssetPair>) (at ./Packages/com.example.tools/Editor/AssetValidator.cs:10)\nSample.Tools.Editor.AssetValidator:Run () (at ./Packages/com.example.tools/Editor/AssetValidator.cs:45)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 13,
+          "timestampUtc": "2026-01-15T10:00:01.190122Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[AssetValidator] Clip 'animations/wave.fbx' exists twice: 'Assets/Art/Characters/Knight/Animations/Wave.fbx', 'Assets/Art/Characters/Archer/Animations/Wave.fbx'. Keep one of them or move it to its own folder; imports stay blocked until then.",
+          "stackTrace": "UnityEngine.Debug:LogError (object)\nSample.Tools.Editor.AssetValidator:Report (string,System.Collections.Generic.IReadOnlyList`1<Sample.Tools.Editor.AssetPair>) (at ./Packages/com.example.tools/Editor/AssetValidator.cs:10)\nSample.Tools.Editor.AssetValidator:Run () (at ./Packages/com.example.tools/Editor/AssetValidator.cs:45)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 14,
+          "timestampUtc": "2026-01-15T10:00:01.554710Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[AssetValidator] Clip 'animations/cheer.fbx' exists twice: 'Assets/Art/Characters/Knight/Animations/Cheer.fbx', 'Assets/Art/Characters/Archer/Animations/Cheer.fbx'. Keep one of them or move it to its own folder; imports stay blocked until then.",
+          "stackTrace": "UnityEngine.Debug:LogError (object)\nSample.Tools.Editor.AssetValidator:Report (string,System.Collections.Generic.IReadOnlyList`1<Sample.Tools.Editor.AssetPair>) (at ./Packages/com.example.tools/Editor/AssetValidator.cs:10)\nSample.Tools.Editor.AssetValidator:Run () (at ./Packages/com.example.tools/Editor/AssetValidator.cs:45)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 15,
+          "timestampUtc": "2026-01-15T10:00:01.538485Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[AssetValidator] Clip 'animations/crouch.fbx' exists twice: 'Assets/Art/Characters/Knight/Animations/Crouch.fbx', 'Assets/Art/Characters/Archer/Animations/Crouch.fbx'. Keep one of them or move it to its own folder; imports stay blocked until then.",
+          "stackTrace": "UnityEngine.Debug:LogError (object)\nSample.Tools.Editor.AssetValidator:Report (string,System.Collections.Generic.IReadOnlyList`1<Sample.Tools.Editor.AssetPair>) (at ./Packages/com.example.tools/Editor/AssetValidator.cs:10)\nSample.Tools.Editor.AssetValidator:Run () (at ./Packages/com.example.tools/Editor/AssetValidator.cs:45)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 16,
+          "timestampUtc": "2026-01-15T10:00:01.173248Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[AssetValidator] Clip 'animations/roll.fbx' exists twice: 'Assets/Art/Characters/Knight/Animations/Roll.fbx', 'Assets/Art/Characters/Archer/Animations/Roll.fbx'. Keep one of them or move it to its own folder; imports stay blocked until then.",
+          "stackTrace": "UnityEngine.Debug:LogError (object)\nSample.Tools.Editor.AssetValidator:Report (string,System.Collections.Generic.IReadOnlyList`1<Sample.Tools.Editor.AssetPair>) (at ./Packages/com.example.tools/Editor/AssetValidator.cs:10)\nSample.Tools.Editor.AssetValidator:Run () (at ./Packages/com.example.tools/Editor/AssetValidator.cs:45)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 17,
+          "timestampUtc": "2026-01-15T10:00:01.352353Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "[AssetValidator] Clip 'animations/turn.fbx' exists twice: 'Assets/Art/Characters/Knight/Animations/Turn.fbx', 'Assets/Art/Characters/Archer/Animations/Turn.fbx'. Keep one of them or move it to its own folder; imports stay blocked until then.",
+          "stackTrace": "UnityEngine.Debug:LogError (object)\nSample.Tools.Editor.AssetValidator:Report (string,System.Collections.Generic.IReadOnlyList`1<Sample.Tools.Editor.AssetPair>) (at ./Packages/com.example.tools/Editor/AssetValidator.cs:10)\nSample.Tools.Editor.AssetValidator:Run () (at ./Packages/com.example.tools/Editor/AssetValidator.cs:45)\nUnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:153)\n",
+          "seeded": false
+        },
+        {
+          "seq": 18,
+          "timestampUtc": "2026-01-15T10:00:02.195119Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "NullReferenceException: Object reference not set to an instance of an object",
+          "stackTrace": "Sample.Gameplay.Spawner.Update () (at Assets/Scripts/Gameplay/Spawner.cs:42)\n",
+          "seeded": false
+        }
+      ],
+      "cursor": 18,
+      "session": "d1371c17149d439536b3216fdaeeb975",
+      "returned": 18,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 18,
+        "warn": 0,
+        "log": 0
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-01-15T10:01:00.000000Z",
+        "ageMs": 120,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 18,
+        "consoleWarnings": 0,
+        "consoleLogs": 0,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/dev/projects/SampleGame"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
