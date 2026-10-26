@@ -1,0 +1,37 @@
+# Normalise text to LF in the repository; let Git decide what is text.
+* text=auto eol=lf
+
+# Source and project files
+*.cs        text diff=csharp
+*.csproj    text
+*.props     text
+*.targets   text
+*.slnx      text
+*.json      text
+*.md        text diff=markdown
+*.yml       text
+*.yaml      text
+
+# Installers: `curl | bash` breaks on CRLF; PowerShell accepts LF on every platform.
+*.sh        text eol=lf
+*.ps1       text eol=lf
+
+# Windows batch files need CRLF.
+*.cmd       text eol=crlf
+*.bat       text eol=crlf
+
+# Captured CLI output: tests compare it byte for byte; collapsed in GitHub diffs.
+tests/**/Fixtures/**  text eol=lf linguist-generated
+
+# Binaries
+*.png       binary
+*.jpg       binary
+*.gif       binary
+*.ico       binary
+*.dll       binary
+*.exe       binary
+*.so        binary
+*.dylib     binary
+*.pdb       binary
+*.zip       binary
+*.gz        binary

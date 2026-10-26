@@ -1,0 +1,40 @@
+# Build output
+bin/
+obj/
+artifacts/
+out/
+dist/
+publish/
+*.dSYM/
+
+# Test results and coverage
+TestResults/
+coverage/
+*.trx
+*.coverage
+*.coveragexml
+coverage*.json
+coverage*.xml
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/packages/
+
+# IDEs and editors
+.vs/
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+*.user
+*.suo
+*.rsuser
+*.userprefs
+*.swp
+*~
+
+# OS clutter
+.DS_Store
+Thumbs.db
+desktop.ini
