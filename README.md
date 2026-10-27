@@ -48,6 +48,7 @@ The installer does the following:
 - Downloads the binary for your OS and CPU from the latest GitHub release and verifies its SHA-256.
 - Installs it as `unity`, in `~/.optimized-unity/bin` or `%LOCALAPPDATA%\OptimizedUnity\bin`.
 - Puts that directory ahead of `~/.unity/bin` on your PATH. It appends a marked block to your shell startup files, or adds itself to the front of the user PATH on Windows.
+- On Windows it also adds that block to your PowerShell profile (`Documents\PowerShell\profile.ps1`, plus the Windows PowerShell one when scripts are allowed) and Git Bash's `~/.bashrc`. Terminal multiplexers such as Zellij and psmux start every pane with the PATH their server started with, so a user PATH change does not reach them or the tools launched from them (Claude Code and its shells). The block fixes PATH in each new pane. For other shells, restart the multiplexer server.
 
 Installer options:
 
