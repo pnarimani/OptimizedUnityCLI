@@ -38,10 +38,10 @@ internal static class CommandHelp
 		foreach (var command in rows.Where(c => NameOf(c) == matched))
 		{
 			var name = NameOf(command);
-			var description = Format.Fmt(command.Get("description"));
+			var description = name == "capture game_view" ? "Save the inline PNG to Temp/pipeline-screenshots/{timestamp}.png and return its project-relative path." : Format.Fmt(command.Get("description"));
 			output.Add(description.Length > 0 ? $"{name}: {description}" : name);
 
-			var parameters = command.Get("parameters").Items().ToList();
+			var parameters = command.Get("parameters").Items().Where(p => name != "capture game_view" || p.Get("name").Str() != "save_path").ToList();
 			var required = parameters.Where(p => p.Get("required").Truthy()).ToList();
 			var optional = parameters.Where(p => !p.Get("required").Truthy()).ToList();
 			var usage = new List<string> { $"usage: unity cmd {name}" };
