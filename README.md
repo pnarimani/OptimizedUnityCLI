@@ -2,6 +2,8 @@
 
 A Native AOT drop-in `unity` that wraps the official Unity CLI and makes its output compact. It forces `--json`, prunes the noise, and renders terse text, so agents and scripts spend far fewer tokens. Exit codes are kept.
 
+Pass `--json` yourself and the wrapper steps aside: the real CLI runs with your arguments and its JSON is returned untouched. A `--json` after a `--` delimiter belongs to the child process and does not count.
+
 ## Benchmark
 
 Real calls against a large Unity 6 project with its Editor open, comparing the plain Unity CLI with the wrapper. Every command was run three ways: the CLI's default output, the CLI with `--json`, and the wrapper. Token counts cover stdout plus stderr, counted with `tiktoken` `cl100k_base`. Claude's tokenizer differs, so compare the ratios rather than the absolute numbers.
