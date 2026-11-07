@@ -4,6 +4,8 @@
 #
 # Options (set before running the one-liner):
 #   $env:OPTIMIZED_UNITY_VERSION = 'v1.0.0'   install a specific release (default: latest)
+#   $env:OPTIMIZED_UNITY_FROM_SOURCE = '1'     build with .NET (Native AOT) instead of downloading a release;
+#                                              uses this checkout when run from one, otherwise clones the repo
 #   $env:OPTIMIZED_UNITY_DIR = 'C:\tools\ou'   install location (default: %LOCALAPPDATA%\OptimizedUnity)
 #   $env:OPTIMIZED_UNITY_SKIP_UNITY_CLI = '1'  don't install the Unity CLI
 #   $env:OPTIMIZED_UNITY_NO_MODIFY_PATH = '1'  don't change the user PATH
@@ -112,18 +114,55 @@ function Install-OptimizedUnity {
 	$temp = Join-Path ([IO.Path]::GetTempPath()) ("optimized-unity-" + [Guid]::NewGuid().ToString('N'))
 	New-Item -ItemType Directory -Force -Path $temp | Out-Null
 	try {
-		Say "Downloading $asset ($version)"
-		$download = Join-Path $temp $asset
-		Invoke-WebRequest -UseBasicParsing -Uri "$base/$asset" -OutFile $download
-		Invoke-WebRequest -UseBasicParsing -Uri "$base/SHA256SUMS" -OutFile (Join-Path $temp 'SHA256SUMS')
-		$line = Get-Content (Join-Path $temp 'SHA256SUMS') | Where-Object {
-			$parts = $_.Trim() -split '\s+'
-			$parts.Count -ge 2 -and $parts[1].TrimStart('*') -eq $asset
-		} | Select-Object -First 1
-		if (-not $line) { Fail "$asset is missing from SHA256SUMS" }
-		$expected = ($line -split '\s+')[0].ToLowerInvariant()
-		$actual = (Get-FileHash -Algorithm SHA256 $download).Hash.ToLowerInvariant()
-		if ($expected -ne $actual) { Fail "checksum mismatch for $asset (expected $expected, got $actual)" }
+		if ($env:OPTIMIZED_UNITY_FROM_SOURCE -eq '1') {
+			$here = if ($PSScriptRoot) { Join-Path $PSScriptRoot '..' } else { $null }
+			if ($here -and (Test-Path (Join-Path $here 'OptimizedUnity.slnx'))) {
+				$src = (Resolve-Path $here).Path
+			} else {
+				if (-not (Get-Command git -CommandType Application -ErrorAction SilentlyContinue)) { Fail 'git is required for OPTIMIZED_UNITY_FROM_SOURCE' }
+				Say "Cloning $repo"
+				$src = Join-Path $temp 'src'
+				$cloneArgs = @('clone', '--quiet', '--depth', '1')
+				if ($version -ne 'latest') { $cloneArgs += @('--branch', $version) }
+				& git @cloneArgs "https://github.com/$repo.git" $src
+				if ($LASTEXITCODE -ne 0) { Fail 'git clone failed' }
+			}
+
+			# Native AOT links with the MSVC toolchain.
+			$dotnet = @((Join-Path $installDir 'dotnet\dotnet.exe'), (Get-Command dotnet -CommandType Application -ErrorAction SilentlyContinue | ForEach-Object Source)) |
+				Where-Object { $_ -and (Test-Path $_) -and ((& $_ --list-sdks 2>$null) -match '^1\d\.') } | Select-Object -First 1
+			if (-not $dotnet) {
+				Say "Installing the .NET 10 SDK into $installDir\dotnet"
+				$dotnetInstaller = Join-Path $temp 'dotnet-install.ps1'
+				Invoke-WebRequest -UseBasicParsing -Uri 'https://dot.net/v1/dotnet-install.ps1' -OutFile $dotnetInstaller
+				& $dotnetInstaller -Channel 10.0 -InstallDir (Join-Path $installDir 'dotnet') | Out-Null
+				$dotnet = Join-Path $installDir 'dotnet\dotnet.exe'
+			}
+
+			Say "Building $rid with Native AOT (this takes a minute)"
+			$out = Join-Path $temp 'out'
+			$env:DOTNET_CLI_TELEMETRY_OPTOUT = '1'
+			$env:DOTNET_NOLOGO = '1'
+			# The AOT linker step calls vswhere.exe, which is not on PATH outside a Developer prompt.
+			$vsInstaller = Join-Path ${env:ProgramFiles(x86)} 'Microsoft Visual Studio\Installer'
+			if (Test-Path $vsInstaller) { $env:Path = "$vsInstaller;$env:Path" }
+			& $dotnet publish (Join-Path $src 'src\OptimizedUnity') -c Release -r $rid -o $out -nologo -v quiet | Out-Null
+			if ($LASTEXITCODE -ne 0) { Fail "build failed; run: dotnet publish $src\src\OptimizedUnity -c Release -r $rid" }
+			$download = Join-Path $out 'unity.exe'
+		} else {
+			Say "Downloading $asset ($version)"
+			$download = Join-Path $temp $asset
+			Invoke-WebRequest -UseBasicParsing -Uri "$base/$asset" -OutFile $download
+			Invoke-WebRequest -UseBasicParsing -Uri "$base/SHA256SUMS" -OutFile (Join-Path $temp 'SHA256SUMS')
+			$line = Get-Content (Join-Path $temp 'SHA256SUMS') | Where-Object {
+				$parts = $_.Trim() -split '\s+'
+				$parts.Count -ge 2 -and $parts[1].TrimStart('*') -eq $asset
+			} | Select-Object -First 1
+			if (-not $line) { Fail "$asset is missing from SHA256SUMS" }
+			$expected = ($line -split '\s+')[0].ToLowerInvariant()
+			$actual = (Get-FileHash -Algorithm SHA256 $download).Hash.ToLowerInvariant()
+			if ($expected -ne $actual) { Fail "checksum mismatch for $asset (expected $expected, got $actual)" }
+		}
 
 		New-Item -ItemType Directory -Force -Path $binDir | Out-Null
 		# A running unity.exe cannot be overwritten, but it can be renamed out of the way.
