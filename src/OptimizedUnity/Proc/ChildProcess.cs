@@ -48,11 +48,16 @@ internal static class ChildProcess
 
 	public static ChildResult Run(string file, IReadOnlyList<string> args, ChildOptions options)
 	{
+		// A hidden console replaces the one this process lacks; it cannot share our stdout and
+		// stderr handles, so inherited output is relayed instead.
+		var relay = options.Inherit && WindowsConsole.IsMissing;
+		var redirectOutput = !options.Inherit || relay;
 		var info = new ProcessStartInfo(file)
 		{
 			UseShellExecute = false,
-			RedirectStandardOutput = !options.Inherit,
-			RedirectStandardError = !options.Inherit,
+			CreateNoWindow = WindowsConsole.IsMissing,
+			RedirectStandardOutput = redirectOutput,
+			RedirectStandardError = redirectOutput,
 			// A closed stdin makes prompts fail fast instead of hanging unseen.
 			RedirectStandardInput = !options.Inherit,
 			WorkingDirectory = options.Cwd ?? "",
@@ -82,9 +87,13 @@ internal static class ChildProcess
 		if (!options.Inherit) process.StandardInput.Close();
 		var stdout = new StringBuilder();
 		var stderr = new StringBuilder();
-		var readers = options.Inherit
-			? []
-			: new[] { Capture(process.StandardOutput, stdout), Capture(process.StandardError, stderr) };
+		Task[] readers;
+		if (relay)
+			readers = [Relay(process.StandardOutput.BaseStream, Console.OpenStandardOutput()), Relay(process.StandardError.BaseStream, Console.OpenStandardError())];
+		else if (options.Inherit)
+			readers = [];
+		else
+			readers = [Capture(process.StandardOutput, stdout), Capture(process.StandardError, stderr)];
 
 		int? received = null;
 		using var interrupt = Forward(PosixSignal.SIGINT, process, () => received ??= Posix.SIGINT);
@@ -115,6 +124,19 @@ internal static class ChildProcess
 		int read;
 		while ((read = await reader.ReadAsync(buffer).ConfigureAwait(false)) > 0)
 			lock (sink) sink.Append(buffer, 0, read);
+	}
+
+	static async Task Relay(Stream source, Stream target)
+	{
+		try
+		{
+			await source.CopyToAsync(target).ConfigureAwait(false);
+			await target.FlushAsync().ConfigureAwait(false);
+		}
+		catch (IOException)
+		{
+			// The reader closed the pipe.
+		}
 	}
 
 	static string Snapshot(StringBuilder sink)
