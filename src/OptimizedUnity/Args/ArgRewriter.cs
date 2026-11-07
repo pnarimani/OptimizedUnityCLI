@@ -165,8 +165,8 @@ internal static class ArgRewriter
 
 		if (command is not null && ExecCommands.Contains(command)) return InvocationKind.Exec;
 		if (command is null && head.Any(VersionFlags.Contains)) return InvocationKind.Exec;
-		// An explicit --json means the caller wants the CLI's own JSON, untouched.
-		if (head.Contains("--json")) return InvocationKind.Exec;
+		// An explicit output format means the caller wants the CLI's own output, untouched.
+		if (head.Contains("--json") || HasFlag(args, "--format")) return InvocationKind.Exec;
 		// Secrets read from stdin need the caller's real stdin.
 		if (head.Any(arg => arg.StartsWith("--", StringComparison.Ordinal) && arg.EndsWith("-stdin", StringComparison.Ordinal)))
 			return InvocationKind.Exec;

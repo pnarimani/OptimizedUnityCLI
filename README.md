@@ -2,7 +2,7 @@
 
 A Native AOT drop-in `unity` that wraps the official Unity CLI and makes its output compact. It forces `--json`, prunes the noise, and renders terse text, so agents and scripts spend far fewer tokens. Exit codes are kept.
 
-Pass `--json` yourself and the wrapper steps aside: the real CLI runs with your arguments and its JSON is returned untouched. A `--json` after a `--` delimiter belongs to the child process and does not count. `shell`, `completion`, `upgrade` and `self-update` always run the real CLI untouched.
+Pass `--json` or `--format <format>` yourself and the wrapper steps aside: the real CLI runs with your arguments and its output is returned untouched. A `--json` or `--format` after a `--` delimiter belongs to the child process and does not count. `shell`, `completion`, `upgrade` and `self-update` always run the real CLI untouched.
 
 ## Benchmark
 
