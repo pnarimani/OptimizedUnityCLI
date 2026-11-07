@@ -46,12 +46,14 @@ internal static class EnvelopeRenderer
 		return lines.Count > 0 ? lines : ["(no Editors running)"];
 	}
 
-	/// <summary>The CLI puts UI decoration (pagination separators) in `warnings`.</summary>
-	static bool IsChrome(JsonNode? warning)
-	{
-		var text = Format.Fmt(warning).Trim();
-		return text.Length == 0 || "-─—".Contains(text[0]);
-	}
+	const string SeparatorCharacters = "-─—";
+
+	/// <summary>
+	/// The CLI puts UI decoration (pagination separators) in `warnings`. Only blank or
+	/// separator-only lines are decoration; a real warning may start with a flag such as `--foo`.
+	/// </summary>
+	static bool IsChrome(JsonNode? warning) =>
+		Format.Fmt(warning).All(character => char.IsWhiteSpace(character) || SeparatorCharacters.Contains(character));
 
 	/// <summary>`unity command &lt;name&gt;` wrapper: {command, parameters, result, target}.</summary>
 	public static bool IsEditorWrapper(JsonNode? data) =>

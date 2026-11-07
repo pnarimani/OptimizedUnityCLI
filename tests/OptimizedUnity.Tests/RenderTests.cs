@@ -28,6 +28,13 @@ public class RenderTests
 	}
 
 	[Fact]
+	public void SeparatorWarningsAreDroppedButFlagWarningsAreKept()
+	{
+		var envelope = JsonNode.Parse("""{"success":true,"data":{},"warnings":["","----","── ──","--foo is deprecated, use --bar"]}""")!;
+		Assert.Equal(["WARN: --foo is deprecated, use --bar", "ok"], EnvelopeRenderer.Render(envelope));
+	}
+
+	[Fact]
 	public void CommandGroupsRenderOnOneLine()
 	{
 		var lines = Render("command-groups.json");
