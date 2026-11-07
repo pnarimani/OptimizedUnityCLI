@@ -135,7 +135,11 @@ function Install-OptimizedUnity {
 				Say "Installing the .NET 10 SDK into $installDir\dotnet"
 				$dotnetInstaller = Join-Path $temp 'dotnet-install.ps1'
 				Invoke-WebRequest -UseBasicParsing -Uri 'https://dot.net/v1/dotnet-install.ps1' -OutFile $dotnetInstaller
-				& $dotnetInstaller -Channel 10.0 -InstallDir (Join-Path $installDir 'dotnet') | Out-Null
+				# A script file, unlike the `irm | iex` one-liner, is blocked by the Restricted and AllSigned
+				# execution policies; run it in its own process with the policy bypassed.
+				$shell = (Get-Process -Id $PID).Path
+				& $shell -NoProfile -ExecutionPolicy Bypass -File $dotnetInstaller -Channel 10.0 -InstallDir (Join-Path $installDir 'dotnet') | Out-Null
+				if ($LASTEXITCODE -ne 0) { Fail 'the .NET SDK installer failed' }
 				$dotnet = Join-Path $installDir 'dotnet\dotnet.exe'
 			}
 
