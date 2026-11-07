@@ -23,6 +23,8 @@ public class ArgRewriterTests
 	[InlineData("-V", "Exec")]
 	[InlineData("shell --protocol ndjson", "Exec")]
 	[InlineData("completion zsh", "Exec")]
+	[InlineData("upgrade", "Exec")]
+	[InlineData("self-update", "Exec")]
 	[InlineData("auth login --secret-from-stdin", "Exec")]
 	[InlineData("logs --follow", "Stream")]
 	[InlineData("editors -w", "Stream")]

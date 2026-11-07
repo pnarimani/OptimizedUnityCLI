@@ -2,7 +2,7 @@
 
 A Native AOT drop-in `unity` that wraps the official Unity CLI and makes its output compact. It forces `--json`, prunes the noise, and renders terse text, so agents and scripts spend far fewer tokens. Exit codes are kept.
 
-Pass `--json` yourself and the wrapper steps aside: the real CLI runs with your arguments and its JSON is returned untouched. A `--json` after a `--` delimiter belongs to the child process and does not count.
+Pass `--json` yourself and the wrapper steps aside: the real CLI runs with your arguments and its JSON is returned untouched. A `--json` after a `--` delimiter belongs to the child process and does not count. `shell`, `completion`, `upgrade` and `self-update` always run the real CLI untouched.
 
 ## Benchmark
 
@@ -62,7 +62,7 @@ Installer options:
 | Don't edit PATH | `--no-modify-path` | `OPTIMIZED_UNITY_NO_MODIFY_PATH=1` |
 | Remove optimized-unity | `--uninstall` | `OPTIMIZED_UNITY_UNINSTALL=1` |
 
-From a checkout, run `./scripts/install.sh --from-source`. To install from a fork, set `OPTIMIZED_UNITY_REPO=<owner>/<repo>`.
+From a checkout, run `./scripts/install.sh --from-source` (Windows: `$env:OPTIMIZED_UNITY_FROM_SOURCE = '1'; ./scripts/install.ps1`). To install from a fork, set `OPTIMIZED_UNITY_REPO=<owner>/<repo>`.
 
 The one-liners download from GitHub Releases, so they work once a release has been published (see below).
 

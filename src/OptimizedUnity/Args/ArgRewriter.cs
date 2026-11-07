@@ -24,7 +24,7 @@ internal static class ArgRewriter
 	static readonly HashSet<string> HelpFlags = ["-h", "--help"];
 	static readonly HashSet<string> StreamFlags = ["-f", "--follow", "-w", "--watch"];
 	static readonly HashSet<string> CommandTokens = ["command", "cmd"];
-	static readonly HashSet<string> ExecCommands = ["shell", "completion"];
+	static readonly HashSet<string> ExecCommands = ["shell", "completion", "upgrade", "self-update"];
 	static readonly HashSet<string> VersionFlags = ["-V", "--version"];
 	/// <summary>Root options that consume the following token.</summary>
 	static readonly HashSet<string> ValuedGlobals = ["--format", "--color", "--proxy"];
