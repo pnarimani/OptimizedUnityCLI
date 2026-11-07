@@ -59,7 +59,6 @@ internal static class Program
             }
 			var kind = ArgRewriter.Classify(argv);
 			if (kind == InvocationKind.Exec) return ChildProcess.Exec(cli, argv);
-			if (kind == InvocationKind.ForceClose) return RunForceClose(argv);
 
 			IReadOnlyList<string> args = wsl is null ? argv : wsl.TranslateArgs(argv, cwd);
 			return kind switch
@@ -71,7 +70,7 @@ internal static class Program
 			};
 		}
 
-		ChildOptions Options(bool inherit = false, int? timeoutMs = null, string? childCwd = null)
+		ChildOptions Options(bool inherit = false)
 		{
 			var environment = new Dictionary<string, string?>
 			{
@@ -88,17 +87,17 @@ internal static class Program
 					environment["UNITY_PROJECT_PATH"] = wsl.ToWindows(Path.GetFullPath(project, cwd)) ?? project;
 				environment["WSLENV"] = Wsl.WslEnv(environment.Where(pair => pair.Value is not null && pair.Key != "WSLENV").Select(pair => pair.Key));
 			}
-			return new ChildOptions { Inherit = inherit, TimeoutMs = timeoutMs ?? OperationTimeoutMs(), Environment = environment, Cwd = childCwd };
+			return new ChildOptions { Inherit = inherit, TimeoutMs = OperationTimeoutMs(), Environment = environment };
 		}
 
 		/// <summary>Opt-in hard cap; builds and imports can legitimately run for a long time.</summary>
 		static int? OperationTimeoutMs() =>
 			int.TryParse(Environment.GetEnvironmentVariable("UNITY_OP_TIMEOUT_MS"), out var value) && value > 0 ? value : null;
 
-		ChildResult Invoke(IReadOnlyList<string> args, int? timeoutMs = null, string? childCwd = null)
+		ChildResult Invoke(IReadOnlyList<string> args)
 		{
 			Launched = true;
-			return ChildProcess.Run(cli, args, Options(timeoutMs: timeoutMs, childCwd: childCwd));
+			return ChildProcess.Run(cli, args, Options());
 		}
 
 		int RunOptimized(IReadOnlyList<string> args)
@@ -233,25 +232,6 @@ internal static class Program
 			Launched = true;
 			var streamArgs = ArgRewriter.InsertBeforeDelimiter(ArgRewriter.StripFormat(args), "--color", "never");
 			return ChildProcess.Run(cli, streamArgs, Options(inherit: true)).Code;
-		}
-
-		int RunForceClose(string[] argv)
-		{
-			var position = ArgRewriter.PositionalIndex(argv);
-			var localProject = Path.GetFullPath(argv[position], cwd);
-			// A Hub registry name rather than a directory: process discovery cannot match it safely.
-			if (!Directory.Exists(localProject))
-				return RunOptimized(wsl is null ? argv : wsl.TranslateArgs(argv, cwd));
-
-			var cliProject = wsl?.ToWindows(localProject) ?? localProject;
-			var close = new ForceClose
-			{
-				Cli = (args, childCwd, timeoutMs) => Invoke(args, timeoutMs, childCwd),
-				Processes = new NativeProcessControl(wsl is not null),
-				ToLocal = path => wsl is null ? path : wsl.ToLinux(path),
-			};
-			var result = close.Run(localProject, cliProject, argv);
-			return Emit(result.Stdout, result.Stderr, result.Code, argv);
 		}
 
 		static string Label(IReadOnlyList<string> args)

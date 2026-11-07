@@ -29,7 +29,7 @@ public class ArgRewriterTests
 	[InlineData("logs --follow", "Stream")]
 	[InlineData("editors -w", "Stream")]
 	[InlineData("watch test .", "Stream")]
-	[InlineData("close ./Proj --force", "ForceClose")]
+	[InlineData("close ./Proj --force", "Optimized")]
 	[InlineData("close ./Proj", "Optimized")]
 	[InlineData("close --force", "Optimized")]
 	[InlineData("run . -- --help", "Optimized")]

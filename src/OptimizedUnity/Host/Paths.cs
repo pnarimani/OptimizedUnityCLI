@@ -23,13 +23,5 @@ internal static class Paths
 		value.Length >= 3 && char.IsAsciiLetter(value[0]) && value[1] == ':' && value[2] is '\\' or '/'
 		|| value.StartsWith(@"\\", StringComparison.Ordinal);
 
-	/// <summary>Comparison key for project paths: forward slashes, no trailing slash, case-folded for Windows paths.</summary>
-	public static string Key(string path)
-	{
-		var normalized = path.Trim().Replace('\\', '/');
-		if (normalized.Length > 1) normalized = normalized.TrimEnd('/');
-		return OperatingSystem.IsWindows() || IsWindowsAbsolute(path) ? normalized.ToLowerInvariant() : normalized;
-	}
-
 	public static string Home() => Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
 }

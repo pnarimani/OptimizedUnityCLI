@@ -6,7 +6,6 @@ namespace OptimizedUnity.Proc;
 internal static partial class Posix
 {
 	public const int SIGINT = 2;
-	public const int SIGKILL = 9;
 	public const int SIGTERM = 15;
 	const int ESRCH = 3;
 	const string Libc = "libc";

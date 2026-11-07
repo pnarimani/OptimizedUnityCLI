@@ -10,8 +10,6 @@ internal enum InvocationKind
 	Help,
 	/// <summary>`--follow`/`--watch`: live output, no JSON.</summary>
 	Stream,
-	/// <summary>`close &lt;project&gt; --force` with confirmed process exit.</summary>
-	ForceClose,
 	/// <summary>JSON envelope rendered as compact text.</summary>
 	Optimized,
 }
@@ -181,7 +179,6 @@ internal static class ArgRewriter
 				: InvocationKind.Help;
 
 		if (command == "watch" || head.Any(StreamFlags.Contains)) return InvocationKind.Stream;
-		if (command == "close" && HasFlag(args, "--force") && PositionalIndex(args) >= 0) return InvocationKind.ForceClose;
 		return InvocationKind.Optimized;
 	}
 }

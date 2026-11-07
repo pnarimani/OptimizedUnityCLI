@@ -86,11 +86,4 @@ public class HostTests
 	[InlineData("/mnt/c", false)]
 	[InlineData("C:", false)]
 	public void DetectsWindowsAbsolutePaths(string path, bool expected) => Assert.Equal(expected, Paths.IsWindowsAbsolute(path));
-
-	[Fact]
-	public void KeysNormaliseSlashesAndCase()
-	{
-		Assert.Equal("c:/games/proj", Paths.Key(@"C:\Games\Proj\"));
-		Assert.Equal(OperatingSystem.IsWindows() ? "/users/me/proj" : "/Users/Me/Proj", Paths.Key("/Users/Me/Proj/"));
-	}
 }
