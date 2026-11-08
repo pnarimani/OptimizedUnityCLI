@@ -6,94 +6,47 @@ using OptimizedUnity.Render;
 
 namespace OptimizedUnity.Features;
 
+/// <summary>
+/// `capture game_view` returns the PNG inline as base64 unless given `--output-path`. The wrapper
+/// always supplies one, so the image lands in the project's Temp folder and only its path is printed.
+/// </summary>
 static class GameViewCapture
 {
+    const string OutputPathFlag = "--output-path";
+    const string ScreenshotDirectory = "Temp/pipeline-screenshots";
+
     public static bool AppliesTo(IReadOnlyList<string> args) =>
         ArgRewriter.EditorCommandWords(args).SequenceEqual(new[] { "capture", "game_view" });
 
-    public static ChildResult Render(JsonNode envelope, Func<string, string?> toLocal)
+    /// <summary>Whether the wrapper should choose the destination: the caller did not.</summary>
+    public static bool ShouldChooseOutputPath(IReadOnlyList<string> args) =>
+        AppliesTo(args) && !ArgRewriter.HasFlag(args, OutputPathFlag);
+
+    /// <summary>Relative paths resolve from the project root, so the file never lands under Assets/.</summary>
+    public static List<string> WithOutputPath(IReadOnlyList<string> args) =>
+        ArgRewriter.InsertBeforeDelimiter(args, OutputPathFlag, $"{ScreenshotDirectory}/{DateTime.UtcNow:yyyyMMdd-HHmmss-fffffff}.png");
+
+    public static ChildResult Render(JsonNode envelope)
     {
         if (EnvelopeRenderer.CommandSuccess(envelope) != true)
         {
             return new ChildResult("", string.Join('\n', EnvelopeRenderer.Render(envelope)), ExitCodes.CommandFailed);
         }
-        try
+        var result = EnvelopeRenderer.Decode(envelope.Get("data").Get("result"));
+        if (result.Get("savedPath").Str() is not { Length: > 0 } savedPath)
         {
-            var project = envelope.Get("data").Get("target").Get("projectPath").Str();
-            if (string.IsNullOrWhiteSpace(project))
-            {
-                return Failure("Capture response has no target project path.");
-            }
-            var root = toLocal(project);
-            if (string.IsNullOrWhiteSpace(root) || !Path.IsPathFullyQualified(root) || !Directory.Exists(root))
-            {
-                return Failure("Cannot resolve the target project directory.");
-            }
-            var images = new List<byte[]>();
-            FindImages(EnvelopeRenderer.Decode(envelope.Get("data").Get("result")), images);
-            if (images.Count != 1)
-            {
-                return Failure("Capture response must contain exactly one inline PNG.");
-            }
-            var directory = Path.Combine(root, "Temp", "pipeline-screenshots");
-            Directory.CreateDirectory(directory);
-            for (var attempt = 0; attempt < 100; attempt++)
-            {
-                var name = $"{DateTime.UtcNow:yyyyMMdd-HHmmss-fffffff}.png";
-                var path = Path.Combine(directory, name);
-                FileStream stream;
-                try
-                {
-                    stream = new FileStream(path, FileMode.CreateNew, FileAccess.Write);
-                }
-                catch (IOException) when (File.Exists(path))
-                {
-                    continue;
-                }
-                using (stream)
-                {
-                    stream.Write(images[0]);
-                }
-                return new ChildResult($"Temp/pipeline-screenshots/{name}\n", "", ExitCodes.Success);
-            }
-            return Failure("Cannot allocate a unique screenshot timestamp.");
+            return new ChildResult("", "ERROR: Capture response has no savedPath.\n", ExitCodes.CommandFailed);
         }
-        catch (Exception error) when (error is IOException or UnauthorizedAccessException or ArgumentException or NotSupportedException)
-        {
-            return Failure($"Cannot save Game View capture: {error.Message}");
-        }
+        var note = result.Get("message").Str();
+        var text = string.IsNullOrWhiteSpace(note) ? $"{ProjectRelative(savedPath)}\n" : $"{ProjectRelative(savedPath)}\nnote: {note}\n";
+        return new ChildResult(text, "", ExitCodes.Success);
     }
 
-    static ChildResult Failure(string message) => new("", $"ERROR: {message}\n", ExitCodes.CommandFailed);
-
-    static void FindImages(JsonNode? node, List<byte[]> images)
+    /// <summary>`savedPath` is absolute (a Windows path under WSL); callers want the path inside the project.</summary>
+    static string ProjectRelative(string savedPath)
     {
-        if (node is JsonObject obj)
-        {
-            foreach (var pair in obj)
-            {
-                FindImages(pair.Value, images);
-            }
-        }
-        else if (node is JsonArray array)
-        {
-            foreach (var item in array)
-            {
-                FindImages(item, images);
-            }
-        }
-        else if (node.Str() is { } text)
-        {
-            const string prefix = "data:image/png;base64,";
-            var payload = text.StartsWith(prefix, StringComparison.Ordinal) ? text[prefix.Length..] : text;
-            var buffer = new byte[payload.Length * 3 / 4 + 3];
-            if (Convert.TryFromBase64String(payload, buffer, out var length) && length >= 8)
-            {
-                if (buffer.AsSpan(0, 8).SequenceEqual(new byte[] { 137, 80, 78, 71, 13, 10, 26, 10 }))
-                {
-                    images.Add(buffer[..length]);
-                }
-            }
-        }
+        var normalized = savedPath.Replace('\\', '/');
+        var marker = normalized.LastIndexOf($"/{ScreenshotDirectory}/", StringComparison.Ordinal);
+        return marker < 0 ? normalized : normalized[(marker + 1)..];
     }
 }

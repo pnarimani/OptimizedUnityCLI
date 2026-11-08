@@ -53,10 +53,6 @@ internal static class Program
 		public int Run(string[] argv)
 		{
 			localArgs = argv;
-            if (GameViewCapture.AppliesTo(argv) && ArgRewriter.HasFlag(argv, "--save_path"))
-            {
-                return Emit("", "ERROR: --save_path is not supported for capture game_view.\n", ExitCodes.BadArgs, argv);
-            }
 			var kind = ArgRewriter.Classify(argv);
 			if (kind == InvocationKind.Exec) return ChildProcess.Exec(cli, argv);
 
@@ -107,30 +103,32 @@ internal static class Program
 				: null;
 
 			var started = DateTime.UtcNow;
-			var result = Invoke(ArgRewriter.WithJson(args));
+			var jsonArgs = ArgRewriter.WithJson(args);
+			if (GameViewCapture.ShouldChooseOutputPath(args)) jsonArgs = GameViewCapture.WithOutputPath(jsonArgs);
+			var result = Invoke(jsonArgs);
 			if (result.Missing) return Emit("", result.Stderr, result.Code, args);
 
-			var envelope = JsonNode.ParseLenient(result.Stdout);
+			var envelope = ResultEnvelope.Parse(args, result.Stdout, result.Code);
 			string stdout;
 			var stderr = result.Stderr.Trim().Length > 0 ? Format.StripAnsi(result.Stderr) : "";
 			var code = result.Code;
 			bool? success = null;
 
-			if (!envelope.IsEnvelope())
+			if (envelope is null)
 			{
-				// Some usage errors are bare text even under --json; pass them through.
+				// Usage errors are bare text even under --json; pass them through.
 				stdout = Format.StripAnsi(result.Stdout);
 			}
 			else
 			{
 				try
 				{
-					if (GameViewCapture.AppliesTo(localArgs))
-                    {
-                        var capture = GameViewCapture.Render(envelope!, path => wsl is null ? path : wsl.ToLinux(path));
-                        return Emit(capture.Stdout, Append(stderr, capture.Stderr), code == 0 ? capture.Code : code, args);
-                    }
-                    Spill.Blobs(envelope, Label(args));
+					if (GameViewCapture.AppliesTo(args) && code == 0)
+					{
+						var capture = GameViewCapture.Render(envelope);
+						return Emit(capture.Stdout, Append(stderr, capture.Stderr), capture.Code, args);
+					}
+					Spill.Blobs(envelope, Label(args));
 					stdout = Lines(EnvelopeRenderer.Render(envelope!));
 				}
 				catch (Exception error) when (error is InvalidOperationException or ArgumentException or FormatException)
@@ -212,11 +210,12 @@ internal static class Program
 			return Emit(Lines(lines), "", found ? ExitCodes.Success : ExitCodes.BadArgs, args);
 		}
 
+		/// <summary>The catalog lookup behind `cmd &lt;command&gt; --help`.</summary>
 		(JsonNode? Envelope, ChildResult Result) Query(string term, List<string> target)
 		{
-			var result = Invoke(["command", "--query", term, "--detail", "full", "--json", .. target]);
-			var envelope = JsonNode.ParseLenient(result.Stdout);
-			return (envelope.IsEnvelope() ? envelope : null, result);
+			string[] queryArgs = ["command", "--query", term, "--detail", "full", "--json", .. target];
+			var result = Invoke(queryArgs);
+			return (ResultEnvelope.Parse(queryArgs, result.Stdout, result.Code), result);
 		}
 
 		int RenderedOrRaw(JsonNode? envelope, ChildResult result, IReadOnlyList<string> args)
