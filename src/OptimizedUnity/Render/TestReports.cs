@@ -274,7 +274,7 @@ internal static partial class TestReports
 		if (summary.Skipped > 0) counts.Add($"{summary.Skipped} skipped");
 		if (summary.Inconclusive > 0) counts.Add($"{summary.Inconclusive} inconclusive");
 		var context = new List<string>();
-		if (summary.DurationSeconds is { } seconds) context.Add(Duration(seconds));
+		if (summary.DurationSeconds is { } seconds) context.Add(Format.Duration(seconds));
 		if (!string.IsNullOrEmpty(summary.Mode)) context.Add(summary.Mode!);
 		if (!string.IsNullOrEmpty(summary.Filter)) context.Add(summary.Filter!);
 		var lines = new List<string>
@@ -326,13 +326,6 @@ internal static partial class TestReports
 		if (lines.Count <= MaxMessageLines) return lines;
 		return [.. lines.Take(MaxMessageLines), $"… {lines.Count - MaxMessageLines} more lines"];
 	}
-
-	static string Duration(double seconds) => seconds switch
-	{
-		< 1 => $"{seconds.ToString("0.##", CultureInfo.InvariantCulture)}s",
-		< 60 => $"{seconds.ToString("0.#", CultureInfo.InvariantCulture)}s",
-		_ => $"{(int)(seconds / 60)}m{(int)(seconds % 60):00}s",
-	};
 
 	// ------------------------------------------------------------------ test list
 

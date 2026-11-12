@@ -39,6 +39,36 @@ internal static partial class Format
 		return rounded.ToString("R", CultureInfo.InvariantCulture);
 	}
 
+	/// <summary>0.25s, 12.3s, 11m27s.</summary>
+	public static string Duration(double seconds) => seconds switch
+	{
+		< 1 => $"{seconds.ToString("0.##", CultureInfo.InvariantCulture)}s",
+		< 60 => $"{seconds.ToString("0.#", CultureInfo.InvariantCulture)}s",
+		_ => $"{(int)(seconds / 60)}m{(int)(seconds % 60):00}s",
+	};
+
+	static readonly string[] ByteUnits = ["B", "KB", "MB", "GB", "TB"];
+
+	/// <summary>91 B, 13.5 MB, 1.75 GB (binary units, three significant digits).</summary>
+	public static string Bytes(long bytes)
+	{
+		double value = bytes;
+		var unit = 0;
+		while (Math.Abs(value) >= 1_024 && unit < ByteUnits.Length - 1)
+		{
+			value /= 1_024;
+			unit++;
+		}
+		var digits = Math.Abs(value) switch
+		{
+			_ when unit == 0 => "0",
+			< 10 => "0.##",
+			< 100 => "0.#",
+			_ => "0",
+		};
+		return $"{value.ToString(digits, CultureInfo.InvariantCulture)} {ByteUnits[unit]}";
+	}
+
 	public static string ObjLine(JsonObject value) =>
 		string.Join("  ", value.Select(pair => $"{pair.Key}: {Fmt(pair.Value)}"));
 
