@@ -1,0 +1,152 @@
+{
+  "status": "completed",
+  "buildId": "build_9d0968bbb24f",
+  "result": "Succeeded",
+  "platform": "StandaloneWindows64",
+  "outputPath": "C:/dev/Game/Builds/Win/Game.exe",
+  "totalSizeBytes": 1874889028,
+  "buildTimeMs": 687442,
+  "buildStartedAt": "2026-11-12T09:26:15.9719241Z",
+  "buildEndedAt": "2026-11-12T09:37:43.4143759Z",
+  "totalWarnings": 2,
+  "totalErrors": 3,
+  "files": [
+    {
+      "path": "C:/dev/Game/Builds/Win/Game_Data/level0",
+      "role": "Scene",
+      "sizeBytes": 2864
+    },
+    {
+      "path": "C:/dev/Game/Builds/Win/Game_Data/sharedassets0.assets",
+      "role": "SharedAssets",
+      "sizeBytes": 13460216
+    },
+    {
+      "path": "C:/dev/Game/Builds/Win/Game.exe",
+      "role": "exe",
+      "sizeBytes": 667648
+    },
+    {
+      "path": "D:/elsewhere/crash.dll",
+      "role": "dll",
+      "sizeBytes": 1024
+    }
+  ],
+  "packedAssets": [
+    {
+      "bundlePath": "level0",
+      "overheadBytes": 100,
+      "contents": [
+        {
+          "assetPath": "Assets/Scenes/Boot.unity",
+          "type": "GameObject",
+          "guid": "a",
+          "sizeBytes": 91
+        },
+        {
+          "assetPath": "Assets/Scenes/Boot.unity",
+          "type": "Transform",
+          "guid": "a",
+          "sizeBytes": 500
+        },
+        {
+          "assetPath": "Assets/Art/Rock.fbx",
+          "type": "Mesh",
+          "guid": "b",
+          "sizeBytes": 2000
+        }
+      ]
+    },
+    {
+      "bundlePath": "sharedassets0.assets",
+      "overheadBytes": 0,
+      "contents": [
+        {
+          "assetPath": "Assets/Art/Rock.fbx",
+          "type": "Mesh",
+          "guid": "b",
+          "sizeBytes": 3000
+        },
+        {
+          "assetPath": "",
+          "type": "Shader",
+          "guid": "c",
+          "sizeBytes": 10
+        }
+      ]
+    }
+  ],
+  "buildSteps": [
+    {
+      "name": "Build player",
+      "durationMs": 680890,
+      "depth": 0,
+      "messages": []
+    },
+    {
+      "name": "Prepare For Build",
+      "durationMs": 17,
+      "depth": 1,
+      "messages": []
+    },
+    {
+      "name": "Building scenes",
+      "durationMs": 381865,
+      "depth": 1,
+      "messages": []
+    },
+    {
+      "name": "Building scene Boot",
+      "durationMs": 40,
+      "depth": 2,
+      "messages": [
+        {
+          "type": "Error",
+          "content": "Tree prefab at index 0 is missing."
+        },
+        {
+          "type": "Error",
+          "content": "Tree prefab at index 0 is missing."
+        },
+        {
+          "type": "Warning",
+          "content": "w"
+        },
+        {
+          "type": "Log",
+          "content": "l"
+        }
+      ]
+    },
+    {
+      "name": "Writing asset files",
+      "durationMs": 96838,
+      "depth": 1,
+      "messages": [
+        {
+          "type": "Log",
+          "content": "x"
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "message": "Tree prefab at index 0 is missing."
+    },
+    {
+      "message": "IOException: Sharing violation"
+    },
+    {
+      "message": "Tree prefab at index 0 is missing."
+    }
+  ],
+  "warnings": [
+    {
+      "message": "Read/Write is disabled on 1 mesh(es).\nAffected meshes:\n - 'Plane001'"
+    },
+    {
+      "message": "Pre-baked collision is disabled"
+    }
+  ]
+}

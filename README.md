@@ -2,7 +2,7 @@
 
 A Native AOT drop-in `unity` that wraps the official Unity CLI and makes its output compact. It forces `--json`, prunes the noise, and renders terse text, so agents and scripts spend far fewer tokens. Exit codes are kept.
 
-Built against `com.unity.pipeline` 0.10 and the Unity CLI 1.0 betas, where `unity cmd` prints bare results under `--json`. `unity cmd capture game_view` needs 0.10 or later: the wrapper supplies `--output-path Temp/pipeline-screenshots/<timestamp>.png` and prints that path instead of the inline image.
+Built against `com.unity.pipeline` 0.10 and the Unity CLI 1.0 betas, where `unity cmd` prints bare results under `--json`. `unity cmd capture game_view` needs 0.10 or later: the wrapper supplies `--output-path Temp/pipeline-screenshots/<timestamp>.png` and prints that path instead of the inline image. `unity cmd build status` prints the status, result, platform, duration, size and error/warning counts as `key: value` fields, and writes errors, warnings, output files, build steps and packed assets to text files in the project's `Temp/build-reports/<buildId>/`.
 
 Pass `--json` or `--format <format>` yourself and the wrapper steps aside: the real CLI runs with your arguments and its output is returned untouched. A `--json` or `--format` after a `--` delimiter belongs to the child process and does not count. `shell`, `completion`, `upgrade` and `self-update` always run the real CLI untouched.
 

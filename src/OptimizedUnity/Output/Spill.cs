@@ -10,7 +10,7 @@ internal static class Spill
 	public const int BlobThreshold = 4 * 1_024;
 	static readonly byte[] PngMagic = [0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A];
 
-	static string Root =>
+	public static string Root =>
 		Environment.GetEnvironmentVariable("UNITY_WRAP_SPILL_DIR") is { Length: > 0 } configured
 			? configured
 			: Path.Combine(Path.GetTempPath(), "optimized-unity");

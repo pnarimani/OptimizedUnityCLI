@@ -107,6 +107,10 @@ internal static class Program
 			if (GameViewCapture.ShouldChooseOutputPath(args)) jsonArgs = GameViewCapture.WithOutputPath(jsonArgs);
 			var result = Invoke(jsonArgs);
 			if (result.Missing) return Emit("", result.Stderr, result.Code, args);
+			// Checked before the generic parse: a real build report is too large for JsonNode trees.
+			if (BuildStatus.AppliesTo(args) && result.Code == 0
+				&& BuildStatus.TryRender(result.Stdout, outputPath => BuildStatus.ProjectRoot(localArgs, cwd, wsl, outputPath)) is { } build)
+				return Emit(build.Stdout, Format.StripAnsi(result.Stderr), build.Code, args);
 
 			var envelope = ResultEnvelope.Parse(args, result.Stdout, result.Code);
 			string stdout;
