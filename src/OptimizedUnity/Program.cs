@@ -105,8 +105,11 @@ internal static class Program
 			var started = DateTime.UtcNow;
 			var jsonArgs = ArgRewriter.WithJson(args);
 			if (GameViewCapture.ShouldChooseOutputPath(args)) jsonArgs = GameViewCapture.WithOutputPath(jsonArgs);
+			var scriptEval = ScriptEval.AppliesTo(args);
+			if (scriptEval) jsonArgs = ScriptEval.WithResultOnly(jsonArgs);
 			var result = Invoke(jsonArgs);
 			if (result.Missing) return Emit("", result.Stderr, result.Code, args);
+			if (scriptEval) return EmitExact(EvalResult(result));
 			// Checked before the generic parse: a real build report is too large for JsonNode trees.
 			if (BuildStatus.AppliesTo(args) && result.Code == 0
 				&& BuildStatus.TryRender(result.Stdout, outputPath => BuildStatus.ProjectRoot(localArgs, cwd, wsl, outputPath)) is { } build)
@@ -162,6 +165,11 @@ internal static class Program
 			if (stdout.Length == 0 && stderr.Length == 0 && code == 0) stdout = "ok\n";
 			return Emit(stdout, stderr, code, args);
 		}
+
+		ChildResult EvalResult(ChildResult result) =>
+			result.TimedOut
+				? new ChildResult("", $"timed out after {OperationTimeoutMs()}ms (UNITY_OP_TIMEOUT_MS)", ExitCodes.Timeout)
+				: ScriptEval.Render(result);
 
 		/// <summary>`unity test` writes its NUnit (or JUnit) report to --output, default ./test-results.xml.</summary>
 		string? TestReportPath()
@@ -270,6 +278,14 @@ internal static class Program
 				Write(Console.OpenStandardError(), text);
 			}
 			return code;
+		}
+
+		/// <summary>Writes the text as is: no output budget, no added newline.</summary>
+		static int EmitExact(ChildResult result)
+		{
+			if (result.Stdout.Length > 0) Write(Console.OpenStandardOutput(), result.Stdout);
+			if (result.Stderr.Length > 0) Write(Console.OpenStandardError(), result.Stderr);
+			return result.Code;
 		}
 
 		static void Write(Stream stream, string text)
