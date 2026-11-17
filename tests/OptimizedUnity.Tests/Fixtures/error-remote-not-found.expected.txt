@@ -1,0 +1,1 @@
+ERROR: REMOTE_COMMAND_NOT_FOUND: Pipeline server returned 400 Bad Request: no command named 'example_cmd'.

@@ -1,0 +1,11 @@
+143 tests: 138 passed, 4 failed, 1 skipped (7m31s, EditMode, assembly: Sample.Navigation.Tests.Editor)
+FAIL Sample.Generated.Tests.Editor.GeneratedTest_8ae0f1fe2400472f2edf8c65
+    sum should be four
+    Expected: 4
+    But was:  5
+    at Sample.Navigation.Tests.Editor.X.Y () in Assets/Tests/X.cs:16
+FAIL Sample.Generated.Tests.Editor.GeneratedTest_ebafd7e594a29cc269e3b320 (+2 more with the same failure)
+    OneTimeSetUp: System.NullReferenceException : Object reference not set to an instance of an object
+    at Sample.Navigation.Tests.Editor.Fixture.Setup () in com.example.nav/Tests/Fixture.cs:22
+    same failure: GeneratedTest_455567bd3b0e909c6e644bce, GeneratedTest_ef7212c746b7ab1affbee007
+SKIP Sample.Generated.Tests.Editor.GeneratedTest_a32bcfcab4eb642c405b0333: not ready

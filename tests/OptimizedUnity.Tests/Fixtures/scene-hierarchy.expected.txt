@@ -1,0 +1,4 @@
+Sample  Assets/Scenes/Sample.unity
+  Main Camera  [Camera, AudioListener]
+  Level  [LevelLoader, Spawner]
+    Stage 0 (inactive)

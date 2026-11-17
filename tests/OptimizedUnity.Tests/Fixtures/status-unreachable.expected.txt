@@ -1,0 +1,2 @@
+ERROR: STATUS_ALL_UNREACHABLE: No Unity Editor answered. Open the project in Unity and check that the Pipeline package is installed.
+state: unreachable  pid: 12345  project: /Users/dev/projects/SampleGame

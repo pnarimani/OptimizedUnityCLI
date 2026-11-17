@@ -1,0 +1,7 @@
+console get: Get captured Unity console output (Editor or Player; supports tail, level filtering, and follow via a cursor)
+usage: unity cmd console get [--tail <int32>] [--level <string>] [--since <int64>] [--since_session <string>]
+  --tail  int32  default=100  Maximum number of most-recent entries to return
+  --level  string  default=log  Minimum severity to include: log | warn | error
+  --since  int64  default=-1  Cursor: only return entries newer than this seq. Use the 'cursor' from a previous response to follow.
+  --since_session  string  optional  Session the 'since' cursor came from: pass the 'session' from a previous response. A cursor from another session is refused and the tail returned with reset=true.
+notes: Unity.Pipeline

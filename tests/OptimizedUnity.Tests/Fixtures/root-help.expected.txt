@@ -1,0 +1,113 @@
+Usage: unity [options] [command]
+
+Automate Unity from the command line: install an Editor and create a project
+without the GUI. Drive a running Editor, play and capture the game, and build
+it.
+
+Options:
+  -V, --version                              output the version number
+  --format <format>                          Output format: human, json, tsv, ndjson, github (env: UNITY_FORMAT)
+  --json                                     Shorthand for --format json
+  --no-banner                                Suppress the startup banner (env: UNITY_NO_BANNER)
+  --no-header                                Leave out the header row in tsv output
+  --no-pager                                 Disable the pager for long output (env: UNITY_NO_PAGER)
+  --non-interactive                          Disable interactive prompts. Useful in CI/CD environments. (env: UNITY_NON_INTERACTIVE)
+  --quiet                                    Suppress informational output (env: UNITY_QUIET)
+  --verbose                                  Show full error details including stack traces on failure (env: UNITY_VERBOSE)
+  --color <mode>                             Control colored output (choices: "auto", "always", "never")
+  --no-color                                 Disable colored output (shorthand for --color never)
+  --proxy <url>                              HTTP/HTTPS/SOCKS/PAC proxy URL. Examples: http://<user>:<pass>@host:8080, socks5://host:1080, pac+http://wpad/proxy.pac (env: UNITY_PROXY)
+  --proxy-disable                            Disable proxy for this invocation, ignoring all sources
+  --log-proxy                                Log every outbound request to proxy-request.json for this run. Off by default; typically used once when reproducing a proxy issue for support. Also settable via UNITY_LOG_PROXY=1 or the proxyRequestLogging user setting. (env: UNITY_LOG_PROXY)
+  --no-log-proxy                             Opt out of --log-proxy / UNITY_LOG_PROXY / the persisted user setting for this run. Use when logging is enabled globally but you want one clean invocation.
+  -h, --help                                 display help for command
+
+Editor Commands:
+  editor                                     Manage a Unity editor installation
+  editors|e [options]                        Manage Unity editors
+  install|i [options] [version]              Install a Unity editor
+  install-modules|im [options]               Install or list modules for an installed editor (fully interactive when no arguments provided)
+  install-path|ip [options]                  Set or get the editor install path
+  license                                    List the Unity licenses active on this machine
+  modules                                    List and manage Unity editor modules
+  terms                                      Accept or check the Unity Editor Software Terms for installed Editors
+  releases [options]                         List available Unity releases
+  uninstall|u [options] [version]            Uninstall an installed Unity editor
+
+Project Commands:
+  assets                                     Work with Unity asset packages
+  collaboration|collab                       Manage Unity Collaboration resources (annotations, attachments, Jira, reactions). Not version control; see unity vcs.
+  projects|p                                 Create, open, upgrade, and link local Unity projects (Unity Cloud, GitHub/GitLab)
+  templates|t                                Browse, inspect, create, edit, and delete Unity project templates
+  open [options] [project]                   Open a Unity project with the correct Editor version
+  close [options] <project>                  Close the Unity editor that has a project open (exits without saving)
+  vcs                                        Version control for Unity projects: GitHub, GitLab, self-hosted git, UVCS. Not Unity Collaboration; see unity collab.
+
+Editor Automation Commands:
+  job                                        Manage detached Editor command jobs
+  list [options]                             List tools available on the connected Unity Editor (commands registered by the Pipeline package)
+  mcp [options]                              MCP server and client configuration for Unity Editor
+  pipeline|pipe                              Unity Editor Pipeline package, plus Build Automation and Pipeline Automation reads
+  command|cmd [options] [command] [args...]  Execute commands on connected Unity Editor instances, or list available commands
+  recompile [options]                        Recompile a running Editor's scripts and report compile errors
+  status [options]                           Show live state of every connected Unity Editor (port, project, version, PID, state)
+
+Build and Test Commands:
+  build [options] [project]                  Build a Unity project from the command line. Spawns the editor in batch mode and forwards conventional CI flags.
+  ci                                         Scaffold CI pipelines that drive the Unity CLI
+  test [options] [project]                   Run a project's EditMode/PlayMode tests in the editor and write a results report
+  run [options] [project]                    Run a Unity project in batch mode and forward args to the editor
+  watch                                      Watch a project and re-run a command each time its files change
+
+Cloud and Account Commands:
+  auth|a                                     Sign in, manage accounts, check login state, or sign out
+  cloud                                      Manage Unity Cloud organizations and projects
+  context                                    Save and switch between named sets of account, organization, project, editor and install path
+
+Setup Commands:
+  analytics                                  Manage analytics and telemetry consent
+  cache                                      Manage the download cache
+  completion <shell>                         Print a shell completion script
+  config                                     View or change persistent CLI configuration
+  hub                                        Manage the Unity Hub application
+  language|lang [options]                    Show or change the CLI display language
+  plugin                                     View and manage the external components Unity installs for you
+  self-uninstall [options]                   Uninstall the unity CLI (removes the binary and environment files)
+  setup                                      Set up coding agents to work with Unity
+  shell [options]                            Start an interactive shell (REPL) that runs many commands in one warm process
+  skill                                      Read the Unity CLI agent skill, or install it into an AI client
+  self-update|upgrade [options]              Update the unity CLI to the latest version
+
+Help and Diagnostic Commands:
+  bug [options]                              Report a bug directly to the Unity bug reporter (requires you to be signed in)
+  changelog [options]                        Show release notes for the installed CLI
+  diagnose                                   One-shot diagnostic commands for support — paste-safe, redacted output
+  docs [options] [topic]                     Open Unity documentation for a class or topic, matched to your project's editor version
+  doctor [options]                           Print diagnostic info about your Unity CLI environment
+  env                                        Print Unity Hub environment paths and version
+  logs [options]                             Read and tail the Hub log file
+  commands [options]                         List every command and subcommand as a machine-readable manifest
+  version                                    Print the Unity CLI version and build information
+  help [command]                             display help for command
+
+Agent skill: unity skill show prints a task-oriented guide to this CLI; unity skill install <client> installs it into an AI client.
+Not sure which command? unity commands --grep <term>
+
+Exit codes (* = running the same command again can succeed):
+  0    SUCCESS                  The command succeeded.
+  1    ERROR                    An unexpected or unsupported state.
+  2    BAD_ARGS                 A usage error: an unknown command or option, or a bad value.
+  3    AUTH_ERROR               Not signed in, the session expired, or permission was denied.
+  4    NEEDS_CONFIG             Setup is missing: a required tool, setting or link.
+  6    COMMAND_FAILED           The command failed for a reason no more specific code names.
+  7    NETWORK_UNREACHABLE    * A required service could not be reached.
+  8    TESTS_FAILED             The tests ran, and some failed.
+  9    INSTALL_LOCKED         * Another process holds the install lock.
+  10   READY_TIMEOUT          * The Editor did not become ready in time.
+  11   NOT_FOUND                What the command names does not exist: a project, a release, a module.
+  12   EDITOR_UNREACHABLE     * No running Editor answered: none is running, none matches, or it refused the connection.
+  13   REMOTE_COMMAND_FAILED    The Editor answered, but it has no command by that name.
+  14   TIMEOUT                * An operation ran out of time: an Editor request, an HTTP request, a batch run.
+  130  INTERRUPTED            * Interrupted by Ctrl-C (SIGINT).
+  141  OUTPUT_CLOSED            The reader of stdout closed the pipe.
+  143  TERMINATED             * Terminated by SIGTERM.

@@ -1,0 +1,2 @@
+groups: animation, animation.animator, animation.clip, animation.timeline, asset, authoring, build, build.target, capture, component, console, diagnostics, editor, editor.playmode, gameobject, job, lighting, material, navmesh, occlusion, package, prefab, runtime, scene, script, script.methodreload, settings, settings.audio, settings.graphics, settings.input, settings.physics, settings.player, settings.quality, settings.runtime_pipeline, settings.tags_layers, settings.time, test
+(unity command --query <group> lists its commands)

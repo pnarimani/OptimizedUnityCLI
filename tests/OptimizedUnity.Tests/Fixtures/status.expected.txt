@@ -1,0 +1,1 @@
+state: ready  pid: 12345  project: /Users/dev/projects/SampleGame

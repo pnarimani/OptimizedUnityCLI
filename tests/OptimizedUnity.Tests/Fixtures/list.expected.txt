@@ -1,0 +1,167 @@
+animation.animator add_layer: Add a layer to an AnimatorController.
+animation.animator add_parameter: Add a parameter (Float | Int | Bool | Trigger) to an AnimatorController. A duplicate name returns code 'duplicate_parameter'.
+animation.animator add_state: Add a state to a layer, optionally with a motion (AnimationClip or BlendTree) and as the layer default. A layer name with no match returns code 'layer_not_found'.
+animation.animator add_transition: Add a transition between two states (or from AnyState/Entry, to Exit) on a layer, with optional conditions. Validates that the states exist and each condition's parameter exists and its mode matches the parameter type.
+animation.animator create_controller: Create an .controller AnimatorController asset (with a default Base Layer) under the authoring root.
+animation.animator get_controller: Read an AnimatorController's full structure: parameters, layers, states (with motion / default), and transitions (with conditions).
+animation.clip create: Create an empty .anim AnimationClip asset under the authoring root, with an optional frame rate and loop flag.
+animation.clip get: Read an AnimationClip's metadata and all float curve bindings (optionally with keyframes).
+animation.clip remove_curve: Remove a float curve binding from an AnimationClip (SetEditorCurve(clip, binding, null)). Destructive: requires confirm=true.
+animation.clip set_curve: Add or replace a single float curve binding on an AnimationClip (via AnimationUtility.SetEditorCurve). Replacing an existing binding overwrites it rather than duplicating.
+animation.timeline add_clip: Add a clip to a named track on a TimelineAsset. For Animation tracks pass an AnimationClip asset; for Audio tracks an AudioClip. Requires the com.unity.timeline package.
+animation.timeline add_track: Add a track (Animation | Audio | Activation | Control | Playable | Signal | Marker) to a TimelineAsset, optionally nested under a parent group/track. Requires the com.unity.timeline package.
+animation.timeline create: Create a .playable TimelineAsset under the authoring root (optional frame rate). Requires the com.unity.timeline package.
+animation.timeline get: Read a TimelineAsset's structure: frame rate, duration, and its tracks with their clips. Requires the com.unity.timeline package.
+asset copy: Copy an asset to a new path under the authoring root. The copy gets a fresh GUID.
+asset create: Create a new ScriptableObject (or other UnityEngine.Object) asset of the given type at a path under the authoring root.
+asset create_folder: Create a folder under the authoring root (creates intermediate folders).
+asset delete: Delete an asset from the project. Destructive: requires confirm=true.
+asset find: Find assets by type and/or name and/or label, returning their path, GUID and type. At least one filter is required.
+asset get_import_settings: Read an asset's import settings, structured by importer type (texture/model/audio), including the default-platform fields and (for textures/audio) one platform override block.
+asset import: Import an external file (e.g. a texture, model, audio clip) into the project by copying it to a path under the authoring root, then importing it.
+asset move: Move (or rename via a new path) an asset to a new location under the authoring root. Preserves the asset's GUID.
+asset read_text: Read a UTF-8 text file under the authoring root and return its contents.
+asset rename: Rename an asset in place (keeps it in the same folder, keeps its GUID).
+asset set_import_settings: Set import settings on an asset's AssetImporter (default platform top-level properties, or a texture/audio per-platform override) and re-import it.
+asset write_text: Write UTF-8 text to a file under the authoring root, then import it. Overwriting an existing file requires confirm=true.
+authoring get_root: Get the base folder (under Assets/) that bare authoring paths resolve against.
+authoring set_root: Set the base folder (under Assets/) that bare authoring paths resolve against and are confined to. Use 'Assets' for full project access.
+build create_profile: Create a Build Profile asset for a platform (Unity 6 only). Call build list_platforms first to get a platform id. Returns feature_unavailable on earlier versions.
+build get_settings: Read the current build configuration from EditorUserBuildSettings / EditorBuildSettings.
+build list_platforms: List the platforms a Build Profile can target, with their platform id (Unity 6 only). Lists only platforms whose build support is installed; pass showAll=true for every known platform.
+build list_profiles: List Build Profile assets in the project (Unity 6 only). Returns feature_unavailable on earlier versions.
+build run: Trigger an async Player build and report the full BuildReport. Returns immediately (queued); poll build status until status is 'completed'. DetailedBuildReport is included by default unless 'options' is supplied. Use dry_run to validate without building.
+build set_profile: Edit an existing Build Profile's scene list and scripting defines (Unity 6 only). Every setting is optional; only the ones supplied change. The platform cannot be changed here: recreate the profile with build create_profile and confirm=true. Returns feature_unavailable on earlier versions.
+build set_settings: Set mutable EditorUserBuildSettings fields. Does NOT manage scenes (use scene add_to_build / scene remove_from_build) or switch target (use build.target switch). Use dry_run to preview.
+build status: Status of the current/most recent build: idle | queued | building | completed, with the full BuildReport (files, packedAssets, buildSteps, errors, warnings) once completed. Retained until the next build.
+build.target list: List the known BuildTarget values with their group and whether build support is installed.
+build.target switch: Switch the active build target (destructive, long-running: triggers a full reimport + domain reload). Requires confirm=true. Returns immediately; poll build.target switch_status.
+build.target switch_status: Status of the last target switch: idle | switching | completed (with success + activeBuildTarget).
+capture game_view: Capture the game view as a PNG. source=screen (default) captures what the Game window shows, incl. Screen Space - Overlay UI; source=camera renders a single camera instead and misses overlay UI. Returns it inline as base64, unless save_path is set (path-only result; pass include_inline_image=true to get both).
+capture scene_view: Render the active Scene View to a PNG. Returns it inline as base64, unless save_path is set (path-only result; pass include_inline_image=true to get both).
+capture screenshot: Capture the Scene or Game view as a PNG and return its file path
+component add: Add a component (by type name) to a GameObject.
+component get_fields: Read serialized fields of a component/asset. Returns each top-level field's name, type and value (object references are returned as re-usable handles). Pass 'field' to read a single SerializedProperty path. Pass format='value' to return just the value(s) — a token-efficient read for scalars.
+component get_properties: Get a component's serialized properties as a JSON map. Address the component by handle, or by GameObject handle + type.
+component remove: Remove a component from a GameObject. Provide either a component handle (target) or a GameObject handle (target) plus a type name.
+component set_field: Set a serialized field on a component/asset. Supports primitives, enums, Vector/Color/Rect/Bounds, object references (value = an ObjectRef: asset by guid/fileId/path or scene object by instanceId/hierarchyPath), and array elements via 'name.Array.data[i]' (or 'name.Array.size' to resize).
+component set_properties: Set serialized properties on a component (one Undo step). 'properties' maps property name -> value; object references accept an ObjectRef handle.
+console clear: Clear the captured log buffer and the Unity Editor console.
+console get: Get captured Unity console output (Editor or Player; supports tail, level filtering, and follow via a cursor)
+console status: Console ground truth and buffer counters without pulling entries: compile-failure flag, Editor console counts, and the buffer's retained counts and cursor.
+console write: Write a message to Unity console
+diagnostics audit_status: Get the status of the last audit: idle | scanning | completed | failed | interrupted | unavailable.
+diagnostics get_performance: Read render, memory, and frame-timing stats (structured, read-only).
+diagnostics report_evals: Aggregate local eval-usage telemetry into a ranked report: API fingerprint frequency, one-liner percentage, error rate, and command-coverage suggestions.
+diagnostics run_audit: Run a Project Auditor static-analysis scan. Returns immediately; poll diagnostics audit_status until status is 'completed', then read the CSV.
+editor focus: Bring the Unity Editor window to the foreground
+editor invoke_menu: Execute an Editor menu item by path, or list available items when no path is given
+editor save_all: Save all open scenes that have unsaved changes.
+editor search: Run a Unity Search query and return structured results.
+editor set_auto_tick: Keep the editor ticking while unfocused by forcing EditorApplication.SignalTick at a throttled rate
+editor status: Get detailed Unity Editor status and state information
+editor.playmode list_instances: List running Editor instances reachable over Pipeline (this Editor + its MPPM virtual player clones). Connect to one with 'unity command --project-path <its projectPath>'.
+editor.playmode pause: Toggle pause state of Unity Editor play mode
+editor.playmode set_run_in_background: Override the project's Run In Background Player Setting, recording enough state to restore it later and to keep it out of builds
+editor.playmode start: Enter Unity Editor play mode
+editor.playmode stop: Exit Unity Editor play mode
+gameobject create: Create an empty GameObject or a built-in primitive (cube/sphere/capsule/cylinder/plane/quad) in the active scene.
+gameobject create_many: Batch-create N empty GameObjects or primitives in one call. Optional positions/rotations/scales are arrays of [x,y,z] (length must equal count). Returns the created identities.
+gameobject delete: Delete a GameObject from the scene (reversible via Undo).
+gameobject find: Find GameObjects in loaded scenes by name, tag, component type, and/or hierarchy path (filters are combined). Returns structured identities.
+gameobject get_selection: Read the current Editor selection as structured object identities.
+gameobject rename: Rename a GameObject.
+gameobject set_active: Set a GameObject's active self-state (activeSelf).
+gameobject set_layer: Set a GameObject's layer by name or numeric index (0-31).
+gameobject set_parent: Reparent a GameObject under a new parent, or detach it to scene root when no parent is given.
+gameobject set_selection: Set the Editor selection to the given assets/scene objects.
+gameobject set_tag: Set a GameObject's tag (the tag must already exist in the project).
+gameobject set_transform: Set a GameObject's local position/rotation(euler)/scale. Omitted channels are left unchanged.
+job batch: Run multiple registered commands in one transactional request. Later ops can reference earlier results with "$<id-or-index>.<jsonPath>" (e.g. "$0.instanceId"; "$$" escapes a literal '$'). transactional=true (default) groups every op into one Undo step and reverts all applied ops if any op fails; commands that mutate outside the Undo system (asset/file/settings writes) are rejected unless transactional=false. on_error=abort|continue (continue forces transactional=false); dry_run validates without mutating; timeout (seconds, default 60) bounds execution — when it is about to run out the remaining ops are skipped and a transactional batch rolls back (submit long batches with "job": true). Excludes build run, build.target switch, the package commands, editor.playmode start/stop/pause, script recompile, script eval, script eval_file, script run, editor invoke_menu, scene open/scene create, async commands (test run/test list), runtime-only commands, and nested job batch.
+job wait: Wait server-side until a member condition holds, then optionally act in the same frame. Sync waits hold the exec queue (every other command waits behind them, including one the condition may depend on) — keep them short and self-contained; set async=true and poll job wait_status for anything else.
+job wait_cancel: Cancel an async wait started with job wait (async=true).
+job wait_status: Get the status/result of an async wait started with job wait (async=true).
+lighting bake: Trigger an async lightmap bake of the open scene(s) via Lightmapping.BakeAsync(). Returns immediately; poll lighting bake_status until completed.
+lighting bake_status: Get the status of the last lighting bake: idle | baking | completed.
+lighting cancel_bake: Cancel an in-progress lighting bake (Lightmapping.Cancel()).
+lighting clear_bake: Clear baked lightmap data for the open scene(s). Destructive: requires confirm=true.
+lighting get_settings: Read the active LightingSettings (lightmapper, bounces, resolution, directional mode, AO, etc.).
+lighting set_settings: Apply a subset of lighting settings to the active LightingSettings. Returns { applied[], unknown[] }.
+material get_properties: Read a material's shader, render queue, enabled keywords, and all shader properties with their current values (Color as [r,g,b,a], Vector as [x,y,z,w], Texture as an object reference).
+material get_shader_properties: Introspect a shader's declared property list (name, description, type Color|Vector|Float|Range|TexEnv|Int, range, textureDimension, flags). Provide 'shader' (by name) OR 'material' (read the shader off that material).
+material list_shaders: Discover available shaders so an agent can pick a valid name for material set_properties / asset create. Returns [{ name, assetPath|null, isBuiltin, isSupported }].
+material set_properties: Set shader properties on a material (Float/Range/Int=number; Color=[r,g,b,a] or "#RRGGBBAA" hex; Vector=[x,y,z,w]; Texture=an object reference or null to clear), optionally reassign the shader, set the render queue, and toggle keywords. Unknown names / type mismatches are reported in unknown[].
+navmesh bake: Trigger an async legacy NavMesh bake of the open scene(s) via UnityEditor.AI.NavMeshBuilder. Returns immediately; poll navmesh bake_status until completed.
+navmesh bake_status: Get the status of the last NavMesh bake: idle | baking | completed.
+navmesh bake_surfaces: Bake NavMeshSurface components (AI Navigation package). v1 stub: returns package_not_found when the package is absent.
+navmesh cancel_bake: Cancel an in-progress NavMesh bake (NavMeshBuilder.Cancel()).
+navmesh clear_bake: Clear the baked NavMesh for the open scene(s). Destructive: requires confirm=true.
+navmesh get_settings: Read the default agent's legacy NavMesh bake settings (agentRadius/Height/Slope/Climb, minRegionArea, voxelSize).
+navmesh set_settings: Apply a subset of legacy NavMesh bake settings to the default agent. Returns { applied[], unknown[] }.
+occlusion bake: Trigger an async occlusion-culling bake of the open scene(s) via StaticOcclusionCulling.GenerateInBackground(). Returns immediately; poll occlusion bake_status until completed.
+occlusion bake_status: Get the status of the last occlusion bake: idle | baking | completed.
+occlusion cancel_bake: Cancel an in-progress occlusion bake (StaticOcclusionCulling.Cancel()).
+occlusion clear_bake: Clear baked occlusion-culling data for the open scene(s). Destructive: requires confirm=true.
+package add: Add a UPM package by name@version, git URL, or 'file:' local path. Async by default (returns in_progress; poll package status); pass wait=true to block until added. A recompile/domain reload follows — poll script recompile_status. Requires confirm=true; use dry_run to preview.
+package list: List packages by scope: installed (default) | available (registry) | all (both). Returns the full result synchronously — available/all block until the registry query completes.
+package remove: Remove a UPM package by name. Async by default (returns in_progress; poll package status); pass wait=true to block until removed. A recompile/domain reload follows — poll script recompile_status. Requires confirm=true; use dry_run to preview.
+package resolve: Resolve/refresh packages from the manifest (re-fetch and re-link). May trigger a recompile/domain reload — poll script recompile_status. Its outcome is recorded for package status.
+package search: Search packages available in the registry. Provide a name (e.g. com.unity.foo) or omit to list all. Returns the full result synchronously (blocks until the registry query completes).
+package status: Status of the last async package operation (add/remove/resolve): idle | in_progress | completed | failed, with the added package, manifest, and any error.
+prefab apply_overrides: Apply a prefab instance's overrides back to its source prefab asset.
+prefab create: Save a GameObject as a prefab asset at a project path; the source becomes a connected instance.
+prefab create_variant: Create a prefab variant asset that inherits from a base prefab.
+prefab instantiate: Instantiate a prefab asset into a loaded scene and return the created instance.
+prefab revert_overrides: Revert a prefab instance's overrides so it matches its source prefab asset.
+prefab save_contents: Open a prefab asset in an isolated prefab stage, apply a declarative edit, and save it back (nested-prefab safe).
+prefab unpack: Unpack a prefab instance into plain GameObjects (outermost level or completely).
+runtime quit: Gracefully quit the Unity application
+runtime set_target_frame_rate: Set the target frame rate for the application
+runtime set_time_scale: Set the time scale for the application
+runtime simulate_key: Simulate a keyboard key event (Input System). Drives the running app.
+runtime simulate_pointer: Simulate a mouse/pointer event at screen coordinates (Input System).
+runtime status: Get comprehensive runtime application status
+scene add_to_build: Add a scene to the Build Settings scene list (idempotent). Optionally enable it.
+scene create: Create a new scene and save it to the given path under the authoring root.
+scene get_hierarchy: Return the GameObject tree of an open scene (or the active scene). Each node carries instanceId + hierarchyPath usable by GameObject commands.
+scene list_open: List all currently open scenes with their load/active/dirty state.
+scene open: Open an existing scene from the given path.
+scene remove_from_build: Remove a scene from the Build Settings scene list (idempotent).
+scene save: Save an open scene. Saves the active scene when no path is given.
+scene set_active: Set which open scene is the active scene (new objects are created in the active scene).
+script attach: Add a MonoBehaviour to a GameObject by its (compiled) type name OR by its script asset path. Provide exactly one of 'type' or 'script'. If the type isn't compiled yet, returns a recoverable error: script recompile, poll script recompile_status, then retry.
+script create: Create a new C# script (default base class MonoBehaviour) from a template under the authoring root. NOTE: the type does not exist until a recompile completes — to attach it, call script recompile, poll script recompile_status, then script attach.
+script eval: Evaluate C# code dynamically using Roslyn compiler
+script eval_file: Evaluate C# code read from a .cs file on disk
+script recompile: Force a script recompile (works while unfocused/minimized). Poll script recompile_status for completion.
+script recompile_status: Get the status of the last recompile: idle | triggered | compiling | completed | up_to_date.
+script run: Compile a project C# file in memory (no domain reload) and execute a named static entry point. The builder-pattern path for bulk construction. Still arbitrary code execution — shares script eval's capability gate.
+script.methodreload cleanup: Remove old method reload DLL versions and clear registry
+script.methodreload generate_link_xml: Generate ProjectSettings/Packages/com.unity.pipeline/MethodReload.link.xml: per-type preservation of the engine/package types the game's assemblies reference and of the game's own types, plus the interpreter's host surface and [MethodReload] targets. Applied to IL2CPP development builds only, while the Pipeline is enabled in development builds. Pass delete=true to remove the file instead.
+script.methodreload reload: Compile and apply in-place [MethodReload] edits from a source file
+script.methodreload reload_editor: Compile in-place [MethodReload] edits and run them through the IlInterpreter VM in this process instead of Assembly.Load (IL2CPP-safe; only a minimal host API + the target type are available)
+script.methodreload reload_player: Compile a file's (or folder's) [MethodReload] method(s) and push the IL to a connected player (IL2CPP-safe) over PlayerConnection. Folders are walked recursively and pushed once.
+script.methodreload status: Show current method reload registry status and statistics
+settings.audio get: Read project Audio settings (volume, rolloff scale, doppler factor).
+settings.audio set: Change project Audio settings. Requires confirm=true; use dry_run to preview. Not undoable via Ctrl+Z.
+settings.graphics get: Read GraphicsSettings (default render pipeline).
+settings.graphics set: Set the default render pipeline asset. Requires confirm=true; use dry_run to preview. Not undoable via Ctrl+Z.
+settings.input get: Read the legacy Input Manager axes (names and count).
+settings.input set: Tune a legacy Input Manager axis (sensitivity/gravity/dead) by name. Requires confirm=true; use dry_run to preview. Not undoable via Ctrl+Z.
+settings.physics get: Read Physics settings (gravity, solver iterations, bounce threshold).
+settings.physics set: Change Physics settings. Requires confirm=true; use dry_run to preview. Not undoable via Ctrl+Z.
+settings.player get: Read PlayerSettings (company/product/version, scripting backend, API level).
+settings.player set: Change PlayerSettings. Requires confirm=true; use dry_run to preview. Not undoable via Ctrl+Z. Scripting backend / API level changes trigger a domain reload.
+settings.quality get: Read QualitySettings (current level, level names, vSync, anti-aliasing).
+settings.quality set: Change QualitySettings. Requires confirm=true; use dry_run to preview. Not undoable via Ctrl+Z.
+settings.runtime_pipeline get: Read Pipeline Runtime settings (enableInDevelopmentBuilds, enableInReleaseBuilds, port, enableAuditLogging, autoStart, maxWorkItemsPerFrame). Reports the settings in effect, falling back to built-in defaults when none have been authored; never creates the settings file. The two toggles are reported for the active build target.
+settings.runtime_pipeline set: Change Pipeline Runtime settings. Requires confirm=true; use dry_run to preview. Not undoable via Ctrl+Z. Refused while in Play Mode: the running driver already loaded its own settings, so a change would silently not apply until the next Play session or build. port and maxWorkItemsPerFrame are rejected outright if outside the same bounds the Project Settings page enforces.
+settings.tags_layers get: Read the project's tags and (named) layers.
+settings.tags_layers set: Add/remove tags and assign user layer names (index 8-31). Requires confirm=true; use dry_run to preview. Not undoable via Ctrl+Z.
+settings.time get: Read Time settings (fixedDeltaTime, maximumDeltaTime, timeScale).
+settings.time set: Change Time settings. Requires confirm=true; use dry_run to preview. Not undoable via Ctrl+Z.
+test cancel: Cancel running test execution
+test list: List all available tests (EditMode and/or PlayMode) without running them
+test run: Execute Unity tests with filtering options
+test status: Get status of running async test execution
+(unity command <name> --help shows a command's parameters and usage)

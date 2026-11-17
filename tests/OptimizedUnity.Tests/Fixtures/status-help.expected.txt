@@ -1,0 +1,17 @@
+Usage: unity status [options]
+
+Show live state of every connected Unity Editor (port, project, version, PID,
+state)
+
+Options:
+  --port <number>        Filter to a single Editor instance on this port
+  --project-path <path>  Filter by project path: an existing directory matches
+                         that project exactly, and any other value matches as a
+                         case-insensitive substring (env: UNITY_PROJECT_PATH)
+  --until-ready          Wait until a matching Editor reports ready, then print
+                         its status
+  --timeout <seconds>    Seconds to keep waiting for a ready Editor (default:
+                         300)
+  -h, --help             display help for command
+
+Global options: see `unity --help`.

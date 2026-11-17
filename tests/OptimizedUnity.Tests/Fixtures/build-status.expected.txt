@@ -1,0 +1,4 @@
+status: completed  result: Succeeded  platform: StandaloneWindows64  time: 11m27s  size: 1.75 GB  buildId: build_9d0968bbb24f
+output: C:/dev/Game/Builds/Win/Game.exe
+errors: 3  warnings: 2
+reports: Temp/build-reports/build_9d0968bbb24f/  errors.txt  warnings.txt  files.txt  steps.txt  assets.txt

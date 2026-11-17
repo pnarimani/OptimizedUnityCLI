@@ -1,0 +1,15 @@
+query: t:Texture2D  count: 100
+results:
+  all: provider: asset
+  Assets/Debug/: iconBlack.png  iconGrey.png
+  Assets/Art/UI/Icons/: icon_{01..30}.png
+  Assets/Editor Default Resources/: arrowLeft.png  arrowRight.png  arrowUp.png  arrowDown.png  close.png  menu.png  search.png  settings.png
+  Assets/Fonts/
+    Display-Bold.otf  label: Font Texture
+    Display-Regular.otf  label: Font Texture
+  Assets/Art/Environments/
+    Forest/Textures/: forest_albedo.png  forest_normal.png  forest_mask.png  forest_detail.png  forest_height.png
+    Desert/Textures/: desert_albedo.png  desert_normal.png  desert_mask.png  desert_detail.png  desert_height.png
+    Snow/Textures/: snow_albedo.png  snow_normal.png  snow_mask.png  snow_detail.png  snow_height.png
+    Swamp/Textures/: swamp_albedo.png  swamp_normal.png  swamp_mask.png  swamp_detail.png  swamp_height.png
+  Assets/Art/Characters/Knight/Textures/: knight_{062..099}.png

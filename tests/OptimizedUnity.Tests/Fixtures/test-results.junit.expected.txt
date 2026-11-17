@@ -1,0 +1,18 @@
+45 tests: 41 passed, 3 failed, 1 skipped (0.05s)
+FAIL Sample.Generated.Tests.Editor.Sample.Generated.Tests.Editor.GeneratedTest_eebadf98797aa8f48f11b781
+    sum should be four
+    Expected: 4
+    But was:  5
+    at Demo.Tests.MathTests.FailsEquality () in Assets/Tests/DemoTests.cs:16
+FAIL Sample.Generated.Tests.Editor.Sample.Generated.Tests.Editor.GeneratedTest_73c0f703b4d5192fba77bb51
+    System.InvalidOperationException : boom from helper
+    at Demo.Tests.Helper.Deeper () in Assets/Tests/DemoTests.cs:45
+    at Demo.Tests.Helper.Explode () in Assets/Tests/DemoTests.cs:44
+    at Demo.Tests.MathTests.FailsWithException () in Assets/Tests/DemoTests.cs:19
+FAIL Sample.Generated.Tests.Editor.Sample.Generated.Tests.Editor.GeneratedTest_dd783654bdd2002e5cc41157
+    Expected: collection containing 4
+    But was:  < 1, 2, 3 >
+    at Demo.Tests.NoisyTests.FailsAfterLogging () in Assets/Tests/DemoTests.cs:38
+    output:
+      about to fail
+SKIP Sample.Generated.Tests.Editor.Sample.Generated.Tests.Editor.GeneratedTest_37f93934d6793aea36ff977d: not ready

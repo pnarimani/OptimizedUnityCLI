@@ -1,0 +1,16 @@
+count: 200  truncated: true
+assets:
+  all: type: Material
+  Assets/Art/Environments/
+    Forest/Materials/: mat_far.mat  mat_lamps.mat  mat_middle.mat  mat_mist.mat  mat_near.mat
+    Desert/Materials/: mat_dunes.mat  mat_rocks.mat  mat_sky.mat
+    Snow/Materials/: mat_Glow {1..11}.mat  mat_ice.mat  mat_snow.mat
+    Swamp/Materials/: mat_water.mat  mat_mud.mat  mat_reeds.mat
+  Assets/Art/Props/
+    Barrel/: Barrel.mat
+    Crate/: Crate.mat
+    Lamp/: Lamp.mat
+    Sign/: Sign.mat
+    Torch/: Torch.mat
+    Well/: Well.mat
+  Assets/Materials/: Default.mat  Outline.mat  Shadow.mat  Unlit.mat  Wireframe.mat  Glass.mat  Metal.mat  Wood.mat  Cloth.mat  Stone.mat
