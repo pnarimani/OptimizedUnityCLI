@@ -26,8 +26,6 @@ internal static partial class TestReports
 	const int MaxMessageLines = 12;
 	const int MaxOutputLines = 10;
 	const int MaxSkippedListed = 20;
-	/// <summary>Above this many tests a listing shows assembly counts, with the full list in a file.</summary>
-	public const int MaxListedTests = 300;
 
 	public static TestOutcome Classify(string? status) => (status ?? "").Trim().ToLowerInvariant() switch
 	{
@@ -334,11 +332,12 @@ internal static partial class TestReports
 
 	/// <summary>
 	/// `test list`: tests grouped by assembly and fixture, parameterised cases folded into one name.
-	/// A large catalog shows assembly counts here and the full grouped list in a file.
+	/// Always printed in full, never written to a file.
 	/// </summary>
-	public static List<string>? RenderList(JsonNode? result, Func<string, string?> spill)
+	public static List<string>? RenderList(JsonNode? result)
 	{
-		if (result.GetAny("Tests") is not JsonArray tests) return null;
+		// Pipeline 0.10 wraps the tests in `Tests`; the CLI 1.0 betas stream them bare, one per line.
+		if ((result as JsonArray ?? result.GetAny("Tests")) is not JsonArray tests) return null;
 		var rows = tests.Select(test => (
 				Name: test.GetAny("FullName").Str() ?? test.GetAny("Name").Str() ?? "?",
 				Assembly: test.GetAny("Assembly").Str() ?? "?",
@@ -348,16 +347,16 @@ internal static partial class TestReports
 			.ToList();
 
 		var modes = rows.Select(r => r.Mode).Where(m => m.Length > 0).Distinct().ToList();
-		var assemblies = rows.GroupBy(r => r.Assembly).OrderByDescending(g => g.Count()).ThenBy(g => g.Key, StringComparer.Ordinal).ToList();
+		var assemblies = rows.GroupBy(r => r.Assembly).OrderBy(g => g.Key, StringComparer.Ordinal).ToList();
 		var head = $"{rows.Count} tests" + (modes.Count > 0 ? $" ({string.Join(", ", modes)})" : "") + $" in {assemblies.Count} assemblies";
 
-		var full = new List<string>();
-		foreach (var assembly in assemblies.OrderBy(g => g.Key, StringComparer.Ordinal))
+		var lines = new List<string> { head };
+		foreach (var assembly in assemblies)
 		{
-			full.Add($"{assembly.Key} ({assembly.Count()})");
+			lines.Add($"{assembly.Key} ({assembly.Count()})");
 			foreach (var fixture in assembly.GroupBy(r => FixtureOf(r.Name)).OrderBy(g => g.Key, StringComparer.Ordinal))
 			{
-				var methods = new List<string>();
+				lines.Add($"  {fixture.Key}");
 				foreach (var method in fixture.GroupBy(r => MethodOf(r.Name, fixture.Key)))
 				{
 					var first = method.First();
@@ -365,19 +364,11 @@ internal static partial class TestReports
 					var label = method.Key.EndsWith("()", StringComparison.Ordinal) ? $"{method.Key[..^2]}(×{method.Count()})" : method.Key;
 					if (first.Categories.Count > 0) label += $"[{string.Join(",", first.Categories)}]";
 					if (first.Explicit) label += "(explicit)";
-					methods.Add(label);
+					lines.Add($"    {label}");
 				}
-				full.Add($"  {fixture.Key}: {string.Join(" ", methods)}");
 			}
 		}
 
-		if (rows.Count <= MaxListedTests) return [head, .. full];
-		var path = spill(string.Join('\n', full) + "\n");
-		var lines = new List<string> { head };
-		lines.AddRange(assemblies.Select(g => $"  {g.Key}  {g.Count()}"));
-		lines.Add(path is null
-			? "Narrow with `unity cmd test list --mode editor|playmode`."
-			: $"full list, grouped by fixture: {path} (grep it; run a subset with `unity cmd test run --filter <name|assembly> --filter_type testName|assembly`)");
 		return lines;
 	}
 

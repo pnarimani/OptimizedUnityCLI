@@ -161,22 +161,21 @@ public class TestReportTests
 		var lines = EnvelopeRenderer.Render(Fixture.Json("test-list-small.json"));
 		Assert.Equal("42 tests (EditMode) in 2 assemblies", lines[0]);
 		Assert.Contains("Sample.Inventory.Tests.Editor (30)", lines);
-		Assert.Contains(lines, line => line.StartsWith("  Sample.Generated.Tests.Editor: GeneratedTest_", StringComparison.Ordinal));
+		Assert.Contains("  Sample.Generated.Tests.Editor", lines);
+		Assert.Contains(lines, line => line.StartsWith("    GeneratedTest_", StringComparison.Ordinal));
 		Assert.DoesNotContain(lines, line => line.Contains("Uncategorized") || line.Contains("Explicit"));
 		Assert.True(string.Join('\n', lines).Length < Fixture.Text("test-list-small.json").Length / 5);
 	}
 
 	[Fact]
-	public void LargeTestListSummarisesAndSpillsTheRest()
+	public void LargeTestListIsPrintedInFull()
 	{
 		var lines = EnvelopeRenderer.Render(Fixture.Json("test-list-large.json"));
 		Assert.Equal("350 tests (EditMode) in 3 assemblies", lines[0]);
-		Assert.Equal("  Sample.Navigation.Tests.Editor  143", lines[1]);
-		var pointer = lines[^1];
-		var path = pointer["full list, grouped by fixture: ".Length..pointer.IndexOf(" (grep", StringComparison.Ordinal)];
-		var full = File.ReadAllText(path);
-		Assert.Contains("Sample.Inventory.Tests.Editor (74)", full);
-		Assert.Contains("Sample.Generated.Tests.Editor: GeneratedTest_", full);
+		Assert.Contains("Sample.Inventory.Tests.Editor (74)", lines);
+		Assert.Contains("Sample.Navigation.Tests.Editor (143)", lines);
+		Assert.Equal(350, lines.Count(line => line.StartsWith("    ", StringComparison.Ordinal)));
+		Assert.DoesNotContain(lines, line => line.Contains("full list"));
 	}
 
 	static JsonObject TestListOf(IEnumerable<(string Name, string Assembly, string[]? Categories, bool Explicit)> tests) => new()
@@ -200,27 +199,19 @@ public class TestReportTests
 			.Append(("Shop.Tests.PriceTests.Slow_Case", "Shop.Tests", ["Slow"], true))
 			.Append(("Shop.Tests.PriceTests.Rounds(1.5, \"a.b\")", "Other.Tests", null, false));
 		var lines = EnvelopeRenderer.RenderEditor("test list", TestListOf(tests));
-		Assert.Equal("11 tests (EditMode) in 2 assemblies", lines[0]);
-		Assert.Contains("Shop.Tests (10)", lines);
-		Assert.Contains("  Shop.Tests.CartTests: AddItem_WithValidItem_Works(×8) Clear_EmptiesCart", lines);
-		Assert.Contains("  Shop.Tests.PriceTests: Slow_Case[Slow](explicit)", lines);
-		Assert.Contains("  Shop.Tests.PriceTests: Rounds(×1)", lines);
-		Assert.DoesNotContain(lines, line => line.Contains("Uncategorized"));
-	}
-
-	[Fact]
-	public void LargeTestListSpillsFixtureGroupedFile()
-	{
-		var tests = Enumerable.Range(0, TestReports.MaxListedTests + 1)
-			.Select(i => ($"Nav.Tests.RouteResolverTests.Case_{i}", i % 2 == 0 ? "Nav.Tests" : "Inv.Tests", (string[]?)null, false));
-		var lines = EnvelopeRenderer.RenderEditor("test list", TestListOf(tests));
-		Assert.Equal($"{TestReports.MaxListedTests + 1} tests (EditMode) in 2 assemblies", lines[0]);
-		Assert.Equal("  Nav.Tests  151", lines[1]);
-		var pointer = lines[^1];
-		var path = pointer["full list, grouped by fixture: ".Length..pointer.IndexOf(" (grep", StringComparison.Ordinal)];
-		var full = File.ReadAllText(path);
-		Assert.Contains("Inv.Tests (150)", full);
-		Assert.Contains("  Nav.Tests.RouteResolverTests: Case_0 ", full);
+		Assert.Equal(
+		[
+			"11 tests (EditMode) in 2 assemblies",
+			"Other.Tests (1)",
+			"  Shop.Tests.PriceTests",
+			"    Rounds(×1)",
+			"Shop.Tests (10)",
+			"  Shop.Tests.CartTests",
+			"    AddItem_WithValidItem_Works(×8)",
+			"    Clear_EmptiesCart",
+			"  Shop.Tests.PriceTests",
+			"    Slow_Case[Slow](explicit)",
+		], lines);
 	}
 
 	[Fact]

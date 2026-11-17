@@ -26,6 +26,19 @@ public class ResultEnvelopeTests
 	}
 
 	[Fact]
+	public void ReadsATestListStreamedOneTestPerLine()
+	{
+		const string stdout = """
+			{"FullName":"Shop.Tests.CartTests.Add(1)","Mode":"EditMode","Assembly":"Shop.Tests","Categories":["Uncategorized"],"Explicit":false}
+			{"FullName":"Shop.Tests.CartTests.Add(2)","Mode":"EditMode","Assembly":"Shop.Tests","Categories":["Uncategorized"],"Explicit":false}
+			{"FullName":"Shop.Tests.CartTests.Clear","Mode":"EditMode","Assembly":"Shop.Tests","Categories":["Uncategorized"],"Explicit":false}
+
+			""";
+		var lines = EnvelopeRenderer.Render(ResultEnvelope.Parse(["cmd", "test", "list"], stdout, 0)!);
+		Assert.Equal(["3 tests (EditMode) in 1 assemblies", "Shop.Tests (3)", "  Shop.Tests.CartTests", "    Add(×2)", "    Clear"], lines);
+	}
+
+	[Fact]
 	public void NamesTheCommandFromItsFirstTwoWords()
 	{
 		var envelope = ResultEnvelope.Parse(["cmd", "script", "eval", "return 1+1;"], """{"success":true,"result":2}""", 0)!;

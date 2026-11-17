@@ -275,13 +275,17 @@ internal static class Program
 		const int LogTailLines = 200;
 		const int LogTailBytes = 16 * 1_024;
 
+		/// <summary>Editor commands whose output is printed in full, never cut or written to a file.</summary>
+		static readonly HashSet<string> UnbudgetedEditorCommands = ["test list"];
+
 		static int Emit(string stdout, string stderr, int code, IReadOnlyList<string> args)
 		{
 			var label = Label(args);
 			var command = ArgRewriter.Command(args) ?? "";
 			// Documents lead with what matters (newest release notes, the guide's overview).
 			var document = DocumentCommands.Contains(command);
-			if (stdout.Length > 0) Write(Console.OpenStandardOutput(), OutputBudget.Compact(stdout, label, keepHead: document));
+			if (stdout.Length > 0)
+				Write(Console.OpenStandardOutput(), UnbudgetedEditorCommands.Contains(string.Join(' ', ArgRewriter.EditorCommandWords(args))) ? stdout : OutputBudget.Compact(stdout, label, keepHead: document));
 			if (stderr.Length > 0)
 			{
 				// The streamed Editor log is saved in full; its tail (and any compiler errors) is what matters.

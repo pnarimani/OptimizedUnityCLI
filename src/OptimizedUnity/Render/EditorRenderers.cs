@@ -52,7 +52,7 @@ internal static class EditorRenderers
     /// <summary>Renderers that also accept a bare array of entries.</summary>
     public static bool AcceptsArray(NodeRenderer renderer)
     {
-        return renderer == (NodeRenderer)Console;
+        return renderer == (NodeRenderer)Console || renderer == (NodeRenderer)TestList;
     }
 
     public static List<string> Execute(JsonNode result)
@@ -254,9 +254,7 @@ internal static class EditorRenderers
 
     public static List<string> TestList(JsonNode result)
     {
-        return TestReports.RenderList(result,
-                   text => Output.Spill.Write("test-list", "txt", System.Text.Encoding.UTF8.GetBytes(text)))
-               ?? Renderer.Render(result);
+        return TestReports.RenderList(result) ?? Renderer.Render(result);
     }
 
     /// <summary>`unity command` listings and `unity list`; the catalog's full form is 100s of KB.</summary>

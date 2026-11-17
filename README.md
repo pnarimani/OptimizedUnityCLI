@@ -10,28 +10,28 @@ Pass `--json` or `--format <format>` yourself and the wrapper steps aside: the r
 
 Real calls against a large Unity 6 project with its Editor open, comparing the plain Unity CLI with the wrapper. Every command was run three ways: the CLI's default output, the CLI with `--json`, and the wrapper. Token counts cover stdout plus stderr, counted with `tiktoken` `cl100k_base`. Claude's tokenizer differs, so compare the ratios rather than the absolute numbers.
 
-| Command | Default | `--json` | Wrapped | Smaller than `--json` |
+| Command | Default | `--json` | Wrapped | Smaller than default |
 |---|---:|---:|---:|---:|
-| `unity status` | 62 | 182 | 52 | 3.5× |
-| `unity list` | 5,271 | 30,980 | 5,032 | 6.2× |
-| `unity command` | 203 | 858 | 137 | 6.3× |
-| `unity cmd --query scene` | 1,900 | 17,853 | 968 | 18× |
-| `unity cmd console get` | 31,206 | 33,720 | 2,896 | 12× |
-| `unity cmd console get --level error` | 5,403 | 5,992 | 1,235 | 4.9× |
-| `unity cmd scene get_hierarchy` | 3,146 | 5,042 | 744 | 6.8× |
-| `unity cmd package list` | 16,998 | 22,447 | 3,362 | 6.7× |
-| `unity cmd asset find --type Material` | 16,370 | 20,677 | 1,734 | 12× |
-| `unity cmd build get_settings` | 97,837 | 118,724 | 10,926 | 11× |
-| `unity cmd test list` | 560,625 | 778,489 | 1,544 | 504× |
-| `unity cmd test run` (one assembly, all passing) | 70 | 5,549 | 52 | 107× |
-| `unity cmd console get --help` | 983 | — | 178 | 5.5× smaller than default |
-| `unity status --help` | 519 | — | 151 | 3.4× smaller than default |
+| `unity status` | 62 | 182 | 52 | 1.2× |
+| `unity list` | 5,271 | 30,980 | 5,032 | 1.05× |
+| `unity command` | 203 | 858 | 137 | 1.5× |
+| `unity cmd --query scene` | 1,900 | 17,853 | 968 | 2.0× |
+| `unity cmd console get` | 31,206 | 33,720 | 2,896 | 11× |
+| `unity cmd console get --level error` | 5,403 | 5,992 | 1,235 | 4.4× |
+| `unity cmd scene get_hierarchy` | 3,146 | 5,042 | 744 | 4.2× |
+| `unity cmd package list` | 16,998 | 22,447 | 3,362 | 5.1× |
+| `unity cmd asset find --type Material` | 16,370 | 20,677 | 1,734 | 9.4× |
+| `unity cmd build get_settings` | 97,837 | 118,724 | 10,926 | 9.0× |
+| `unity cmd test list` | 556,025 | 650,979 | 67,653 | 8.2× |
+| `unity cmd test run` (one assembly, all passing) | 70 | 5,549 | 52 | 1.3× |
+| `unity cmd console get --help` | 983 | — | 178 | 5.5× |
+| `unity status --help` | 519 | — | 151 | 3.4× |
 
-Across the twelve data commands that is 1,040,513 tokens with `--json`, 739,091 with the default output, and 28,682 wrapped: 36× and 26× fewer.
+Across the twelve data commands that is 734,491 tokens with the default output, 913,003 with `--json`, and 94,791 wrapped: 7.7× and 9.6× fewer.
 
 Notes:
-- **`test list`:** above 300 tests the wrapper prints counts per assembly and writes the full grouped list to a file, so most of that saving is the list moving out of the reply.
-- **Speed:** wall time is the Editor's. The wrapper adds roughly 0.6 s to a 3.5 MB `test list` and less elsewhere. `cmd <command> --help` takes about 1 s instead of being instant, because it reads the live command schema from the Editor.
+- **`test list`:** the wrapper prints every test, one per line under its assembly and fixture, with parameterised cases folded into one name. It was measured with CLI 1.0.0-beta.17, which prints `--json` as one test object per line.
+- **Speed:** wall time is the Editor's. The wrapper adds roughly 0.25 s to a 3 MB `test list` and less elsewhere. `cmd <command> --help` takes about 1 s instead of being instant, because it reads the live command schema from the Editor.
 
 ## Install
 
@@ -82,5 +82,5 @@ Push a `v*` tag. `.github/workflows/release.yml` then:
 | `UNITY_WRAP=off` | Run the real CLI untouched |
 | `UNITY_CLI_PATH` | Real CLI location (default `~/.unity/bin/unity`, then PATH, never itself) |
 | `UNITY_OP_TIMEOUT_MS` | Opt-in hard timeout; exits 14 |
-| `UNITY_WRAP_MAX_LINES` / `UNITY_WRAP_MAX_BYTES` | Output budget |
+| `UNITY_WRAP_MAX_LINES` / `UNITY_WRAP_MAX_BYTES` | Output budget (`cmd test list` is exempt) |
 | `UNITY_WRAP_SPILL_DIR` | Where full outputs and blobs are saved |
