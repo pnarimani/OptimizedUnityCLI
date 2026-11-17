@@ -1,4 +1,3 @@
-using System.Runtime.CompilerServices;
 using System.Text.Json.Nodes;
 using OptimizedUnity.Json;
 
@@ -17,14 +16,6 @@ internal sealed class LinuxFactAttribute : FactAttribute
 	{
 		if (OperatingSystem.IsWindows()) Skip = "Linux path semantics";
 	}
-}
-
-internal static class TestSetup
-{
-	public static readonly string SpillDir = Path.Combine(Path.GetTempPath(), "optimized-unity-tests", Guid.NewGuid().ToString("N"));
-
-	[ModuleInitializer]
-	public static void Init() => Environment.SetEnvironmentVariable("UNITY_WRAP_SPILL_DIR", SpillDir);
 }
 
 internal sealed class TempDir : IDisposable

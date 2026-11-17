@@ -1,6 +1,7 @@
 using System.Text.Json.Nodes;
 using OptimizedUnity.Json;
 using OptimizedUnity.Output;
+using OptimizedUnity.Render;
 
 namespace OptimizedUnity.Tests;
 
@@ -24,17 +25,16 @@ public class OutputTests
 	}
 
 	[Fact]
-	public void UntruncatedOutputIsUnchanged() => Assert.Equal("a\nb\n", OutputBudget.Compact("a\nb\n", "t", 5, 100));
+	public void UntruncatedOutputIsUnchanged() => Assert.Equal("a\nb\n", OutputBudget.Compact("a\nb\n", 5, 100));
 
 	[Fact]
-	public void TruncatedOutputPointsAtFullCopy()
+	public void TruncatedOutputKeepsTheTailAndSaysWhatWasCut()
 	{
 		var text = string.Join('\n', Enumerable.Range(1, 50)) + "\n";
-		var compact = OutputBudget.Compact(text, "status", 5, 10_000);
+		var compact = OutputBudget.Compact(text, 5, 10_000);
 		var header = compact.Split('\n')[0];
 		Assert.StartsWith("[Output truncated: kept the last 5 of 50 lines", header);
-		var path = header[(header.IndexOf("Full output: ", StringComparison.Ordinal) + 13)..^1];
-		Assert.Equal(text, File.ReadAllText(path));
+		Assert.EndsWith("Narrow the query, e.g. with --limit/--query.]", header);
 		Assert.EndsWith("46\n47\n48\n49\n50\n", compact);
 	}
 
@@ -42,23 +42,19 @@ public class OutputTests
 	public void DocumentsKeepTheirHead()
 	{
 		var text = string.Join('\n', Enumerable.Range(1, 50)) + "\n";
-		var compact = OutputBudget.Compact(text, "changelog", 5, 10_000, keepHead: true);
+		var compact = OutputBudget.Compact(text, 5, 10_000, keepHead: true);
 		Assert.StartsWith("1\n2\n3\n4\n5\n[Output truncated: kept the first 5 of 50 lines", compact);
 		Assert.Equal("€€", OutputBudget.Truncate("€€€ab", maxLines: 10, maxBytes: 7, keepHead: true).Content);
 	}
 
 	[Fact]
-	public void LongBase64BecomesFile()
+	public void LongBase64IsOmitted()
 	{
 		var png = new byte[6_000];
 		new byte[] { 0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A }.CopyTo(png, 0);
 		var node = new JsonObject { ["data"] = new JsonObject { ["base64"] = Convert.ToBase64String(png), ["width"] = 10 } };
-		Spill.Blobs(node, "capture-game_view");
-		var text = node["data"]!["base64"].Str()!;
-		Assert.StartsWith("<base64 6000 bytes → ", text);
-		var path = text["<base64 6000 bytes → ".Length..^1];
-		Assert.EndsWith(".png", path);
-		Assert.Equal(png, File.ReadAllBytes(path));
+		Base64Blobs.Omit(node);
+		Assert.Equal("<base64 6000 bytes omitted>", node["data"]!["base64"].Str());
 		Assert.Equal(10, node["data"]!["width"].Int());
 	}
 
@@ -67,7 +63,7 @@ public class OutputTests
 	{
 		var prose = string.Concat(Enumerable.Repeat("plain words here ", 400));
 		var node = new JsonObject { ["message"] = prose };
-		Spill.Blobs(node, "x");
+		Base64Blobs.Omit(node);
 		Assert.Equal(prose, node["message"].Str());
 	}
 }

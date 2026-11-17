@@ -138,7 +138,7 @@ internal static class Program
 						var capture = GameViewCapture.Render(envelope);
 						return Emit(capture.Stdout, Append(stderr, capture.Stderr), capture.Code, args);
 					}
-					Spill.Blobs(envelope, Label(args));
+					Base64Blobs.Omit(envelope);
 					stdout = Lines(EnvelopeRenderer.Render(envelope!));
 				}
 				catch (Exception error) when (error is InvalidOperationException or ArgumentException or FormatException)
@@ -258,15 +258,6 @@ internal static class Program
 			return ChildProcess.Run(cli, streamArgs, Options(inherit: true)).Code;
 		}
 
-		static string Label(IReadOnlyList<string> args)
-		{
-			var head = ArgRewriter.Head(args);
-			var index = ArgRewriter.CommandIndex(head);
-			if (index < 0) return "unity";
-			var words = head.Skip(index).TakeWhile(arg => !arg.StartsWith('-')).Take(3);
-			return string.Join('-', words);
-		}
-
 		/// <summary>Commands whose output is a document read top-down.</summary>
 		static readonly HashSet<string> DocumentCommands = ["changelog", "skill", "docs", "help"];
 
@@ -280,18 +271,16 @@ internal static class Program
 
 		static int Emit(string stdout, string stderr, int code, IReadOnlyList<string> args)
 		{
-			var label = Label(args);
 			var command = ArgRewriter.Command(args) ?? "";
 			// Documents lead with what matters (newest release notes, the guide's overview).
 			var document = DocumentCommands.Contains(command);
 			if (stdout.Length > 0)
-				Write(Console.OpenStandardOutput(), UnbudgetedEditorCommands.Contains(string.Join(' ', ArgRewriter.EditorCommandWords(args))) ? stdout : OutputBudget.Compact(stdout, label, keepHead: document));
+				Write(Console.OpenStandardOutput(), UnbudgetedEditorCommands.Contains(string.Join(' ', ArgRewriter.EditorCommandWords(args))) ? stdout : OutputBudget.Compact(stdout, keepHead: document));
 			if (stderr.Length > 0)
 			{
-				// The streamed Editor log is saved in full; its tail (and any compiler errors) is what matters.
+				// With the streamed Editor log, its tail (and any compiler errors) is what matters.
 				var log = LogStreamingCommands.Contains(command);
-				var text = OutputBudget.Compact(EnsureNewline(stderr), label + "-stderr",
-					log ? LogTailLines : null, log ? LogTailBytes : null);
+				var text = OutputBudget.Compact(EnsureNewline(stderr), log ? LogTailLines : null, log ? LogTailBytes : null);
 				Write(Console.OpenStandardError(), text);
 			}
 			return code;

@@ -5,7 +5,7 @@ namespace OptimizedUnity.Output;
 
 internal sealed record Truncation(string Content, bool Truncated, int OutputLines, int TotalLines, int OutputBytes, int TotalBytes);
 
-/// <summary>Keep output within a line and byte budget, tail first, with the full text saved aside.</summary>
+/// <summary>Keep output within a line and byte budget, tail first.</summary>
 internal static class OutputBudget
 {
 	const int DefaultMaxLines = 2_000;
@@ -64,17 +64,15 @@ internal static class OutputBudget
 		_ => (bytes / (1_024.0 * 1_024.0)).ToString("0.0", CultureInfo.InvariantCulture) + " MB",
 	};
 
-	/// <summary>Apply the budget; when truncated, save the full text and point at it.</summary>
-	public static string Compact(string value, string label, int? maxLines = null, int? maxBytes = null, bool keepHead = false)
+	/// <summary>Apply the budget; when truncated, say what was cut.</summary>
+	public static string Compact(string value, int? maxLines = null, int? maxBytes = null, bool keepHead = false)
 	{
 		var trimmed = value.TrimEnd('\n');
 		var lines = maxLines ?? MaxLines;
 		var bytes = maxBytes ?? MaxBytes;
 		var truncation = Truncate(trimmed, lines, bytes, keepHead);
 		if (!truncation.Truncated) return value;
-		var saved = Spill.Write(label, "txt", Encoding.UTF8.GetBytes(trimmed + "\n"));
-		var where = saved is null ? "Narrow the query, e.g. with --limit/--query." : $"Full output: {saved}";
-		var notice = $"[Output truncated: kept the {(keepHead ? "first" : "last")} {truncation.OutputLines} of {truncation.TotalLines} lines ({FormatSize(truncation.OutputBytes)} of {FormatSize(truncation.TotalBytes)}). {where}]";
+		var notice = $"[Output truncated: kept the {(keepHead ? "first" : "last")} {truncation.OutputLines} of {truncation.TotalLines} lines ({FormatSize(truncation.OutputBytes)} of {FormatSize(truncation.TotalBytes)}). Narrow the query, e.g. with --limit/--query.]";
 		return keepHead ? $"{truncation.Content}\n{notice}\n" : $"{notice}\n{truncation.Content}\n";
 	}
 }

@@ -83,4 +83,3 @@ Push a `v*` tag. `.github/workflows/release.yml` then:
 | `UNITY_CLI_PATH` | Real CLI location (default `~/.unity/bin/unity`, then PATH, never itself) |
 | `UNITY_OP_TIMEOUT_MS` | Opt-in hard timeout; exits 14 |
 | `UNITY_WRAP_MAX_LINES` / `UNITY_WRAP_MAX_BYTES` | Output budget (`cmd test list` is exempt) |
-| `UNITY_WRAP_SPILL_DIR` | Where full outputs and blobs are saved |

@@ -127,12 +127,11 @@ public class BuildStatusTests
 		Assert.Null(BuildStatus.TryRender("""{"something":"else"}""", _ => null));
 
 	[Fact]
-	public void WithoutAProjectReportsGoToTheSpillFolder()
+	public void WithoutAProjectNoReportsAreWritten()
 	{
 		var result = Render("""{"buildId":"b3","result":"Succeeded","errors":[{"message":"e"}]}""", null);
-		var directory = Path.Combine(Spill.Root, "build-reports", "b3");
-		Assert.Contains($"reports: {directory}{Path.DirectorySeparatorChar}  errors.txt\n", result.Stdout);
-		Assert.True(File.Exists(Path.Combine(directory, "errors.txt")));
+		Assert.Contains("note: no Unity project found; `unity cmd build status --json` has the full report\n", result.Stdout);
+		Assert.DoesNotContain("reports:", result.Stdout);
 	}
 
 	[Fact]

@@ -111,19 +111,11 @@ static class BuildStatus
 	static List<string> WriteReports(JsonElement report, string? projectRoot)
 	{
 		var name = SafeName(JsonElements.String(report, "buildId") ?? "latest");
-		var fallback = Path.Combine(Spill.Root, "build-reports", name);
-		if (projectRoot is not null)
-		{
-			var directory = Path.Combine(projectRoot, ReportDirectory, name);
-			if (BuildReportFiles.Write(report, directory) is { } written)
-				return [ReportsLine($"{ReportDirectory}/{name}/", written)];
-		}
-		if (BuildReportFiles.Write(report, fallback) is { } spilled)
-		{
-			var note = projectRoot is null ? "note: no Unity project found; reports saved outside it" : $"note: could not write under {projectRoot}";
-			return [ReportsLine(fallback + Path.DirectorySeparatorChar, spilled), note];
-		}
-		return ["note: could not write the build reports; `unity cmd build status --json` has the full report"];
+		if (projectRoot is not null
+			&& BuildReportFiles.Write(report, Path.Combine(projectRoot, ReportDirectory, name)) is { } written)
+			return [ReportsLine($"{ReportDirectory}/{name}/", written)];
+		var reason = projectRoot is null ? "no Unity project found" : $"could not write under {projectRoot}";
+		return [$"note: {reason}; `unity cmd build status --json` has the full report"];
 	}
 
 	static string ReportsLine(string directory, List<string> files) => $"reports: {directory}  {string.Join("  ", files)}";
