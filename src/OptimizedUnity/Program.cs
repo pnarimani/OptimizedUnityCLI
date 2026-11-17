@@ -98,6 +98,9 @@ internal static class Program
 
 		int RunOptimized(IReadOnlyList<string> args)
 		{
+			if (DirtySceneGuard.AppliesTo(args) && DirtyScenes(args) is { Count: > 0 } dirty)
+				return Emit("", DirtySceneGuard.Rejection(dirty), ExitCodes.CommandFailed, args);
+
 			var snapshot = CompilerErrors.AppliesTo(args)
 				? CompilerErrors.Snapshot(CompilerErrors.LogPath(args, cwd, () => CompilerErrors.DefaultLogPath(wsl)))
 				: null;
@@ -164,6 +167,16 @@ internal static class Program
 
 			if (stdout.Length == 0 && stderr.Length == 0 && code == 0) stdout = "ok\n";
 			return Emit(stdout, stderr, code, args);
+		}
+
+		/// <summary>
+		/// Read-only, so it does not mark the run as launched. A failed listing guards nothing:
+		/// the test run itself then reports why the Editor is unreachable.
+		/// </summary>
+		List<string> DirtyScenes(IReadOnlyList<string> args)
+		{
+			var result = ChildProcess.Run(cli, DirtySceneGuard.ListOpenArgs(args), Options());
+			return result.Missing || result.TimedOut ? [] : DirtySceneGuard.DirtyScenes(result.Stdout);
 		}
 
 		ChildResult EvalResult(ChildResult result) =>
